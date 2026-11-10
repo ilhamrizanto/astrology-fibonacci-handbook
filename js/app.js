@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nextBtn.onclick = () => loadChapter(available[currIdx + 1]);
     } else {
       nextBtn.disabled = true;
-      nextTitle.textContent = "Sprint 6 (Segera Hadir)";
+      nextTitle.textContent = "Akhir Buku (Edisi Paripurna 17 Bab)";
       nextBtn.onclick = null;
     }
   }

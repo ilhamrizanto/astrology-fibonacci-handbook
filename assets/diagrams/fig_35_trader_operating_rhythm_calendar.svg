@@ -1,0 +1,399 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="auto" style="background-color: #0a0f1a; font-family: 'Inter', sans-serif;">
+  <defs>
+    <!--  Grid Pattern  -->
+    <pattern id="bg-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1e283d" stroke-width="0.4" opacity="0.5"/>
+    </pattern>
+
+    <!--  Gradients  -->
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="emerald-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.03"/>
+    </linearGradient>
+
+    <!--  Arrow Markers  -->
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d4af37"/>
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#00f0ff"/>
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <!--  Outer Frame  -->
+  <rect x="4" y="4" width="912" height="452" rx="10" fill="#0a0f1a" stroke="#1e283d" stroke-width="1.5"/>
+  <rect x="4" y="4" width="912" height="452" rx="10" fill="url(#bg-grid)"/>
+
+  <!--  Header  -->
+  <g transform="translate(30, 26)">
+    <rect x="0" y="-12" width="4" height="22" rx="2" fill="#d4af37"/>
+    <text x="12" y="4" fill="#f3e5ab" font-size="13.5" font-weight="800" letter-spacing="0.8">BLUEPRINT RITME OPERASIONAL TRADER &amp; KALENDER SIKLUS KOSMIK PRIBADI</text>
+    <text x="860" y="4" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">SYS.OP.RHYTHM // V4.2</text>
+  </g>
+  <line x1="30" y1="40" x2="890" y2="40" stroke="#1e283d" stroke-width="1"/>
+
+  <!--  =========================================================================  -->
+  <!--  TOP SECTION: 3 NESTED CONCENTRIC & SEQUENTIAL OPERATING LOOPS              -->
+  <!--  =========================================================================  -->
+  <g id="top-section">
+    <!--  Left Panel: Concentric Nesting Radar (x=30..210, y=48..224)  -->
+    <rect x="30" y="48" width="180" height="176" rx="8" fill="#0d1424" stroke="#1e283d" stroke-width="1"/>
+    <text x="120" y="64" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="middle" letter-spacing="0.5">NESTED CYCLE HIERARCHY</text>
+
+    <!--  Radar Crosshairs  -->
+    <line x1="120" y1="74" x2="120" y2="210" stroke="#1e283d" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="48" y1="142" x2="192" y2="142" stroke="#1e283d" stroke-width="1" stroke-dasharray="2,2"/>
+
+    <!--  Outer Loop 1: Monthly (Gold)  -->
+    <circle cx="120" cy="142" r="62" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="5,3" opacity="0.85"/>
+    <circle cx="120" cy="80" r="3.5" fill="#d4af37"/>
+    <text x="120" y="92" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="700" text-anchor="middle">1. BULANAN</text>
+
+    <!--  Middle Loop 2: Weekly (Cyan)  -->
+    <circle cx="120" cy="142" r="41" fill="none" stroke="#00f0ff" stroke-width="1.5" opacity="0.85"/>
+    <circle cx="120" cy="101" r="3.5" fill="#00f0ff"/>
+    <text x="120" y="113" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="700" text-anchor="middle">2. MINGGUAN</text>
+
+    <!--  Inner Loop 3: Daily (Emerald)  -->
+    <circle cx="120" cy="142" r="20" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="120" cy="142" r="3" fill="#10b981"/>
+    <text x="120" y="156" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="700" text-anchor="middle">3. HARIAN</text>
+
+    <!--  Connector Lines from Radar to Sequential Tracks  -->
+    <path d="M 182 80 L 225 74" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="2,2" marker-end="url(#arrow-gold)"/>
+    <path d="M 161 136 L 225 136" fill="none" stroke="#00f0ff" stroke-width="1" stroke-dasharray="2,2" marker-end="url(#arrow-cyan)"/>
+    <path d="M 138 152 L 225 198" fill="none" stroke="#10b981" stroke-width="1" stroke-dasharray="2,2" marker-end="url(#arrow-emerald)"/>
+
+    <!--  =====================================================================  -->
+    <!--  Track 1: SIKLUS BULANAN (EPHEMERIS MAPPING) (x=225..890, y=48..100)     -->
+    <!--  =====================================================================  -->
+    <g transform="translate(225, 48)">
+      <rect x="0" y="0" width="665" height="52" rx="6" fill="url(#gold-grad)" stroke="#d4af37" stroke-width="1" stroke-opacity="0.6"/>
+      <rect x="0" y="0" width="5" height="52" rx="2.5" fill="#d4af37"/>
+      
+      <!--  Loop Header  -->
+      <text x="16" y="16" fill="#f3e5ab" font-size="10.5" font-weight="700" letter-spacing="0.4">1. SIKLUS BULANAN (EPHEMERIS MAPPING)</text>
+      <text x="652" y="15" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8.5" text-anchor="end">MACRO TIME ANCHOR [T-30D]</text>
+
+      <!--  Sequential Nodes inside Track 1  -->
+      <!--  Node 1  -->
+      <rect x="16" y="23" width="110" height="22" rx="4" fill="#0a0f1a" stroke="#d4af37" stroke-width="0.8"/>
+      <circle cx="28" cy="34" r="4" fill="#0a0f1a" stroke="#f3e5ab" stroke-width="1.5"/>
+      <text x="38" y="37.5" fill="#e2e8f0" font-size="9.5" font-weight="600">New Moon</text>
+      <line x1="126" y1="34" x2="142" y2="34" stroke="#d4af37" stroke-width="1.2" marker-end="url(#arrow-gold)"/>
+
+      <!--  Node 2  -->
+      <rect x="146" y="23" width="110" height="22" rx="4" fill="#0a0f1a" stroke="#d4af37" stroke-width="0.8"/>
+      <circle cx="158" cy="34" r="4" fill="#f3e5ab"/>
+      <text x="168" y="37.5" fill="#e2e8f0" font-size="9.5" font-weight="600">Full Moon</text>
+      <line x1="256" y1="34" x2="272" y2="34" stroke="#d4af37" stroke-width="1.2" marker-end="url(#arrow-gold)"/>
+
+      <!--  Node 3  -->
+      <rect x="276" y="23" width="105" height="22" rx="4" fill="#0a0f1a" stroke="#d4af37" stroke-width="0.8"/>
+      <circle cx="288" cy="34" r="4" fill="#f43f5e"/>
+      <text x="298" y="37.5" fill="#e2e8f0" font-size="9.5" font-weight="600">Eclipse Window</text>
+      <line x1="381" y1="34" x2="397" y2="34" stroke="#d4af37" stroke-width="1.2" marker-end="url(#arrow-gold)"/>
+
+      <!--  Node 4  -->
+      <rect x="401" y="23" width="118" height="22" rx="4" fill="#0a0f1a" stroke="#d4af37" stroke-width="0.8"/>
+      <text x="411" y="37.5" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">Rx</text>
+      <text x="428" y="37.5" fill="#e2e8f0" font-size="9.5" font-weight="600">Station SR / SD</text>
+      <line x1="519" y1="34" x2="535" y2="34" stroke="#d4af37" stroke-width="1.2" marker-end="url(#arrow-gold)"/>
+
+      <!--  Node 5  -->
+      <rect x="539" y="23" width="114" height="22" rx="4" fill="#0a0f1a" stroke="#d4af37" stroke-width="0.8"/>
+      <text x="549" y="37.5" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">✦</text>
+      <text x="562" y="37.5" fill="#f3e5ab" font-size="9.5" font-weight="600">Bradley Dates</text>
+    </g>
+
+    <!--  =====================================================================  -->
+    <!--  Track 2: SIKLUS MINGGUAN (WEEKEND AUDIT) (x=225..890, y=110..162)       -->
+    <!--  =====================================================================  -->
+    <g transform="translate(225, 110)">
+      <rect x="0" y="0" width="665" height="52" rx="6" fill="url(#cyan-grad)" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.6"/>
+      <rect x="0" y="0" width="5" height="52" rx="2.5" fill="#00f0ff"/>
+
+      <!--  Loop Header  -->
+      <text x="16" y="16" fill="#00f0ff" font-size="10.5" font-weight="700" letter-spacing="0.4">2. SIKLUS MINGGUAN (WEEKEND AUDIT)</text>
+      <text x="652" y="15" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8.5" text-anchor="end">STRUCTURAL ALIGNMENT [W-1]</text>
+
+      <!--  Step 1  -->
+      <rect x="16" y="23" width="185" height="22" rx="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="0.8"/>
+      <text x="26" y="37.5" fill="#e2e8f0" font-size="9.5" font-weight="600">Macro Screening <tspan fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8.5">(Nadia)</tspan></text>
+      <line x1="201" y1="34" x2="222" y2="34" stroke="#00f0ff" stroke-width="1.2" marker-end="url(#arrow-cyan)"/>
+
+      <!--  Step 2  -->
+      <rect x="226" y="23" width="225" height="22" rx="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="0.8"/>
+      <text x="236" y="37.5" fill="#e2e8f0" font-size="9.5" font-weight="600">Sectoral Deep Dive <tspan fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8.5">(Fikri/Surya/Aldo)</tspan></text>
+      <line x1="451" y1="34" x2="472" y2="34" stroke="#00f0ff" stroke-width="1.2" marker-end="url(#arrow-cyan)"/>
+
+      <!--  Step 3  -->
+      <rect x="476" y="23" width="177" height="22" rx="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="0.8"/>
+      <text x="486" y="37.5" fill="#e2e8f0" font-size="9.5" font-weight="600">Confluence Box <tspan fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="8.5">(Kalingga)</tspan></text>
+    </g>
+
+    <!--  =====================================================================  -->
+    <!--  Track 3: SIKLUS HARIAN (30M PRE-MARKET) (x=225..890, y=172..224)        -->
+    <!--  =====================================================================  -->
+    <g transform="translate(225, 172)">
+      <rect x="0" y="0" width="665" height="52" rx="6" fill="url(#emerald-grad)" stroke="#10b981" stroke-width="1" stroke-opacity="0.6"/>
+      <rect x="0" y="0" width="5" height="52" rx="2.5" fill="#10b981"/>
+
+      <!--  Loop Header  -->
+      <text x="16" y="16" fill="#10b981" font-size="10.5" font-weight="700" letter-spacing="0.4">3. SIKLUS HARIAN (30M PRE-MARKET)</text>
+      <text x="652" y="15" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="8.5" text-anchor="end">TACTICAL EXECUTION [D-0]</text>
+
+      <!--  Step 1  -->
+      <rect x="16" y="23" width="195" height="22" rx="4" fill="#0a0f1a" stroke="#10b981" stroke-width="0.8"/>
+      <text x="26" y="37.5" fill="#e2e8f0" font-size="9.5" font-weight="600">Cek Kalender Makro <tspan fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5">(CPI/FOMC)</tspan></text>
+      <line x1="211" y1="34" x2="232" y2="34" stroke="#10b981" stroke-width="1.2" marker-end="url(#arrow-emerald)"/>
+
+      <!--  Step 2  -->
+      <rect x="236" y="23" width="215" height="22" rx="4" fill="#0a0f1a" stroke="#10b981" stroke-width="0.8"/>
+      <text x="246" y="37.5" fill="#e2e8f0" font-size="9.5" font-weight="600">Tunggu Sweep + ChoCH <tspan fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="8.5">di POI</tspan></text>
+      <line x1="451" y1="34" x2="472" y2="34" stroke="#10b981" stroke-width="1.2" marker-end="url(#arrow-emerald)"/>
+
+      <!--  Step 3  -->
+      <rect x="476" y="23" width="177" height="22" rx="4" fill="#0a0f1a" stroke="#10b981" stroke-width="0.8"/>
+      <text x="486" y="37.5" fill="#e2e8f0" font-size="9.5" font-weight="600">Eksekusi + <tspan fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="8.5">Catat Jurnal</tspan></text>
+    </g>
+  </g>
+
+  <!--  =========================================================================  -->
+  <!--  BOTTOM SECTION: 30-DAY PERSONAL ASTRONACCI CYCLE CALENDAR                  -->
+  <!--  =========================================================================  -->
+  <g id="bottom-section" transform="translate(30, 236)">
+    <!--  Section Container  -->
+    <rect x="0" y="0" width="860" height="208" rx="8" fill="#0d1424" stroke="#1e283d" stroke-width="1.2"/>
+
+    <!--  Calendar Header Bar  -->
+    <rect x="0" y="0" width="860" height="28" rx="8" fill="#131c31"/>
+    <text x="14" y="18" fill="#f3e5ab" font-size="11" font-weight="700" letter-spacing="0.6">30-DAY PERSONAL ASTRONACCI CYCLE CALENDAR (MOCKUP GRID)</text>
+    
+    <!--  Legend in Header  -->
+    <g transform="translate(490, 9)" font-family="'JetBrains Mono', monospace" font-size="8.5">
+      <circle cx="0" cy="5" r="4" fill="#00f0ff"/>
+      <text x="8" y="8" fill="#e2e8f0">DAY 04: POI</text>
+      <circle cx="95" cy="5" r="4" fill="#f43f5e"/>
+      <text x="103" y="8" fill="#e2e8f0">DAY 12: NO BREAKOUT</text>
+      <circle cx="230" cy="5" r="4" fill="#d4af37"/>
+      <text x="238" y="8" fill="#e2e8f0">DAY 19: TP ALERT</text>
+    </g>
+
+    <!--  30-Day Grid (10 Columns x 3 Rows)  -->
+    <!--  Cell Width = 81px, Gap = 4px (10*81 + 9*4 = 846px). Left Margin = 7px  -->
+    <!--  Row 1: y=34, Row 2: y=90, Row 3: y=146 (Cell Height = 52px, Gap = 4px)  -->
+
+    <!--  ==================== ROW 1 (DAYS 01 - 10) ====================  -->
+    <g transform="translate(7, 34)">
+      <!--  Day 01  -->
+      <g transform="translate(0, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">01</text>
+        <text x="6" y="44" fill="#1e283d" font-family="'JetBrains Mono', monospace" font-size="7.5">SCAN</text>
+      </g>
+      <!--  Day 02  -->
+      <g transform="translate(85, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">02</text>
+      </g>
+      <!--  Day 03  -->
+      <g transform="translate(170, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">03</text>
+      </g>
+
+      <!--  DAY 04: HIGHLIGHTED (New Moon + Fib Time 1.618 -> Watchlist POI)  -->
+      <g transform="translate(255, 0)">
+        <rect width="81" height="52" rx="4" fill="#00f0ff" fill-opacity="0.12" stroke="#00f0ff" stroke-width="1.5"/>
+        <text x="6" y="12" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">DAY 04</text>
+        <!--  New Moon Icon  -->
+        <circle cx="70" cy="9" r="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="1.2"/>
+        <text x="6" y="24" fill="#e2e8f0" font-size="8" font-weight="700">New Moon</text>
+        <text x="6" y="34" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="7.5">Fib Time 1.618</text>
+        <rect x="4" y="38" width="73" height="11" rx="2" fill="#00f0ff"/>
+        <text x="40.5" y="46" fill="#0a0f1a" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="800" text-anchor="middle">WATCHLIST POI</text>
+      </g>
+
+      <!--  Day 05  -->
+      <g transform="translate(340, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">05</text>
+        <text x="6" y="28" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="7.5">EXEC WINDOW</text>
+      </g>
+      <!--  Day 06  -->
+      <g transform="translate(425, 0)">
+        <rect width="81" height="52" rx="4" fill="#0d1424" stroke="#1e283d" stroke-width="0.8" stroke-dasharray="2,2"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">06</text>
+        <text x="6" y="44" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="7" opacity="0.6">WKND AUDIT</text>
+      </g>
+      <!--  Day 07  -->
+      <g transform="translate(510, 0)">
+        <rect width="81" height="52" rx="4" fill="#0d1424" stroke="#1e283d" stroke-width="0.8" stroke-dasharray="2,2"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">07</text>
+        <text x="6" y="44" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="7" opacity="0.7">W-1 ALIGN</text>
+      </g>
+      <!--  Day 08  -->
+      <g transform="translate(595, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">08</text>
+      </g>
+      <!--  Day 09  -->
+      <g transform="translate(680, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">09</text>
+      </g>
+      <!--  Day 10  -->
+      <g transform="translate(765, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">10</text>
+        <text x="6" y="28" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="7.5" opacity="0.7">CPI DATA</text>
+      </g>
+    </g>
+
+    <!--  ==================== ROW 2 (DAYS 11 - 20) ====================  -->
+    <g transform="translate(7, 90)">
+      <!--  Day 11  -->
+      <g transform="translate(0, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">11</text>
+      </g>
+
+      <!--  DAY 12: HIGHLIGHTED (Mercury Station Retrograde -> No Breakout Mode)  -->
+      <g transform="translate(85, 0)">
+        <rect width="81" height="52" rx="4" fill="#f43f5e" fill-opacity="0.14" stroke="#f43f5e" stroke-width="1.5"/>
+        <text x="6" y="12" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">DAY 12</text>
+        <text x="62" y="12" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="800">☿ Rx</text>
+        <text x="6" y="24" fill="#e2e8f0" font-size="8" font-weight="700">Mercury SR</text>
+        <text x="6" y="34" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="7.2">Retrograde</text>
+        <rect x="4" y="38" width="73" height="11" rx="2" fill="#f43f5e"/>
+        <text x="40.5" y="46" fill="#0a0f1a" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="800" text-anchor="middle">NO BREAKOUT</text>
+      </g>
+
+      <!--  Day 13  -->
+      <g transform="translate(170, 0)">
+        <rect width="81" height="52" rx="4" fill="#0d1424" stroke="#1e283d" stroke-width="0.8" stroke-dasharray="2,2"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">13</text>
+        <text x="6" y="44" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="7" opacity="0.6">WKND AUDIT</text>
+      </g>
+      <!--  Day 14  -->
+      <g transform="translate(255, 0)">
+        <rect width="81" height="52" rx="4" fill="#0d1424" stroke="#1e283d" stroke-width="0.8" stroke-dasharray="2,2"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">14</text>
+        <text x="6" y="44" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="7" opacity="0.7">W-2 ALIGN</text>
+      </g>
+      <!--  Day 15  -->
+      <g transform="translate(340, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">15</text>
+      </g>
+      <!--  Day 16  -->
+      <g transform="translate(425, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">16</text>
+      </g>
+      <!--  Day 17  -->
+      <g transform="translate(510, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">17</text>
+        <text x="6" y="28" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="7.5" opacity="0.7">FOMC MINS</text>
+      </g>
+      <!--  Day 18  -->
+      <g transform="translate(595, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">18</text>
+      </g>
+
+      <!--  DAY 19: HIGHLIGHTED (Full Moon + Square Aspect -> Exhaustion / TP Alert)  -->
+      <g transform="translate(680, 0)">
+        <rect width="81" height="52" rx="4" fill="#d4af37" fill-opacity="0.15" stroke="#d4af37" stroke-width="1.5"/>
+        <text x="6" y="12" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">DAY 19</text>
+        <!--  Full Moon + Square Icon  -->
+        <circle cx="62" cy="8.5" r="4" fill="#f3e5ab"/>
+        <rect x="69" y="5" width="7" height="7" fill="none" stroke="#f43f5e" stroke-width="1.2"/>
+        <text x="6" y="24" fill="#e2e8f0" font-size="8" font-weight="700">Full Moon + □</text>
+        <text x="6" y="34" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="7.2">Exhaustion</text>
+        <rect x="4" y="38" width="73" height="11" rx="2" fill="#d4af37"/>
+        <text x="40.5" y="46" fill="#0a0f1a" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="800" text-anchor="middle">TP ALERT</text>
+      </g>
+
+      <!--  Day 20  -->
+      <g transform="translate(765, 0)">
+        <rect width="81" height="52" rx="4" fill="#0d1424" stroke="#1e283d" stroke-width="0.8" stroke-dasharray="2,2"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">20</text>
+        <text x="6" y="44" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="7" opacity="0.6">WKND AUDIT</text>
+      </g>
+    </g>
+
+    <!--  ==================== ROW 3 (DAYS 21 - 30) ====================  -->
+    <g transform="translate(7, 146)">
+      <!--  Day 21  -->
+      <g transform="translate(0, 0)">
+        <rect width="81" height="52" rx="4" fill="#0d1424" stroke="#1e283d" stroke-width="0.8" stroke-dasharray="2,2"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">21</text>
+        <text x="6" y="44" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="7" opacity="0.7">W-3 ALIGN</text>
+      </g>
+      <!--  Day 22  -->
+      <g transform="translate(85, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">22</text>
+      </g>
+      <!--  Day 23  -->
+      <g transform="translate(170, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">23</text>
+      </g>
+      <!--  Day 24  -->
+      <g transform="translate(255, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">24</text>
+        <text x="6" y="28" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="7.2" opacity="0.85">✦ BRADLEY</text>
+      </g>
+      <!--  Day 25  -->
+      <g transform="translate(340, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">25</text>
+      </g>
+      <!--  Day 26  -->
+      <g transform="translate(425, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">26</text>
+      </g>
+      <!--  Day 27  -->
+      <g transform="translate(510, 0)">
+        <rect width="81" height="52" rx="4" fill="#0d1424" stroke="#1e283d" stroke-width="0.8" stroke-dasharray="2,2"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">27</text>
+        <text x="6" y="44" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="7" opacity="0.6">WKND AUDIT</text>
+      </g>
+      <!--  Day 28  -->
+      <g transform="translate(595, 0)">
+        <rect width="81" height="52" rx="4" fill="#0d1424" stroke="#1e283d" stroke-width="0.8" stroke-dasharray="2,2"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">28</text>
+        <text x="6" y="44" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="7" opacity="0.7">W-4 ALIGN</text>
+      </g>
+      <!--  Day 29  -->
+      <g transform="translate(680, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="0.8"/>
+        <text x="6" y="13" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">29</text>
+      </g>
+      <!--  Day 30  -->
+      <g transform="translate(765, 0)">
+        <rect width="81" height="52" rx="4" fill="#0a0f1a" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <text x="6" y="13" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9">30</text>
+        <text x="6" y="30" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="7">EOM REVIEW</text>
+        <text x="6" y="42" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="6.8">NEXT EPHEMERIS</text>
+      </g>
+    </g>
+  </g>
+</svg>

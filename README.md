@@ -18,34 +18,34 @@ Buku ini membedah sintesis dua disiplin fundamental yang mengatur dinamika pasar
 
 ---
 
-## ✦ Peta Kurikulum Master (17 Bab / 6 Bagian)
+## ✦ Peta Kurikulum Master (17 Bab / 6 Bagian — Edisi Paripurna 100% Selesai)
 
-### BAGIAN I: EPISTEMOLOGI, SEJARAH & VALIDASI EMPIRIS *(Sprint 1 - Selesai & Aktif)*
+### BAGIAN I: EPISTEMOLOGI, SEJARAH & VALIDASI EMPIRIS *(Selesai & Aktif)*
 - **Bab 1**: Epistemologi & Genealogi Keilmuan: Menyingkap Dimensi Waktu di Pasar Keuangan (W.D. Gann, Donald Bradley, George Bayer, Dr. Gema Goeyardi).
 - **Bab 2**: Sains Perilaku & Bukti Empiris Peer-Reviewed: Anomali Kosmik dalam Finansial (Paper Dichev & Janes 2001, Yuan et al. 2006, Ritme Sirkadian & Melatonin).
 
-### BAGIAN II: DIMENSI RUANG — GEOMETRI FRAKTAL & FIBONACCI MASTERY *(Sprint 2)*
+### BAGIAN II: DIMENSI RUANG — GEOMETRI FRAKTAL & FIBONACCI MASTERY *(Selesai & Aktif)*
 - **Bab 3**: Matematika Semesta & Fraktalitas Pasar: The Golden Ratio $\Phi$.
 - **Bab 4**: Arsitektur Fibonacci Retracement, Extension & OTE Golden Pocket.
 - **Bab 5**: Geometri Pola Lanjutan: Harmonics & Aturan Elliott Wave.
 
-### BAGIAN III: DIMENSI WAKTU — SIKLUS ASTRONOMI & JAM KOSMIK *(Sprint 3)*
+### BAGIAN III: DIMENSI WAKTU — SIKLUS ASTRONOMI & JAM KOSMIK *(Selesai & Aktif)*
 - **Bab 6**: Navigasi Ephemeris & Siklus Lunar: Psikologi New Moon vs Full Moon.
 - **Bab 7**: Geometri Sudut Planet: Hard Aspects, Soft Aspects & Conjunction.
 - **Bab 8**: Pergeseran Rezim Energi: Ingress, Retrograde & Siklus Planet Luar.
 - **Bab 9**: Model Matematis Bradley Siderograph & Sudut Konversi Gann Square of 9.
 
-### BAGIAN IV: SINTESIS TERPADU — KONFLUENSI TIME & PRICE *(Sprint 4)*
+### BAGIAN IV: SINTESIS TERPADU — KONFLUENSI TIME & PRICE *(Selesai & Aktif)*
 - **Bab 10**: Algoritma Titik Temu: Protokol The Confluence Box.
 - **Bab 11**: Struktur Pasar Murni (Price Action) sebagai Pelatuk Eksekusi.
 
-### BAGIAN V: FORENSIK HISTORIS & ANOMALI BERITA TERKAIT *(Sprint 5)*
+### BAGIAN V: FORENSIK HISTORIS & ANOMALI BERITA TERKAIT *(Selesai & Aktif)*
 - **Bab 12**: Bedah Titik Balik Krisis Global: Crash 2008 & Bottom Covid 2020.
 - **Bab 13**: Siklus Komoditas & Logam Mulia: Gold XAU & Crude Oil.
 - **Bab 14**: Siklus Pasar Saham Domestik & Global: IHSG & S&P 500.
 - **Bab 15**: Aset Digital & Siklus Kripto: 4-Year Halving & Jupiter-Saturn Cycle.
 
-### BAGIAN VI: TATA KELOLA RISIKO, EKSEKUSI & DISIPLIN OPERASIONAL *(Sprint 6)*
+### BAGIAN VI: TATA KELOLA RISIKO, EKSEKUSI & DISIPLIN OPERASIONAL *(Selesai & Aktif)*
 - **Bab 16**: Hukum Besi Tata Kelola Risiko: No Invalidation, No Trade & Position Sizing.
 - **Bab 17**: Blueprint Rutinitas Trader & Kalender Siklus Pribadi.
 

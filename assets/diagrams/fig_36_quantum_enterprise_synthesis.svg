@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="100%" height="auto" style="background-color: #0a0f1a; font-family: 'Inter', system-ui, sans-serif;">
+  <defs>
+    <!--  Background Grid Pattern  -->
+    <pattern id="bgGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="#1e283d" />
+    </pattern>
+
+    <!--  Core Quantum Glow  -->
+    <radialGradient id="nexusGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35" />
+      <stop offset="45%" stop-color="#d4af37" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0a0f1a" stop-opacity="0" />
+    </radialGradient>
+
+    <!--  Panel Gradients  -->
+    <linearGradient id="cyanWingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1b2a" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0a121e" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="goldWingGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#221c11" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#14110b" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="synergyBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.12" />
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.12" />
+    </linearGradient>
+
+    <!--  Arrowhead Markers  -->
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#00f0ff" />
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#d4af37" />
+    </marker>
+    <marker id="arrowEmerald" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#10b981" />
+    </marker>
+  </defs>
+
+  <!--  Outer Frame & Grid  -->
+  <rect x="4" y="4" width="912" height="432" rx="12" fill="#0a0f1a" stroke="#1e283d" stroke-width="1.5" />
+  <rect x="8" y="8" width="904" height="424" rx="10" fill="url(#bgGrid)" />
+
+  <!--  Top Header Banner  -->
+  <g text-anchor="middle">
+    <text x="460" y="34" fill="#f3e5ab" font-size="14.5" font-weight="800" letter-spacing="1.2">SINTESIS PARIPURNA: KOLABORASI MANUSIA &amp; KECERDASAN BUATAN KUANTITATIF</text>
+    <text x="460" y="52" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="10.5" letter-spacing="0.8">ARSITEKTUR EKSEKUSI HIBRIDA RIZACORP DIV-FIN // PROTOKOL ASTRONACCI v4.2</text>
+    <line x1="180" y1="62" x2="740" y2="62" stroke="#1e283d" stroke-width="1" />
+    <rect x="430" y="60.5" width="60" height="3" rx="1.5" fill="#d4af37" />
+  </g>
+
+  <!--  ==================== LEFT WING: MACHINE AGENTS ====================  -->
+  <g transform="translate(26, 76)">
+    <!--  Wing Container  -->
+    <rect x="0" y="0" width="295" height="284" rx="8" fill="url(#cyanWingGrad)" stroke="#00f0ff" stroke-opacity="0.45" stroke-width="1.2" />
+    <!--  Top Accent Bar  -->
+    <path d="M 0 8 Q 0 0 8 0 L 287 0 Q 295 0 295 8 L 295 36 L 0 36 Z" fill="#00f0ff" fill-opacity="0.12" />
+    <line x1="0" y1="36" x2="295" y2="36" stroke="#00f0ff" stroke-opacity="0.3" stroke-width="1" />
+
+    <circle cx="18" cy="18" r="5" fill="#00f0ff" />
+    <text x="30" y="16" fill="#00f0ff" font-size="11" font-weight="700" letter-spacing="0.6">MESIN KUANTITATIF (AI AGENTS)</text>
+    <text x="30" y="28" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9">RIZACORP DIV-FIN AUTONOMOUS SWARM</text>
+
+    <!--  Node 1: Nadia  -->
+    <g transform="translate(14, 48)">
+      <rect x="0" y="0" width="267" height="54" rx="6" fill="#0a0f1a" stroke="#1e283d" stroke-width="1" />
+      <rect x="0" y="0" width="4" height="54" rx="2" fill="#00f0ff" />
+      <text x="14" y="19" fill="#e2e8f0" font-size="11.5" font-weight="700">Nadia <tspan fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="400">[MACRO-LIQ]</tspan></text>
+      <text x="14" y="34" fill="#8e9bb0" font-size="10">Global Macro &amp; Net Liquidity</text>
+      <text x="14" y="47" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8.5" fill-opacity="0.8">Fed Balance Sheet • DXY • Yield Curve</text>
+    </g>
+
+    <!--  Node 2: Fikri, Surya, Aldo  -->
+    <g transform="translate(14, 112)">
+      <rect x="0" y="0" width="267" height="54" rx="6" fill="#0a0f1a" stroke="#1e283d" stroke-width="1" />
+      <rect x="0" y="0" width="4" height="54" rx="2" fill="#00f0ff" />
+      <text x="14" y="19" fill="#e2e8f0" font-size="11.5" font-weight="700">Fikri, Surya, Aldo <tspan fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="400">[MULTI-ASSET]</tspan></text>
+      <text x="14" y="34" fill="#8e9bb0" font-size="10">Equities, Commodities, Crypto Fundamentals</text>
+      <text x="14" y="47" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8.5" fill-opacity="0.8">Valuation • COT Report • On-Chain Flows</text>
+    </g>
+
+    <!--  Node 3: Kalingga  -->
+    <g transform="translate(14, 176)">
+      <rect x="0" y="0" width="267" height="54" rx="6" fill="#0a0f1a" stroke="#1e283d" stroke-width="1" />
+      <rect x="0" y="0" width="4" height="54" rx="2" fill="#00f0ff" />
+      <text x="14" y="19" fill="#e2e8f0" font-size="11.5" font-weight="700">Kalingga <tspan fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="400">[ASTRO-QUANT]</tspan></text>
+      <text x="14" y="34" fill="#8e9bb0" font-size="10">Ephemeris Engine, Fibonacci &amp; Risk Calc</text>
+      <text x="14" y="47" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8.5" fill-opacity="0.8">Planetary Harmonics • Price-Time Kelly</text>
+    </g>
+
+    <!--  Machine Edge Footer  -->
+    <g transform="translate(14, 240)">
+      <rect x="0" y="0" width="267" height="32" rx="5" fill="#00f0ff" fill-opacity="0.08" stroke="#00f0ff" stroke-opacity="0.35" stroke-width="1" />
+      <text x="133.5" y="14" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">KEUNGGULAN KOMPUTASI</text>
+      <text x="133.5" y="25" text-anchor="middle" fill="#e2e8f0" font-size="9.5">Speed • Zero Emotion • Backtesting 100-Yr Data</text>
+    </g>
+  </g>
+
+  <!--  ==================== RIGHT WING: HUMAN PRINCIPAL ====================  -->
+  <g transform="translate(599, 76)">
+    <!--  Wing Container  -->
+    <rect x="0" y="0" width="295" height="284" rx="8" fill="url(#goldWingGrad)" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1.2" />
+    <!--  Top Accent Bar  -->
+    <path d="M 0 8 Q 0 0 8 0 L 287 0 Q 295 0 295 8 L 295 36 L 0 36 Z" fill="#d4af37" fill-opacity="0.14" />
+    <line x1="0" y1="36" x2="295" y2="36" stroke="#d4af37" stroke-opacity="0.35" stroke-width="1" />
+
+    <circle cx="18" cy="18" r="5" fill="#d4af37" />
+    <text x="30" y="16" fill="#f3e5ab" font-size="11" font-weight="700" letter-spacing="0.6">PRINSIPAL EKSEKUTIF MANUSIA</text>
+    <text x="30" y="28" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="9">ILHAM RIZANTO // SOVEREIGN COMMAND</text>
+
+    <!--  Node 1: Strategic Allocation  -->
+    <g transform="translate(14, 48)">
+      <rect x="0" y="0" width="267" height="54" rx="6" fill="#0a0f1a" stroke="#1e283d" stroke-width="1" />
+      <rect x="263" y="0" width="4" height="54" rx="2" fill="#d4af37" />
+      <text x="14" y="19" fill="#f3e5ab" font-size="11.5" font-weight="700">Strategic Allocation &amp; Mandate</text>
+      <text x="14" y="34" fill="#8e9bb0" font-size="10">Otoritas Alokasi Modal &amp; Mandat Risiko</text>
+      <text x="14" y="47" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8.5" fill-opacity="0.85">Portfolio Weighting • Drawdown Threshold</text>
+    </g>
+
+    <!--  Node 2: Pattern Intuition  -->
+    <g transform="translate(14, 112)">
+      <rect x="0" y="0" width="267" height="54" rx="6" fill="#0a0f1a" stroke="#1e283d" stroke-width="1" />
+      <rect x="263" y="0" width="4" height="54" rx="2" fill="#d4af37" />
+      <text x="14" y="19" fill="#f3e5ab" font-size="11.5" font-weight="700">Pattern Intuition &amp; Judgement</text>
+      <text x="14" y="34" fill="#8e9bb0" font-size="10">Intuisi Pola &amp; Penilaian Kontekstual</text>
+      <text x="14" y="47" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8.5" fill-opacity="0.85">Geopolitical Nuance • Regime Shift Sense</text>
+    </g>
+
+    <!--  Node 3: Iron Risk Discipline  -->
+    <g transform="translate(14, 176)">
+      <rect x="0" y="0" width="267" height="54" rx="6" fill="#0a0f1a" stroke="#1e283d" stroke-width="1" />
+      <rect x="263" y="0" width="4" height="54" rx="2" fill="#d4af37" />
+      <text x="14" y="19" fill="#f3e5ab" font-size="11.5" font-weight="700">Iron Risk Discipline &amp; Command</text>
+      <text x="14" y="34" fill="#8e9bb0" font-size="10">Disiplin Risiko Besi &amp; Komando Eksekusi</text>
+      <text x="14" y="47" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8.5" fill-opacity="0.85">Final Veto Power • Black Swan Override</text>
+    </g>
+
+    <!--  Human Edge Footer  -->
+    <g transform="translate(14, 240)">
+      <rect x="0" y="0" width="267" height="32" rx="5" fill="#d4af37" fill-opacity="0.08" stroke="#d4af37" stroke-opacity="0.4" stroke-width="1" />
+      <text x="133.5" y="14" text-anchor="middle" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">KEUNGGULAN KOGNITIF</text>
+      <text x="133.5" y="25" text-anchor="middle" fill="#e2e8f0" font-size="9.5">Wisdom • Asymmetric Vision • Sovereign Veto</text>
+    </g>
+  </g>
+
+  <!--  ==================== DATA STREAM CONNECTORS ====================  -->
+  <!--  Left Wing (Machine) to Center Nexus  -->
+  <g fill="none" stroke="#00f0ff" stroke-width="1.5">
+    <path d="M 321 151 C 348 151, 355 195, 378 202" marker-end="url(#arrowCyan)" stroke-dasharray="3,2" />
+    <path d="M 321 215 L 374 215" marker-end="url(#arrowCyan)" />
+    <path d="M 321 279 C 348 279, 355 235, 378 228" marker-end="url(#arrowCyan)" stroke-dasharray="3,2" />
+  </g>
+  <!--  Telemetry Labels Left  -->
+  <text x="348" y="168" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8">SIGNAL</text>
+  <text x="348" y="209" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8">ALPHA</text>
+  <text x="348" y="269" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8">TIMING</text>
+
+  <!--  Right Wing (Human) to Center Nexus  -->
+  <g fill="none" stroke="#d4af37" stroke-width="1.5">
+    <path d="M 599 151 C 572 151, 565 195, 542 202" marker-end="url(#arrowGold)" stroke-dasharray="3,2" />
+    <path d="M 599 215 L 546 215" marker-end="url(#arrowGold)" />
+    <path d="M 599 279 C 572 279, 565 235, 542 228" marker-end="url(#arrowGold)" stroke-dasharray="3,2" />
+  </g>
+  <!--  Command Labels Right  -->
+  <text x="572" y="168" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8">MANDATE</text>
+  <text x="572" y="209" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8">CONTEXT</text>
+  <text x="572" y="269" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8">VETO</text>
+
+  <!--  ==================== CENTER CORE: QUANTUM NEXUS ====================  -->
+  <g transform="translate(460, 215)">
+    <!--  Ambient Radial Glow  -->
+    <circle cx="0" cy="0" r="110" fill="url(#nexusGlow)" />
+
+    <!--  Outer Ephemeris Degree Ring  -->
+    <circle cx="0" cy="0" r="82" fill="#0a0f1a" fill-opacity="0.75" stroke="#1e283d" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="76" fill="none" stroke="#d4af37" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="6,4" />
+    <circle cx="0" cy="0" r="68" fill="none" stroke="#00f0ff" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="2,6" />
+
+    <!--  Sacred Geometry Octagram (2 Rotated Squares)  -->
+    <rect x="-46" y="-46" width="92" height="92" rx="4" fill="none" stroke="#00f0ff" stroke-opacity="0.3" stroke-width="1" transform="rotate(45)" />
+    <rect x="-46" y="-46" width="92" height="92" rx="4" fill="none" stroke="#d4af37" stroke-opacity="0.35" stroke-width="1" />
+
+    <!--  Cardinal Axis Nodes  -->
+    <circle cx="0" cy="-76" r="3" fill="#d4af37" />
+    <circle cx="0" cy="76" r="3" fill="#10b981" />
+    <circle cx="-76" cy="0" r="3.5" fill="#00f0ff" />
+    <circle cx="76" cy="0" r="3.5" fill="#d4af37" />
+
+    <!--  Top & Bottom Sub-Badges Inside Ring  -->
+    <rect x="-48" y="-62" width="96" height="16" rx="8" fill="#0e1726" stroke="#00f0ff" stroke-opacity="0.5" stroke-width="0.8" />
+    <text x="0" y="-51" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700">QUANTUM NEXUS</text>
+
+    <rect x="-52" y="46" width="104" height="16" rx="8" fill="#0e1726" stroke="#10b981" stroke-opacity="0.6" stroke-width="0.8" />
+    <text x="0" y="57" text-anchor="middle" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700">SYNC: 99.98%</text>
+
+    <!--  Core Decision Pill  -->
+    <rect x="-72" y="-32" width="144" height="64" rx="10" fill="#0a0f1a" stroke="#d4af37" stroke-width="1.8" />
+    <rect x="-68" y="-28" width="136" height="56" rx="7" fill="#0a0f1a" stroke="#00f0ff" stroke-opacity="0.5" stroke-width="0.8" />
+
+    <text x="0" y="-11" text-anchor="middle" fill="#f3e5ab" font-size="11.5" font-weight="800" letter-spacing="0.8">ASTRONACCI</text>
+    <text x="0" y="4" text-anchor="middle" fill="#00f0ff" font-size="10.5" font-weight="700" letter-spacing="0.6">DECISION ENGINE</text>
+    <line x1="-45" y1="11" x2="45" y2="11" stroke="#1e283d" stroke-width="1" />
+    <text x="0" y="21" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="7.5">TIME • PRICE • RISK FUSION</text>
+  </g>
+
+  <!--  Downward Convergence Stream to Final Synergy  -->
+  <line x1="460" y1="297" x2="460" y2="368" stroke="#10b981" stroke-width="2" marker-end="url(#arrowEmerald)" />
+  <path d="M 321 335 C 390 335, 435 345, 454 368" fill="none" stroke="#00f0ff" stroke-opacity="0.5" stroke-width="1.2" stroke-dasharray="3,3" />
+  <path d="M 599 335 C 530 335, 485 345, 466 368" fill="none" stroke="#d4af37" stroke-opacity="0.5" stroke-width="1.2" stroke-dasharray="3,3" />
+
+  <rect x="405" y="322" width="110" height="16" rx="4" fill="#0a0f1a" stroke="#10b981" stroke-opacity="0.6" stroke-width="1" />
+  <text x="460" y="333" text-anchor="middle" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">UNIFIED OUTPUT</text>
+
+  <!--  ==================== BOTTOM GRAND FINALE SYNERGY BANNER ====================  -->
+  <g transform="translate(26, 374)">
+    <rect x="0" y="0" width="868" height="48" rx="8" fill="url(#synergyBarGrad)" stroke="#d4af37" stroke-width="1.5" />
+
+    <!--  Left Tag: Formula Input  -->
+    <rect x="14" y="10" width="186" height="28" rx="5" fill="#0a0f1a" stroke="#00f0ff" stroke-opacity="0.4" stroke-width="1" />
+    <text x="107" y="22" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8">PERSAMAAN SINTESIS</text>
+    <text x="107" y="33" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">AI Edge × Human Wisdom</text>
+
+    <!--  Center Main Synergy Output  -->
+    <text x="434" y="20" text-anchor="middle" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="1.2">FINAL SYNERGY // ULTIMATE MANDATE</text>
+    <text x="434" y="37" text-anchor="middle" fill="#f3e5ab" font-size="14" font-weight="800" letter-spacing="0.5">&quot;Probabilistic Alpha + Absolute Capital Preservation&quot;</text>
+
+    <!--  Right Tag: Risk Status  -->
+    <rect x="668" y="10" width="186" height="28" rx="5" fill="#0a0f1a" stroke="#10b981" stroke-opacity="0.5" stroke-width="1" />
+    <text x="761" y="22" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8">STATUS EKSEKUSI</text>
+    <text x="761" y="33" text-anchor="middle" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">ASYMMETRIC DOMINANCE</text>
+  </g>
+</svg>
