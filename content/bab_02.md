@@ -124,6 +124,12 @@ Tabel berikut merangkum struktur data komparatif dari 25 negara yang dianalisis 
 
 *Catatan Tabel: Konversi tahunan dihitung berdasarkan sekitar 252 hari perdagangan per tahun yang terbagi rata menjadi 126 hari perdagangan di jendela New Moon dan 126 hari perdagangan di jendela Full Moon ($\text{Annualized Return} \approx \bar{R}_{\text{daily}} \times 252$). Simbol signifikansi statistik: $^{*}p < 0,10$; $^{**}p < 0,05$; $^{***}p < 0,01$.*
 
+<figure class="editorial-figure">
+  <div class="figure-badge">GAMBAR 2.1 • DATA EMPIRIS EKONOMETRIKA (DICHEV &amp; JANES 2001 + YUAN ET AL. 2006)</div>
+  <img src="assets/diagrams/fig_04_dichev_janes_lunar_returns.svg" alt="Grafik Empiris Perbandingan Return New Moon vs Full Moon dan Model Kosinus Yuan et al." class="zoomable-img">
+  <figcaption><strong>Gambar 2.1:</strong> Visualisasi data empiris <em>Annualized Equity Returns</em> pada fase <em>New Moon</em> (Cyan) vs <em>Full Moon</em> (Rose) lintas 25 negara (Dichev &amp; Janes, 2001) beserta gelombang kosinus kontinu 48 negara dari Yuan, Zheng, &amp; Zhu (2006).</figcaption>
+</figure>
+
 ### Analisis Mendalam atas Bukti Statistik Dichev & Janes
 
 Terdapat empat kesimpulan ekonometrika fundamental yang dapat ditarik dari audit kuantitatif di atas:
@@ -178,6 +184,18 @@ $$R_{i,t} = \alpha_i + \beta \cdot \text{Lunar}_t + \delta_1 D_t^{\text{Jan}} + 
 Jika bukti ekonometrika dari 48 negara selama lebih dari satu abad telah mengonfirmasi bahwa imbal hasil pasar saham secara sistematis tertekan pada fase *Full Moon* dan melonjak pada fase *New Moon*, maka pertanyaan ilmiah selanjutnya yang harus dijawab secara tuntas adalah: **Bagaimana mekanisme transmisi biofisika dan neurobiologis yang menghubungkan posisi mekanika benda langit dengan pengambilan keputusan finansial di dalam otak manusia?**
 
 Sains modern menolak penjelasan mistis; di dalam kerangka kerja *Astronacci*, fenomena ini dijelaskan secara presisi melalui disiplin **Chronobiology** (kronobiologi), **Neuroendocrinology** (neuroendokrinologi), dan **Heliobiology / Geomagnetics** (biofisika medan geomagnetik).
+
+<figure class="editorial-figure">
+  <div class="figure-badge">GAMBAR 2.2 • TRANSMISI BIOFISIKA &amp; NEUROKIMIA PASAR</div>
+  <img src="assets/diagrams/fig_05_biophysics_melatonin_risk.svg" alt="Mekanisme Transmisi Biofisika dari Medan Kosmik menuju Order Flow Bursa" class="zoomable-img">
+  <figcaption><strong>Gambar 2.2:</strong> Alur kausalitas biologis dari perturbasi magnetosfer &amp; fase lunar menuju aktivasi kelenjar pineal (supresi melatonin), peningkatan aversi risiko akibat kortisol, hingga manifestasi tekanan jual di lantai bursa.</figcaption>
+</figure>
+
+<figure class="editorial-figure archival-plate">
+  <div class="figure-badge">OBSERVASI ASTRONOMI PRIMER • FULL MOON TRANSIT (PUBLIC DOMAIN)</div>
+  <img src="assets/images/full_moon_nasa.jpg" alt="Citra Resolusi Tinggi Full Moon" class="zoomable-img archival-photo">
+  <figcaption><strong>Pelat Arsip 2.1:</strong> Citra astronomis fase <em>Full Moon</em> (oposisi Matahari–Bumi–Bulan pada elongasi $180^\circ$). Pada fase inilah Bulan menembus langsung lembar plasma ekor magnetosfer Bumi (<em>Magnetotail</em>), memicu gelombang ULF geomagnetik dan supresi melatonin hingga $30\%\text{--}50\%$ (Cajochen et al., 2013).</figcaption>
+</figure>
 
 ```
 [Siklus Sinodik Bulan: Konjungsi (New Moon) vs Oposisi (Full Moon)]
@@ -291,6 +309,12 @@ Berikut adalah arsip kliping dan kutipan liputan media keuangan internasional te
 ---
 
 ## 2.6 Sintesis Epistemologis menuju Metodologi *Astronacci*
+
+<figure class="editorial-figure">
+  <div class="figure-badge">GAMBAR 2.3 • ARSITEKTUR DUAL-FILTER ASTRONACCI</div>
+  <img src="assets/diagrams/fig_06_astronacci_synthesis_architecture.svg" alt="Arsitektur Sintesis Terpadu Penggabungan Time Filter dan Space Filter" class="zoomable-img">
+  <figcaption><strong>Gambar 2.3:</strong> Arsitektur penyaringan probabilitas ganda: menggabungkan <em>Time Filter</em> (siklus lunar &amp; ephemeris) dengan <em>Space Filter</em> (<em>Golden Pocket Fibonacci</em> &amp; <em>Order Blocks</em>) di dalam gerbang konfluensi untuk menghasilkan eksekusi trading berasio Risk-to-Reward asimetris.</figcaption>
+</figure>
 
 Bukti-bukti empiris yang telah dibedah dalam bab ini membangun sebuah rantai deduksi ilmiah yang tak terputus:
 1. Pasar finansial tidak efisien dalam pengertian neoklasik Fama (1970) karena pelaku pasar bukanlah *Homo Economicus*, melainkan entitas biologis (*Homo Sentimentalis*) yang tunduk pada *Prospect Theory* dan modulasi neuroendokrin.

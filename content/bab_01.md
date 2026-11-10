@@ -30,6 +30,12 @@ Aksioma ini membalikkan kausalitas analisis pasar. Dalam kerangka pemikiran Gann
 | **Sifat Indikator Utama** | *Lagging* (bereaksi terhadap masa lalu: MA, MACD, Bollinger Bands). | *Coincident* / Korelasional (kovarians statistik, regresi). | *Leading* (memetakan *Time Support/Resistance* dan target harga sebelum peristiwa terjadi). |
 | **Kausalitas Pasar** | Harga menggerakkan indikator; berita menggerakkan harga. | Informasi acak (*random walk*) menggerakkan harga secara instan. | Siklus waktu memicu pergeseran psikologi massa; psikologi massa menggerakkan harga pada rasio harmonik. |
 
+<figure class="editorial-figure">
+  <div class="figure-badge">GAMBAR 1.1 • DIAGRAM KONSEPTUAL RUANG-WAKTU</div>
+  <img src="assets/diagrams/fig_01_spacetime_tensor.svg" alt="Perbandingan Paradigma 1D Lagging vs Ekuilibrium Ruang-Waktu Astronacci" class="zoomable-img">
+  <figcaption><strong>Gambar 1.1:</strong> Pergeseran paradigma dari analisis 1D konvensional yang bersifat <em>lagging</em> menuju matriks pertemuan Ortogonal Ruang-Waktu Astronacci (<em>Confluence Box</em> $E = P \cdot T = k$).</figcaption>
+</figure>
+
 Mengabaikan dimensi waktu dalam analisis pasar sama halnya dengan seorang navigator kapal laut yang mencoba memetakan lokasi dan waktu pendaratan hanya dengan mengukur ketinggian gelombang laut (sumbu vertikal) tanpa pernah melihat kronometer atau posisi benda-benda langit (sumbu horizontal). Kebutaan terhadap dimensi waktu inilah yang menyebabkan jutaan pelaku pasar terjebak dalam fenomena *false breakout*, *whipsaw*, dan likuidasi paksa: mereka membeli pada level *support* harga yang tepat, namun pada koordinat siklus waktu yang salah—yaitu ketika siklus penurunan waktu belum mencapai titik terminasinya.
 
 ---
@@ -49,6 +55,18 @@ Gann menyatakan bahwa setiap saham dan komoditas di pasar keuangan memiliki pusa
    $$P_{target} = \left( \sqrt{P_0} \pm \frac{\Delta \theta}{180^\circ} \right)^2$$
    di mana $P_0$ adalah harga titik balik awal (seperti *all-time low* atau *major high*) dan $\Delta \theta$ adalah sudut rotasi waktu atau planet dalam derajat (misalnya $90^\circ, 180^\circ, 360^\circ$).
 3. **Time and Price Squaring (Keseimbangan Waktu dan Harga)**: Konsep di mana pasar mencapai akhir dari sebuah tren ketika unit waktu yang telah ditempuh setara secara proporsional atau geometris dengan unit ruang (harga) yang telah dicapai, membentuk sudut $45^\circ$ sempurna (dikenal sebagai sudut $1 \times 1$ pada *Gann Fan*). Pada titik persilangan ini, energi kinetik tren habis dan pasar mengalami transisi fase.
+
+<figure class="editorial-figure">
+  <div class="figure-badge">GAMBAR 1.2 • GEOMETRI MASTER CALCULATOR W.D. GANN</div>
+  <img src="assets/diagrams/fig_02_gann_square_of_9.svg" alt="Matriks Spiral W.D. Gann Square of Nine (1-49)" class="zoomable-img">
+  <figcaption><strong>Gambar 1.2:</strong> Rekonstruksi Matriks Spiral <em>Square of Nine</em> W.D. Gann (1–49). Perhatikan deretan kuadrat ganjil ($3^2=9, 5^2=25, 7^2=49$) sejajar presisi pada sumbu diagonal $225^\circ$, sementara sumbu kardinal ($0^\circ, 90^\circ, 180^\circ, 270^\circ$) memetakan titik transisi harga dari sudut astronomis.</figcaption>
+</figure>
+
+<figure class="editorial-figure archival-plate">
+  <div class="figure-badge">ARSIP VISUAL PRIMER • DOKUMEN ASLI W.D. GANN (PUBLIC DOMAIN)</div>
+  <img src="assets/images/gann_hexagon_chart.jpg" alt="Original W.D. Gann Hexagon Chart" class="zoomable-img archival-photo">
+  <figcaption><strong>Pelat Arsip 1.1:</strong> Reproduksi historis <em>The Hexagon Chart</em> rancangan asli William Delbert Gann (arsip Wikimedia Commons / Public Domain). Selain <em>Square of Nine</em>, Gann menggunakan struktur heksagonal $60^\circ$ ($360^\circ / 6$) untuk memetakan harmonisasi sudut planet Saturnus, Jupiter, dan siklus harga komoditas.</figcaption>
+</figure>
 
 #### Donald A. Bradley (1947): "Stock Market Prediction: The Planetary Barometer" dan Bradley Siderograph
 
@@ -97,6 +115,12 @@ Pesavento memformalkan pola-pola harmonik seperti *Gartley 222*, *Butterfly Patt
 ---
 
 ### 1.3 Sintesis Modern: Kelahiran Metodologi Astronacci oleh Dr. Gema Goeyardi
+
+<figure class="editorial-figure">
+  <div class="figure-badge">GAMBAR 1.3 • TIMELINE EVOLUSI INTELEKTUAL</div>
+  <img src="assets/diagrams/fig_03_genealogy_timeline.svg" alt="Peta Genealogi Keilmuan Astronacci 1909 hingga Era Modern" class="zoomable-img">
+  <figcaption><strong>Gambar 1.3:</strong> Linimasa evolusi epistemologis dari <em>Law of Vibration</em> W.D. Gann (1909), riset komoditas George Bayer (1930-an), model kuantitatif <em>Planetary Barometer</em> Donald Bradley (1947), hingga sintesis terpadu <em>Astronacci</em> oleh Dr. Gema Goeyardi.</figcaption>
+</figure>
 
 Meskipun para pelopor abad ke-20 telah meninggalkan warisan keilmuan yang luar biasa, selama puluhan tahun kedua mazhab besar ini—mazhab Waktu Kosmik (Astrologi Finansial/Geokosmik) dan mazhab Ruang Fraktal (Geometri Fibonacci/Elliott Wave)—berjalan secara terpisah dan sering kali terfragmentasi. Para praktisi astrologi finansial sering kali unggul dalam memprediksi *tanggal* pembalikan arah pasar, namun gagal mengidentifikasi secara objektif *pada harga berapa* pembalikan itu akan berhenti dan di mana batas risiko (*stop loss*) harus ditempatkan secara struktural. Sebaliknya, para analis Fibonacci dan pola harmonik sering kali terjebak dalam ambiguitas: ketika harga mendekati beberapa klaster rasio Fibonacci ($0.618, 1.272, 1.618$), mereka tidak memiliki instrumen waktu yang presisi untuk menentukan klaster harga mana yang akan memicu pembalikan sejati dan mana yang akan ditembus begitu saja.
 
@@ -281,8 +305,21 @@ Sejarah pasar keuangan dunia menyimpan bukti-bukti terdokumentasi di mana penera
 > *"Tahun 1929 akan menjadi tahun berakhirnya pasar Bullish Agung (Great Bull Market) yang dimulai sejak tahun 1921. Sebuah puncak spekulatif yang ekstrem akan tercapai pada akhir Agustus atau awal **September 1929**. Setelah puncak ini terlewati, pasar akan mengalami penurunan paling tajam dan paling merusak dalam sejarah bursa. Kepanikan jual yang sesungguhnya akan melanda pasar pada bulan **Oktober 1929**, dengan hari paling kelam jatuh pada hari **Jumat, 25 Oktober** hingga awal November."*
 >
 > Catatan sejarah bursa membuktikan presisi proyeksi waktu tersebut:
-> * **3 September 1929**: Indeks *Dow Jones Industrial Average* (DJIA) mencetak puncak tertinggi sepanjang masa (*All-Time High* saat itu) tepat pada level **381,17**, dan tidak pernah lagi melampaui level tersebut selama 25 tahun berikutnya.
-> * **24–29 Oktober 1929 (*Black Thursday, Black Friday, Black Tuesday*)**: Tepat di dalam jendela waktu Oktober yang diproyeksikan setahun sebelumnya, likuiditas pasar menguap dan DJIA runtuh hampir 50% hanya dalam hitungan minggu, memicu *Great Depression*.
+* **3 September 1929**: Indeks *Dow Jones Industrial Average* (DJIA) mencetak puncak tertinggi sepanjang masa (*All-Time High* saat itu) tepat pada level **381,17**, dan tidak pernah lagi melampaui level tersebut selama 25 tahun berikutnya.
+* **24–29 Oktober 1929 (*Black Thursday, Black Friday, Black Tuesday*)**: Tepat di dalam jendela waktu Oktober yang diproyeksikan setahun sebelumnya, likuiditas pasar menguap dan DJIA runtuh hampir 50% hanya dalam hitungan minggu, memicu *Great Depression*.
+
+<div class="figure-grid-2">
+  <figure class="editorial-figure archival-plate">
+    <div class="figure-badge">FOTO DOKUMENTER • 24 OKTOBER 1929 (BLACK THURSDAY)</div>
+    <img src="assets/images/nyse_1929_crowd.jpg" alt="Kerumunan di Luar New York Stock Exchange Oktober 1929" class="zoomable-img archival-photo">
+    <figcaption><strong>Pelat Arsip 1.2A:</strong> Kepanikan massa dan kerumunan di luar gedung Bursa Efek New York (NYSE) pada 24 Oktober 1929 (<em>Black Thursday</em>), tepat di dalam jendela waktu yang dipetakan W.D. Gann 11 bulan sebelumnya (Sumber: Associated Press / Wikimedia Commons Public Domain).</figcaption>
+  </figure>
+  <figure class="editorial-figure archival-plate">
+    <div class="figure-badge">KLIPING KORAN PRIMER • THE NEW YORK TIMES (30 OKT 1929)</div>
+    <img src="assets/images/nyt_1929_crash.jpg" alt="Halaman Depan The New York Times Crash 1929" class="zoomable-img archival-photo">
+    <figcaption><strong>Pelat Arsip 1.2B:</strong> Halaman depan asli <em>The New York Times</em> (30 Oktober 1929) pasca-<em>Black Tuesday</em> yang mendokumentasikan kehancuran nilai pasar saham dalam sejarah modern (Sumber: Wikimedia Commons Public Domain).</figcaption>
+  </figure>
+</div>
 
 ---
 

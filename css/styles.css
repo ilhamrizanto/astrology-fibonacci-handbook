@@ -673,9 +673,150 @@ canvas {
   color: var(--gold-primary);
 }
 
+/* Editorial Figures & Archival Plates */
+.editorial-figure {
+  margin: 2.25rem 0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.editorial-figure:hover {
+  border-color: var(--gold-primary);
+}
+
+.figure-badge {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0.5rem 1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.figure-badge::after {
+  content: "🔍 Klik untuk Perbesar";
+  color: var(--text-dim);
+  font-weight: 400;
+  font-size: 0.65rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.editorial-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  background: #0a0f1a;
+}
+
+.editorial-figure.archival-plate img.archival-photo {
+  max-height: 480px;
+  object-fit: contain;
+  background: #05070b;
+  padding: 0.75rem;
+}
+
+.editorial-figure figcaption {
+  padding: 0.95rem 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.editorial-figure figcaption strong {
+  color: var(--gold-light);
+}
+
+.figure-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 2.25rem 0;
+}
+
+.figure-grid-2 .editorial-figure {
+  margin: 0;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 7, 12, 0.92);
+  backdrop-filter: blur(10px);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.lightbox-modal.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  color: #fff;
+  font-size: 1.25rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.lightbox-close:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+}
+
+.lightbox-img {
+  max-width: 92vw;
+  max-height: 78vh;
+  border-radius: 8px;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  background: #0a0f1a;
+}
+
+.lightbox-caption {
+  margin-top: 1rem;
+  max-width: 780px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  font-family: var(--font-sans);
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-  .sim-grid {
+  .sim-grid, .figure-grid-2 {
     grid-template-columns: 1fr;
   }
   .sidebar {

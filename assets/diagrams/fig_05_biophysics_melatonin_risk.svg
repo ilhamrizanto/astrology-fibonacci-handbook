@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 400" width="100%" height="auto" style="background-color: #0a0f1a; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <defs>
+    <!-- Grid Pattern -->
+    <pattern id="bg-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1e283d" opacity="0.5"/>
+    </pattern>
+
+    <!-- Linear Gradients -->
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131c2e" />
+      <stop offset="100%" stop-color="#0d1424" />
+    </linearGradient>
+
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#f3e5ab" />
+    </linearGradient>
+
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00b4d8" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glow-gold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Arrowhead Markers -->
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#00f0ff" />
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#d4af37" />
+    </marker>
+  </defs>
+
+  <!-- Main Outer Container -->
+  <rect x="4" y="4" width="912" height="392" rx="12" fill="#0a0f1a" stroke="#1e283d" stroke-width="1.5"/>
+  <rect x="4" y="4" width="912" height="392" rx="12" fill="url(#bg-grid)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(28, 32)">
+    <rect x="0" y="-14" width="4" height="28" rx="2" fill="url(#gold-grad)"/>
+    <text x="14" y="0" fill="#f3e5ab" font-size="14" font-weight="700" letter-spacing="1.2">MEKANISME TRANSMISI BIOFISIKA: DARI MEDAN KOSMIK MENUJU ORDER FLOW BURSA</text>
+    <text x="14" y="18" fill="#8e9bb0" font-size="11" font-family="'JetBrains Mono', monospace">MODEL HIPOTESIS KRONOBIOLOGI &amp;KEUANGAN KEPERILAKUAN (YUAN ET AL., 2006 / CAJOCHEN ET AL., 2013)</text>
+    <line x1="0" y1="30" x2="864" y2="30" stroke="#1e283d" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== STAGE 1: COSMIC INPUT ==================== -->
+  <g transform="translate(24, 84)">
+    <rect x="0" y="0" width="192" height="256" rx="8" fill="url(#card-bg)" stroke="#26354d" stroke-width="1.2"/>
+    <path d="M 0 8 Q 0 0 8 0 L 184 0 Q 192 0 192 8 L 192 4 L 0 4 Z" fill="#d4af37"/>
+    
+    <!-- Stage Badge & Icon -->
+    <rect x="14" y="16" width="68" height="20" rx="4" fill="#1a2436" stroke="#d4af37" stroke-width="0.8"/>
+    <text x="48" y="29" fill="#f3e5ab" font-size="9.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">STAGE 01</text>
+    <text x="178" y="29" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace" text-anchor="end">ASTRO-PHYSICS</text>
+
+    <!-- Title -->
+    <text x="14" y="56" fill="#e2e8f0" font-size="12" font-weight="700" letter-spacing="0.4">PERTURBASI KOSMIK</text>
+    <text x="14" y="72" fill="#d4af37" font-size="12" font-weight="700" letter-spacing="0.4">&amp; SIKLUS LUNAR</text>
+    <line x1="14" y1="84" x2="178" y2="84" stroke="#1e283d" stroke-width="1"/>
+
+    <!-- Bullet 1 -->
+    <circle cx="20" cy="106" r="3" fill="#d4af37"/>
+    <text x="30" y="109" fill="#e2e8f0" font-size="10.5" font-weight="600">Gravitasi Mikro</text>
+    <text x="30" y="123" fill="#8e9bb0" font-size="9.5">Gaya pasang surut (tidal force)</text>
+
+    <!-- Bullet 2 -->
+    <circle cx="20" cy="150" r="3" fill="#d4af37"/>
+    <text x="30" y="153" fill="#e2e8f0" font-size="10.5" font-weight="600">Medan Magnetosfer</text>
+    <text x="30" y="167" fill="#8e9bb0" font-size="9.5">Fluktuasi geomagnetik (<tspan fill="#00f0ff" font-family="'JetBrains Mono', monospace">Kp Index</tspan>)</text>
+
+    <!-- Bullet 3 -->
+    <circle cx="20" cy="194" r="3" fill="#d4af37"/>
+    <text x="30" y="197" fill="#e2e8f0" font-size="10.5" font-weight="600">Luminositas Foton</text>
+    <text x="30" y="211" fill="#8e9bb0" font-size="9.5">Puncak spektrum cahaya</text>
+    <text x="30" y="224" fill="#8e9bb0" font-size="9.5">saat fase <tspan fill="#f3e5ab">Full Moon</tspan></text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <g>
+    <line x1="216" y1="212" x2="239" y2="212" stroke="#d4af37" stroke-width="2" marker-end="url(#arrow-gold)" filter="url(#glow-gold)"/>
+  </g>
+
+  <!-- ==================== STAGE 2: BIOLOGICAL SENSOR ==================== -->
+  <g transform="translate(244, 84)">
+    <rect x="0" y="0" width="198" height="256" rx="8" fill="url(#card-bg)" stroke="#26354d" stroke-width="1.2"/>
+    <path d="M 0 8 Q 0 0 8 0 L 190 0 Q 198 0 198 8 L 198 4 L 0 4 Z" fill="#00f0ff"/>
+    
+    <!-- Stage Badge -->
+    <rect x="14" y="16" width="68" height="20" rx="4" fill="#102536" stroke="#00f0ff" stroke-width="0.8"/>
+    <text x="48" y="29" fill="#00f0ff" font-size="9.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">STAGE 02</text>
+    <text x="184" y="29" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace" text-anchor="end">BIO-RECEPTOR</text>
+
+    <!-- Title -->
+    <text x="14" y="56" fill="#e2e8f0" font-size="12" font-weight="700" letter-spacing="0.4">RESEPTOR BIOLOGIS</text>
+    <text x="14" y="72" fill="#00f0ff" font-size="12" font-weight="700" letter-spacing="0.4">&amp; KELENJAR PINEAL</text>
+    <line x1="14" y1="84" x2="184" y2="84" stroke="#1e283d" stroke-width="1"/>
+
+    <!-- Bullet 1 -->
+    <circle cx="20" cy="106" r="3" fill="#00f0ff"/>
+    <text x="30" y="109" fill="#e2e8f0" font-size="10.5" font-weight="600">Jalur Retinohipotalamus</text>
+    <text x="30" y="123" fill="#8e9bb0" font-size="9.5">Transduksi sinyal menuju <tspan fill="#e2e8f0">SCN</tspan></text>
+
+    <!-- Bullet 2 -->
+    <circle cx="20" cy="150" r="3" fill="#00f0ff"/>
+    <text x="30" y="153" fill="#e2e8f0" font-size="10.5" font-weight="600">Modulasi Kriptokrom</text>
+    <text x="30" y="167" fill="#8e9bb0" font-size="9.5">Magnetoreseptor radikal bebas</text>
+
+    <!-- Bullet 3 -->
+    <circle cx="20" cy="194" r="3" fill="#00f0ff"/>
+    <text x="30" y="197" fill="#e2e8f0" font-size="10.5" font-weight="600">Osilasi Ritme Sirkadian</text>
+    <text x="30" y="211" fill="#8e9bb0" font-size="9.5">Sinkronisasi jam biologis</text>
+    <text x="30" y="224" fill="#00f0ff" font-size="9" font-family="'JetBrains Mono', monospace">(Cajochen et al., 2013)</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <g>
+    <line x1="442" y1="212" x2="465" y2="212" stroke="#00f0ff" stroke-width="2" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)"/>
+  </g>
+
+  <!-- ==================== STAGE 3: NEUROCHEMISTRY ==================== -->
+  <g transform="translate(470, 84)">
+    <rect x="0" y="0" width="198" height="256" rx="8" fill="url(#card-bg)" stroke="#26354d" stroke-width="1.2"/>
+    <path d="M 0 8 Q 0 0 8 0 L 190 0 Q 198 0 198 8 L 198 4 L 0 4 Z" fill="#00f0ff"/>
+    
+    <!-- Stage Badge -->
+    <rect x="14" y="16" width="68" height="20" rx="4" fill="#102536" stroke="#00f0ff" stroke-width="0.8"/>
+    <text x="48" y="29" fill="#00f0ff" font-size="9.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">STAGE 03</text>
+    <text x="184" y="29" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace" text-anchor="end">NEURO-CHEM</text>
+
+    <!-- Title -->
+    <text x="14" y="56" fill="#e2e8f0" font-size="12" font-weight="700" letter-spacing="0.4">SEKRESI MELATONIN</text>
+    <text x="14" y="72" fill="#00f0ff" font-size="12" font-weight="700" letter-spacing="0.4">&amp; SEROTONIN</text>
+    <line x1="14" y1="84" x2="184" y2="84" stroke="#1e283d" stroke-width="1"/>
+
+    <!-- Bullet 1 -->
+    <circle cx="20" cy="106" r="3" fill="#f43f5e"/>
+    <text x="30" y="109" fill="#e2e8f0" font-size="10.5" font-weight="600">Deprivasi Tidur Dalam</text>
+    <text x="30" y="123" fill="#8e9bb0" font-size="9.5">NREM turun <tspan fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-weight="600">-30%</tspan> (Full Moon)</text>
+
+    <!-- Bullet 2 -->
+    <circle cx="20" cy="150" r="3" fill="#00f0ff"/>
+    <text x="30" y="153" fill="#e2e8f0" font-size="10.5" font-weight="600">Disregulasi Hormonal</text>
+    <text x="30" y="167" fill="#8e9bb0" font-size="9.5">Fluktuasi kortisol &amp; dopamin</text>
+
+    <!-- Bullet 3 -->
+    <circle cx="20" cy="194" r="3" fill="#d4af37"/>
+    <text x="30" y="197" fill="#e2e8f0" font-size="10.5" font-weight="600">Pergeseran Afektif</text>
+    <text x="30" y="211" fill="#8e9bb0" font-size="9.5">Peningkatan bias kognitif &amp;</text>
+    <text x="30" y="224" fill="#f3e5ab" font-size="9.5" font-weight="600">Risk Aversion (Penghindaran Risiko)</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <g>
+    <line x1="668" y1="212" x2="691" y2="212" stroke="#d4af37" stroke-width="2" marker-end="url(#arrow-gold)" filter="url(#glow-gold)"/>
+  </g>
+
+  <!-- ==================== STAGE 4: MARKET MICROSTRUCTURE ==================== -->
+  <g transform="translate(696, 84)">
+    <rect x="0" y="0" width="200" height="256" rx="8" fill="url(#card-bg)" stroke="#d4af37" stroke-width="1.2"/>
+    <path d="M 0 8 Q 0 0 8 0 L 192 0 Q 200 0 200 8 L 200 4 L 0 4 Z" fill="#d4af37"/>
+    
+    <!-- Stage Badge -->
+    <rect x="14" y="16" width="68" height="20" rx="4" fill="#1a2436" stroke="#d4af37" stroke-width="0.8"/>
+    <text x="48" y="29" fill="#f3e5ab" font-size="9.5" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">STAGE 04</text>
+    <text x="186" y="29" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace" text-anchor="end">ORDER FLOW</text>
+
+    <!-- Title -->
+    <text x="14" y="56" fill="#e2e8f0" font-size="12" font-weight="700" letter-spacing="0.4">AGREGASI SENTIMEN</text>
+    <text x="14" y="72" fill="#d4af37" font-size="12" font-weight="700" letter-spacing="0.4">&amp; MIKROSTRUKTUR</text>
+    <line x1="14" y1="84" x2="186" y2="84" stroke="#1e283d" stroke-width="1"/>
+
+    <!-- Sub-card 1: Full Moon (Alert Rose) -->
+    <rect x="12" y="96" width="176" height="68" rx="6" fill="#1a1423" stroke="#f43f5e" stroke-width="1"/>
+    <circle cx="24" cy="112" r="4" fill="#f3e5ab"/>
+    <text x="34" y="115" fill="#f43f5e" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="700">FASE FULL MOON</text>
+    <text x="20" y="132" fill="#e2e8f0" font-size="9.5">Risk Aversion Puncak</text>
+    <text x="20" y="148" fill="#f43f5e" font-size="9.5" font-weight="600">→ Tekanan Jual / Likuidasi</text>
+
+    <!-- Sub-card 2: New Moon (Emerald) -->
+    <rect x="12" y="174" width="176" height="68" rx="6" fill="#0f2228" stroke="#10b981" stroke-width="1"/>
+    <circle cx="24" cy="190" r="4" fill="#0a0f1a" stroke="#8e9bb0" stroke-width="1.2"/>
+    <text x="34" y="193" fill="#10b981" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="700">FASE NEW MOON</text>
+    <text x="20" y="210" fill="#e2e8f0" font-size="9.5">Pemulihan Toleransi Risiko</text>
+    <text x="20" y="226" fill="#10b981" font-size="9.5" font-weight="600">→ Akumulasi Institusional</text>
+  </g>
+
+  <!-- Footer / Legend Bar -->
+  <g transform="translate(24, 358)">
+    <rect x="0" y="0" width="872" height="26" rx="5" fill="#0d1424" stroke="#1e283d" stroke-width="1"/>
+    
+    <!-- Legend Items -->
+    <circle cx="18" cy="13" r="3.5" fill="#d4af37"/>
+    <text x="28" y="16" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace">INPUT / OUTPUT MAKRO</text>
+
+    <circle cx="175" cy="13" r="3.5" fill="#00f0ff"/>
+    <text x="185" y="16" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace">TRANSMISI NEUROBIOLOGIS</text>
+
+    <circle cx="355" cy="13" r="3.5" fill="#f43f5e"/>
+    <text x="365" y="16" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace">DISRUPSI / BEARISH BIAS</text>
+
+    <circle cx="525" cy="13" r="3.5" fill="#10b981"/>
+    <text x="535" y="16" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace">HOMEOSTASIS / BULLISH BIAS</text>
+
+    <text x="858" y="16" fill="#8e9bb0" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="end">STATUS: TEORITIS / LITERATUR AKADEMIK</text>
+  </g>
+</svg>

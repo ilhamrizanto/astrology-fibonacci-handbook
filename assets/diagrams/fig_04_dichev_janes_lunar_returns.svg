@@ -1,0 +1,303 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="auto">
+  <defs>
+    <!-- Gradients for Bars -->
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0080ff" stop-opacity="0.65"/>
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.90"/>
+      <stop offset="100%" stop-color="#9f1239" stop-opacity="0.60"/>
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="waveFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#0a0f1a" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.25"/>
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Main Institutional Background -->
+  <rect x="2" y="2" width="916" height="456" rx="10" fill="#0a0f1a" stroke="#1e283d" stroke-width="2"/>
+
+  <!-- Header Banner -->
+  <g transform="translate(30, 28)">
+    <text x="0" y="0" font-family="'Inter', -apple-system, sans-serif" font-size="14.5" font-weight="800" fill="#e2e8f0" letter-spacing="0.6">
+      BUKTI EMPIRIS ANOMALI LUNAR: NEW MOON vs FULL MOON <tspan fill="#d4af37">(DICHEV &amp; JANES, 2001)</tspan>
+    </text>
+    <text x="0" y="18" font-family="'Inter', -apple-system, sans-serif" font-size="11" fill="#8e9bb0">
+      Perbandingan Annualized Equity Returns (%) pada Jendela 15-Hari Siklus Sinodik
+    </text>
+    <line x1="0" y1="28" x2="860" y2="28" stroke="#1e283d" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== LEFT PANEL: GROUPED BAR CHART ==================== -->
+  <g id="left-panel">
+    <!-- Legend (Top Right of Left Panel) -->
+    <g transform="translate(300, 68)">
+      <rect x="0" y="0" width="10" height="10" rx="2" fill="url(#cyanGrad)"/>
+      <text x="15" y="9" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#e2e8f0">New Moon (NM)</text>
+      
+      <rect x="108" y="0" width="10" height="10" rx="2" fill="url(#roseGrad)"/>
+      <text x="123" y="9" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#e2e8f0">Full Moon (FM)</text>
+      
+      <rect x="210" y="-1" width="12" height="12" rx="3" fill="#0d2822" stroke="#10b981" stroke-width="1"/>
+      <text x="227" y="9" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#10b981">Δ Spread</text>
+    </g>
+
+    <!-- Y-Axis Label -->
+    <text x="-235" y="22" transform="rotate(-90)" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="600" fill="#8e9bb0" letter-spacing="0.5">
+      ANNUALIZED EQUITY RETURN (%)
+    </text>
+
+    <!-- Grid Lines & Y-Axis Ticks (y=375 is 0%, y=100 is 25% -> 11px per 1%) -->
+    <g font-family="'JetBrains Mono', monospace" font-size="10" fill="#8e9bb0" text-anchor="end">
+      <!-- 25% -->
+      <line x1="65" y1="100" x2="575" y2="100" stroke="#1e283d" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="58" y="103.5">25%</text>
+      <!-- 20% -->
+      <line x1="65" y1="155" x2="575" y2="155" stroke="#1e283d" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="58" y="158.5">20%</text>
+      <!-- 15% -->
+      <line x1="65" y1="210" x2="575" y2="210" stroke="#1e283d" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="58" y="213.5">15%</text>
+      <!-- 10% -->
+      <line x1="65" y1="265" x2="575" y2="265" stroke="#1e283d" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="58" y="268.5">10%</text>
+      <!-- 5% -->
+      <line x1="65" y1="320" x2="575" y2="320" stroke="#1e283d" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="58" y="323.5">5%</text>
+      <!-- 0% Base -->
+      <line x1="65" y1="375" x2="575" y2="375" stroke="#475569" stroke-width="1.5"/>
+      <text x="58" y="378.5" fill="#e2e8f0">0%</text>
+    </g>
+
+    <!-- 1. USA (1896-2000): NM 11.39% vs FM 4.99% (+6.40%) | Center X = 100 -->
+    <g>
+      <!-- Spread Badge -->
+      <rect x="75" y="206" width="50" height="16" rx="4" fill="#0d2822" stroke="#10b981" stroke-width="0.8"/>
+      <text x="100" y="217" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#10b981">+6.40%</text>
+      <!-- NM Bar (11.39% -> h=125.3, y=249.7) -->
+      <rect x="77" y="249.7" width="21" height="125.3" rx="2" fill="url(#cyanGrad)"/>
+      <text x="87.5" y="244" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#00f0ff">11.39</text>
+      <!-- FM Bar (4.99% -> h=54.9, y=320.1) -->
+      <rect x="102" y="320.1" width="21" height="54.9" rx="2" fill="url(#roseGrad)"/>
+      <text x="112.5" y="314" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#f43f5e">4.99</text>
+      <!-- Label -->
+      <text x="100" y="393" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">USA</text>
+      <text x="100" y="406" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#8e9bb0">1896–2000</text>
+    </g>
+
+    <!-- 2. UK (1965-2000): NM 15.50% vs FM 7.81% (+7.69%) | Center X = 172 -->
+    <g>
+      <rect x="147" y="161" width="50" height="16" rx="4" fill="#0d2822" stroke="#10b981" stroke-width="0.8"/>
+      <text x="172" y="172" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#10b981">+7.69%</text>
+      <!-- NM Bar (15.50% -> h=170.5, y=204.5) -->
+      <rect x="149" y="204.5" width="21" height="170.5" rx="2" fill="url(#cyanGrad)"/>
+      <text x="159.5" y="199" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#00f0ff">15.50</text>
+      <!-- FM Bar (7.81% -> h=85.9, y=289.1) -->
+      <rect x="174" y="289.1" width="21" height="85.9" rx="2" fill="url(#roseGrad)"/>
+      <text x="184.5" y="283" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#f43f5e">7.81</text>
+      <!-- Label -->
+      <text x="172" y="393" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">UK</text>
+      <text x="172" y="406" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#8e9bb0">1965–2000</text>
+    </g>
+
+    <!-- 3. Japan (1970-2000): NM 12.10% vs FM 2.39% (+9.71%) | Center X = 244 -->
+    <g>
+      <rect x="219" y="198" width="50" height="16" rx="4" fill="#0d2822" stroke="#10b981" stroke-width="0.8"/>
+      <text x="244" y="209" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#10b981">+9.71%</text>
+      <!-- NM Bar (12.10% -> h=133.1, y=241.9) -->
+      <rect x="221" y="241.9" width="21" height="133.1" rx="2" fill="url(#cyanGrad)"/>
+      <text x="231.5" y="236" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#00f0ff">12.10</text>
+      <!-- FM Bar (2.39% -> h=26.3, y=348.7) -->
+      <rect x="246" y="348.7" width="21" height="26.3" rx="2" fill="url(#roseGrad)"/>
+      <text x="256.5" y="343" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#f43f5e">2.39</text>
+      <!-- Label -->
+      <text x="244" y="393" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Japan</text>
+      <text x="244" y="406" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#8e9bb0">1970–2000</text>
+    </g>
+
+    <!-- 4. Germany (1970-2000): NM 12.40% vs FM 4.66% (+7.74%) | Center X = 316 -->
+    <g>
+      <rect x="291" y="195" width="50" height="16" rx="4" fill="#0d2822" stroke="#10b981" stroke-width="0.8"/>
+      <text x="316" y="206" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#10b981">+7.74%</text>
+      <!-- NM Bar (12.40% -> h=136.4, y=238.6) -->
+      <rect x="293" y="238.6" width="21" height="136.4" rx="2" fill="url(#cyanGrad)"/>
+      <text x="303.5" y="233" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#00f0ff">12.40</text>
+      <!-- FM Bar (4.66% -> h=51.3, y=323.7) -->
+      <rect x="318" y="323.7" width="21" height="51.3" rx="2" fill="url(#roseGrad)"/>
+      <text x="328.5" y="318" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#f43f5e">4.66</text>
+      <!-- Label -->
+      <text x="316" y="393" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Germany</text>
+      <text x="316" y="406" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#8e9bb0">1970–2000</text>
+    </g>
+
+    <!-- 5. Singapore (1973-2000): NM 14.11% vs FM 3.65% (+10.46%) | Center X = 388 -->
+    <g>
+      <rect x="361" y="176" width="54" height="16" rx="4" fill="#0d2822" stroke="#10b981" stroke-width="0.8"/>
+      <text x="388" y="187" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#10b981">+10.46%</text>
+      <!-- NM Bar (14.11% -> h=155.2, y=219.8) -->
+      <rect x="365" y="219.8" width="21" height="155.2" rx="2" fill="url(#cyanGrad)"/>
+      <text x="375.5" y="214" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#00f0ff">14.11</text>
+      <!-- FM Bar (3.65% -> h=40.2, y=334.8) -->
+      <rect x="390" y="334.8" width="21" height="40.2" rx="2" fill="url(#roseGrad)"/>
+      <text x="400.5" y="329" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#f43f5e">3.65</text>
+      <!-- Label -->
+      <text x="388" y="393" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Singapore</text>
+      <text x="388" y="406" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#8e9bb0">1973–2000</text>
+    </g>
+
+    <!-- 6. Hong Kong (1973-2000): NM 22.93% vs FM 9.70% (+13.23%) | Center X = 460 -->
+    <g>
+      <rect x="433" y="79" width="54" height="16" rx="4" fill="#0d2822" stroke="#10b981" stroke-width="0.8"/>
+      <text x="460" y="90" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#10b981">+13.23%</text>
+      <!-- NM Bar (22.93% -> h=252.2, y=122.8) -->
+      <rect x="437" y="122.8" width="21" height="252.2" rx="2" fill="url(#cyanGrad)"/>
+      <text x="447.5" y="117" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#00f0ff">22.93</text>
+      <!-- FM Bar (9.70% -> h=106.7, y=268.3) -->
+      <rect x="462" y="268.3" width="21" height="106.7" rx="2" fill="url(#roseGrad)"/>
+      <text x="472.5" y="262" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#f43f5e">9.70</text>
+      <!-- Label -->
+      <text x="460" y="393" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Hong Kong</text>
+      <text x="460" y="406" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#8e9bb0">1973–2000</text>
+    </g>
+
+    <!-- 7. POOLED 25 COUNTRIES: NM 15.32% vs FM 6.78% (+8.54%) | Center X = 536 (GOLD HIGHLIGHT) -->
+    <g>
+      <!-- Gold Highlight Enclosure -->
+      <rect x="501" y="140" width="70" height="288" rx="6" fill="url(#goldGlow)" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <rect x="508" y="132" width="56" height="14" rx="3" fill="#d4af37"/>
+      <text x="536" y="142" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" font-weight="800" fill="#0a0f1a" letter-spacing="0.4">BENCHMARK</text>
+
+      <!-- Spread Badge (Gold/Emerald) -->
+      <rect x="511" y="162" width="50" height="16" rx="4" fill="#1f1a0d" stroke="#d4af37" stroke-width="1.2"/>
+      <text x="536" y="173" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#f3e5ab">+8.54%</text>
+
+      <!-- NM Bar (15.32% -> h=168.5, y=206.5) with Gold Outline -->
+      <rect x="513" y="206.5" width="21" height="168.5" rx="2" fill="url(#cyanGrad)" stroke="#d4af37" stroke-width="1.5"/>
+      <text x="523.5" y="200" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#f3e5ab">15.32</text>
+
+      <!-- FM Bar (6.78% -> h=74.6, y=300.4) with Gold Outline -->
+      <rect x="538" y="300.4" width="21" height="74.6" rx="2" fill="url(#roseGrad)" stroke="#d4af37" stroke-width="1.5"/>
+      <text x="548.5" y="294" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#f3e5ab">6.78</text>
+
+      <!-- Label -->
+      <text x="536" y="393" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" fill="#d4af37">POOLED</text>
+      <text x="536" y="406" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" fill="#f3e5ab">25 NEGARA</text>
+    </g>
+
+    <!-- Bottom Caption Left Panel -->
+    <text x="65" y="440" font-family="'Inter', sans-serif" font-size="9.5" fill="#8e9bb0">
+      *Catatan: 24 dari 25 pasar saham nasional menunjukkan return New Moon &gt; Full Moon secara konsisten.
+    </text>
+  </g>
+
+  <!-- ==================== RIGHT PANEL: CARDS & COSINE MODEL ==================== -->
+  <g id="right-panel">
+    <!-- TOP CARD: SIGNIFIKANSI STATISTIK GLOBAL -->
+    <g transform="translate(600, 68)">
+      <rect x="0" y="0" width="290" height="168" rx="8" fill="#111827" stroke="#1e283d" stroke-width="1.5"/>
+      <!-- Gold Top Accent Bar -->
+      <path d="M 8 0 L 282 0 C 286 0 290 4 290 8 L 290 10 L 0 10 L 0 8 C 0 4 4 0 8 0 Z" fill="#d4af37" opacity="0.85"/>
+      
+      <text x="16" y="30" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#f3e5ab" letter-spacing="0.6">
+        SIGNIFIKANSI STATISTIK GLOBAL
+      </text>
+      <line x1="16" y1="39" x2="274" y2="39" stroke="#1e283d" stroke-width="1"/>
+
+      <!-- Metric 1: Pooled Spread -->
+      <circle cx="24" cy="60" r="3.5" fill="#10b981"/>
+      <text x="36" y="64" font-family="'Inter', sans-serif" font-size="11" fill="#8e9bb0">Pooled Spread ΔR:</text>
+      <text x="274" y="64" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="12.5" font-weight="700" fill="#10b981">+8.54% / tahun</text>
+
+      <!-- Metric 2: t-statistic -->
+      <circle cx="24" cy="92" r="3.5" fill="#00f0ff"/>
+      <text x="36" y="96" font-family="'Inter', sans-serif" font-size="11" fill="#8e9bb0">t-statistic:</text>
+      <text x="274" y="96" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#00f0ff">
+        5.84 <tspan fill="#f3e5ab" font-size="10.5">(p &lt; 0.0001***)</tspan>
+      </text>
+
+      <!-- Metric 3: Binomial Test -->
+      <circle cx="24" cy="124" r="3.5" fill="#d4af37"/>
+      <text x="36" y="128" font-family="'Inter', sans-serif" font-size="11" fill="#8e9bb0">Binomial Test (24/25):</text>
+      <text x="274" y="128" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#f3e5ab">
+        p = 7.75 × 10<tspan baseline-shift="super" font-size="8.5">-7</tspan>
+      </text>
+
+      <!-- Sub-footer inside card -->
+      <rect x="12" y="142" width="266" height="18" rx="4" fill="#0a0f1a"/>
+      <text x="145" y="154" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#8e9bb0">
+        Robus terhadap kontrol Januari, Hari Bursa &amp; Makro
+      </text>
+    </g>
+
+    <!-- BOTTOM MINI CHART: MODEL KOSINUS YUAN ET AL. (2006) -->
+    <g transform="translate(600, 252)">
+      <rect x="0" y="0" width="290" height="190" rx="8" fill="#111827" stroke="#1e283d" stroke-width="1.5"/>
+      
+      <text x="16" y="22" font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" fill="#d4af37" letter-spacing="0.4">
+        MODEL KOSINUS YUAN ET AL. (2006) — 48 NEGARA
+      </text>
+      
+      <!-- Equation Pill -->
+      <rect x="16" y="30" width="258" height="20" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="1"/>
+      <text x="145" y="43.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#e2e8f0">
+        R<tspan baseline-shift="sub" font-size="7">t</tspan> = α + <tspan fill="#00f0ff" font-weight="700">β</tspan>·cos(2π·d<tspan baseline-shift="sub" font-size="7">t</tspan> / 29.53) + ε<tspan baseline-shift="sub" font-size="7">t</tspan>
+      </text>
+
+      <!-- Cosine Wave Coordinate System:
+           X: 35 (Day 0) -> 150 (Day 15) -> 265 (Day 29.5)
+           Y: 72 (Peak +β) -> 108 (Mean 0) -> 144 (Trough -β)
+      -->
+      <!-- Zero Mean Axis -->
+      <line x1="25" y1="108" x2="275" y2="108" stroke="#475569" stroke-dasharray="3,3" stroke-width="1"/>
+      <text x="22" y="111" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="8" fill="#8e9bb0">0</text>
+      <text x="22" y="75" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="8" fill="#00f0ff">+β</text>
+      <text x="22" y="147" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="8" fill="#f43f5e">-β</text>
+
+      <!-- Vertical Phase Guides -->
+      <line x1="35" y1="65" x2="35" y2="155" stroke="#1e283d" stroke-width="1"/>
+      <line x1="150" y1="65" x2="150" y2="155" stroke="#1e283d" stroke-width="1"/>
+      <line x1="265" y1="65" x2="265" y2="155" stroke="#1e283d" stroke-width="1"/>
+
+      <!-- Shaded Area under Cosine Curve -->
+      <path d="M 35 72 C 80 72, 105 144, 150 144 C 195 144, 220 72, 265 72 L 265 108 L 35 108 Z" fill="url(#waveFill)"/>
+
+      <!-- Smooth Sinusoidal / Cosine Curve -->
+      <path d="M 35 72 C 80 72, 105 144, 150 144 C 195 144, 220 72, 265 72" fill="none" stroke="#00f0ff" stroke-width="2.5" filter="url(#glow)"/>
+
+      <!-- Nodes & Moon Icons -->
+      <!-- Day 0: New Moon Peak -->
+      <circle cx="35" cy="72" r="5" fill="#0a0f1a" stroke="#00f0ff" stroke-width="2"/>
+      <text x="45" y="68" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#00f0ff">Puncak (NM)</text>
+
+      <!-- Day 15: Full Moon Trough -->
+      <circle cx="150" cy="144" r="5" fill="#f43f5e" stroke="#f3e5ab" stroke-width="1.5"/>
+      <text x="150" y="133" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#f43f5e">Palung (FM)</text>
+
+      <!-- Day 29.5: New Moon Peak -->
+      <circle cx="265" cy="72" r="5" fill="#0a0f1a" stroke="#00f0ff" stroke-width="2"/>
+      <text x="255" y="68" text-anchor="end" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#00f0ff">Puncak (NM)</text>
+
+      <!-- X-Axis Labels -->
+      <text x="35" y="168" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#e2e8f0">Hari 0</text>
+      <text x="35" y="179" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#8e9bb0">New Moon</text>
+
+      <text x="150" y="168" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#e2e8f0">Hari 15</text>
+      <text x="150" y="179" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#8e9bb0">Full Moon</text>
+
+      <text x="265" y="168" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#e2e8f0">Hari 29.5</text>
+      <text x="265" y="179" text-anchor="middle" font-family="'Inter', sans-serif" font-size="8" fill="#8e9bb0">New Moon</text>
+    </g>
+  </g>
+</svg>

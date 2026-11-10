@@ -212,6 +212,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Lightbox Modal Logic
+  const lightboxModal = document.getElementById('lightbox-modal');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  if (chapterContentEl && lightboxModal) {
+    chapterContentEl.addEventListener('click', (e) => {
+      const img = e.target.closest('.zoomable-img');
+      if (!img) return;
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      const fig = img.closest('figure');
+      const cap = fig ? fig.querySelector('figcaption') : null;
+      lightboxCaption.innerHTML = cap ? cap.innerHTML : (img.alt || '');
+      lightboxModal.classList.remove('hidden');
+    });
+
+    const closeLB = () => lightboxModal.classList.add('hidden');
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLB);
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) closeLB();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightboxModal.classList.contains('hidden')) closeLB();
+    });
+  }
+
   // Init App
   buildTOC();
   loadChapter("bab-01");
