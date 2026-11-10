@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="100%" height="auto" style="background-color: #0a0f1a; font-family: 'Inter', system-ui, sans-serif;">
+  <defs>
+    <!-- Grid Pattern -->
+    <pattern id="bgGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e283d" stroke-width="0.6" stroke-opacity="0.5"/>
+    </pattern>
+
+    <!-- Gradients -->
+    <linearGradient id="oteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.32"/>
+      <stop offset="65%" stop-color="#d4af37" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.04"/>
+    </linearGradient>
+
+    <linearGradient id="premiumGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.01"/>
+    </linearGradient>
+
+    <linearGradient id="discountGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.01"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.07"/>
+    </linearGradient>
+
+    <!-- Markers -->
+    <marker id="arrowEmerald" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d4af37"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#00f0ff"/>
+    </marker>
+    <marker id="arrowRose" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#f43f5e"/>
+    </marker>
+  </defs>
+
+  <!-- Main Background & Border -->
+  <rect x="2" y="2" width="916" height="476" rx="10" fill="#0a0f1a" stroke="#1e283d" stroke-width="1.5"/>
+  <rect x="20" y="65" width="600" height="390" fill="url(#bgGrid)"/>
+
+  <!-- Header Banner -->
+  <rect x="20" y="16" width="880" height="38" rx="6" fill="#111827" stroke="#1e283d" stroke-width="1"/>
+  <circle cx="38" cy="35" r="5" fill="#d4af37"/>
+  <text x="54" y="40" fill="#f3e5ab" font-size="13.5" font-weight="700" letter-spacing="0.6">ANATOMI FIBONACCI RETRACEMENT &amp; ZONA OPTIMAL TRADE ENTRY (OTE GOLDEN POCKET)</text>
+  <text x="885" y="39" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="10.5" text-anchor="end">RIZACORP QUANT SERIES</text>
+
+  <!-- Premium vs Discount Background Shading (Chart Area x: 65 to 615) -->
+  <!-- 0.000 (y=90) to 0.500 (y=260) = Premium Zone -->
+  <rect x="65" y="90" width="550" height="170" fill="url(#premiumGrad)"/>
+  <!-- 0.500 (y=260) to 1.000 (y=430) = Discount Zone -->
+  <rect x="65" y="260" width="550" height="170" fill="url(#discountGrad)"/>
+
+  <!-- Left Vertical Premium / Discount Indicators -->
+  <g font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" letter-spacing="1">
+    <rect x="26" y="92" width="24" height="164" rx="3" fill="#18121e" stroke="#f43f5e" stroke-width="0.7" stroke-opacity="0.5"/>
+    <text x="41" y="174" fill="#f43f5e" text-anchor="middle" transform="rotate(-90, 41, 174)">PREMIUM (MAHAL)</text>
+
+    <rect x="26" y="264" width="24" height="164" rx="3" fill="#0d1f22" stroke="#10b981" stroke-width="0.7" stroke-opacity="0.5"/>
+    <text x="41" y="346" fill="#10b981" text-anchor="middle" transform="rotate(-90, 41, 346)">DISCOUNT (MURAH)</text>
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- FIBONACCI RETRACEMENT HORIZONTAL LEVELS (Y_0 = 90, Y_1 = 430, H = 340)  -->
+  <!-- ======================================================================= -->
+
+  <!-- THE GOLDEN POCKET / OTE SHADED BOX (0.618 at y=300.1 to 0.705 at y=329.7) -->
+  <rect x="215" y="300" width="400" height="30" fill="url(#oteGrad)" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="3,2"/>
+  <!-- 0.650 Sub-level inside Golden Pocket (y=311) -->
+  <line x1="215" y1="311" x2="615" y2="311" stroke="#f3e5ab" stroke-width="0.8" stroke-dasharray="2,4" stroke-opacity="0.7"/>
+
+  <!-- 0.000 Swing High (y = 90) -->
+  <line x1="215" y1="90" x2="615" y2="90" stroke="#10b981" stroke-width="1.5"/>
+  <text x="610" y="84" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" text-anchor="end">0.000 — SWING HIGH (TARGET / BOS)</text>
+
+  <!-- 0.236 Super Momentum (y = 170.2) -->
+  <line x1="215" y1="170" x2="615" y2="170" stroke="#8e9bb0" stroke-width="1" stroke-dasharray="4,4" stroke-opacity="0.6"/>
+  <text x="610" y="165" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">0.236 (Super Momentum Pullback)</text>
+
+  <!-- 0.382 Shallow Healthy Pullback (y = 219.9) -->
+  <line x1="215" y1="220" x2="615" y2="220" stroke="#8e9bb0" stroke-width="1" stroke-dasharray="4,4" stroke-opacity="0.75"/>
+  <text x="610" y="215" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">0.382 (Shallow Healthy Pullback — Wave 4)</text>
+
+  <!-- 0.500 Equilibrium (y = 260) -->
+  <line x1="65" y1="260" x2="615" y2="260" stroke="#00f0ff" stroke-width="1.3" stroke-dasharray="6,3"/>
+  <rect x="405" y="244" width="208" height="14" rx="2" fill="#0a0f1a" fill-opacity="0.85"/>
+  <text x="610" y="254" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="end">0.500 (EQUILIBRIUM / FAIR VALUE)</text>
+
+  <!-- 0.618 Golden Ratio (y = 300.1) -->
+  <text x="610" y="296" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" text-anchor="end">0.618 (Golden Ratio — Batas Atas OTE)</text>
+
+  <!-- Golden Pocket Center Label -->
+  <text x="610" y="314" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" text-anchor="end">0.650 (Mid-Pocket Institutional Key)</text>
+  <text x="610" y="327" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" text-anchor="end">0.705 (OTE Deep Limit)</text>
+
+  <!-- 0.786 Deep Structural Defense (y = 357.2) -->
+  <line x1="215" y1="357" x2="615" y2="357" stroke="#8e9bb0" stroke-width="1" stroke-dasharray="4,4" stroke-opacity="0.75"/>
+  <text x="610" y="352" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">0.786 (√0.618 — Deep Structural Defense)</text>
+
+  <!-- 0.886 Last Harmonic Defense (y = 391.2) -->
+  <line x1="215" y1="391" x2="615" y2="391" stroke="#8e9bb0" stroke-width="1" stroke-dasharray="2,3" stroke-opacity="0.6"/>
+  <text x="610" y="386" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">0.886 (Last Harmonic Defense)</text>
+
+  <!-- 1.000 Swing Low / Invalidation (y = 430) -->
+  <line x1="65" y1="430" x2="615" y2="430" stroke="#f43f5e" stroke-width="1.8"/>
+  <text x="610" y="444" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" text-anchor="end">1.000 — SWING LOW (INVALIDATION LEVEL / CUT LOSS MUTLAK)</text>
+
+  <!-- ======================================================================= -->
+  <!-- INSTITUTIONAL ORDER BLOCK & PRICE ACTION WAVES                          -->
+  <!-- ======================================================================= -->
+
+  <!-- Bullish Order Block (Origin of Impulse before BOS) -->
+  <rect x="82" y="300" width="133" height="30" fill="#d4af37" fill-opacity="0.12" stroke="#d4af37" stroke-width="0.8" stroke-dasharray="2,2"/>
+  <text x="90" y="318" fill="#f3e5ab" font-size="9.5" font-weight="600" opacity="0.85">BULLISH ORDER BLOCK (OB)</text>
+
+  <!-- Anchor Diagonal Dashed Line (Fib Measure Vector from P0 to P1) -->
+  <line x1="85" y1="430" x2="215" y2="90" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="3,3" stroke-opacity="0.65" marker-end="url(#arrowGold)"/>
+
+  <!-- PRICE ACTION PATH:
+       1. Impulse Leg: (85,430) -> (110,360) -> (122,380) -> (155,250) -> (170,275) -> (215,90)
+       2. Corrective Pullback (A-B-C + Retail Trap at 0.500):
+          (215,90) -> (245,195) -> (262,165) -> (290,255 [0.500 bounce]) -> (310,222) -> (338,295) -> (355,322 [OTE Entry!])
+       3. Expansion Rebound:
+          (355,322) -> (382,250) -> (396,268) -> (435,145) -> (452,172) -> (495,68)
+  -->
+
+  <!-- Glow Effect Behind Price Line -->
+  <polyline points="85,430 110,360 122,380 155,250 170,275 215,90" fill="none" stroke="#10b981" stroke-width="5" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="215,90 245,195 262,165 290,255 310,222 338,285 355,320" fill="none" stroke="#00f0ff" stroke-width="5" stroke-opacity="0.18" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="355,320 382,250 396,268 435,145 452,172 492,70" fill="none" stroke="#d4af37" stroke-width="6" stroke-opacity="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 1. Bullish Impulse Leg (Green) -->
+  <polyline points="85,430 110,360 122,380 155,250 170,275 215,90" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 2. Corrective Pullback into OTE (Cyan/Slate) -->
+  <polyline points="215,90 245,195 262,165 290,255 310,222 338,285 355,320" fill="none" stroke="#00f0ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Rejection Wick inside Golden Pocket -->
+  <line x1="355" y1="312" x2="355" y2="328" stroke="#f3e5ab" stroke-width="2.2"/>
+
+  <!-- 3. Bullish Rebound / Impulse Wave 3 (Gold -> Emerald) -->
+  <polyline points="355,320 382,250 396,268 435,145 452,172 492,70" fill="none" stroke="#d4af37" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowGold)"/>
+
+  <!-- ======================================================================= -->
+  <!-- CHART ANNOTATIONS, P0/P1 NODES, LIQUIDITY SWEEP & ENTRY TRIGGER         -->
+  <!-- ======================================================================= -->
+
+  <!-- P0 Swing Low Node -->
+  <circle cx="85" cy="430" r="5" fill="#0a0f1a" stroke="#f43f5e" stroke-width="2.5"/>
+  <rect x="68" y="438" width="115" height="20" rx="3" fill="#18121e" stroke="#f43f5e" stroke-width="0.8"/>
+  <text x="125" y="452" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="middle">P₀ : SWING LOW</text>
+
+  <!-- P1 Swing High Node -->
+  <circle cx="215" cy="90" r="5" fill="#0a0f1a" stroke="#10b981" stroke-width="2.5"/>
+  <rect x="155" y="62" width="120" height="20" rx="3" fill="#0d1f22" stroke="#10b981" stroke-width="0.8"/>
+  <text x="215" y="76" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="middle">P₁ : SWING HIGH</text>
+
+  <!-- Impulse Label -->
+  <text x="132" y="235" fill="#10b981" font-size="10.5" font-weight="700" transform="rotate(-68, 132, 235)" letter-spacing="0.5">IMPULSE LEG (EXPANSION)</text>
+
+  <!-- Inducement / Liquidity Sweep Marker below 0.500 -->
+  <circle cx="290" cy="255" r="3.5" fill="#00f0ff"/>
+  <line x1="275" y1="268" x2="335" y2="268" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="2,2"/>
+  <text x="292" y="280" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">$$$ SSL SWEPT</text>
+  <path d="M 290,245 C 295,215 315,205 330,205" fill="none" stroke="#00f0ff" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="333" y="208" fill="#00f0ff" font-size="9.5" font-weight="600">Retail Bounce (0.500 Trap)</text>
+
+  <!-- GOLDEN POCKET BOX CALLOUT & ENTRY TRIGGER -->
+  <circle cx="355" cy="320" r="6" fill="#d4af37" fill-opacity="0.3" stroke="#f3e5ab" stroke-width="2"/>
+  <circle cx="355" cy="320" r="2.5" fill="#f3e5ab"/>
+
+  <!-- Entry Trigger Callout Box -->
+  <rect x="224" y="334" width="218" height="20" rx="3" fill="#161b26" stroke="#d4af37" stroke-width="1"/>
+  <text x="333" y="348" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" text-anchor="middle">⚡ OTE ENTRY TRIGGER (0.618–0.705)</text>
+
+  <!-- Golden Pocket Banner Inside Zone -->
+  <rect x="222" y="303" width="118" height="16" rx="2" fill="#0a0f1a" fill-opacity="0.8"/>
+  <text x="281" y="314" fill="#d4af37" font-size="9" font-weight="700" text-anchor="middle">THE GOLDEN POCKET</text>
+
+  <!-- Break of Structure (BOS) Line on Rebound -->
+  <line x1="215" y1="90" x2="480" y2="90" stroke="#10b981" stroke-width="1.2" stroke-dasharray="5,3"/>
+  <rect x="385" y="73" width="75" height="15" rx="2" fill="#0d1f22" stroke="#10b981" stroke-width="0.7"/>
+  <text x="422" y="84" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="middle">BOS / TP 1</text>
+
+  <!-- Risk to Reward Visual Bar at x=355 -->
+  <rect x="355" y="90" width="18" height="230" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-width="0.6" stroke-dasharray="2,2"/>
+  <rect x="355" y="320" width="18" height="110" fill="#f43f5e" fill-opacity="0.1" stroke="#f43f5e" stroke-width="0.6" stroke-dasharray="2,2"/>
+
+  <!-- ======================================================================= -->
+  <!-- RIGHT ANNOTATION PANEL: INSTITUTIONAL MECHANICS & LIQUIDITY SWEEP       -->
+  <!-- ======================================================================= -->
+
+  <rect x="632" y="65" width="268" height="390" rx="8" fill="#111827" stroke="#1e283d" stroke-width="1.2"/>
+
+  <!-- Panel Title -->
+  <rect x="644" y="77" width="244" height="28" rx="4" fill="#192338" stroke="#d4af37" stroke-width="0.8"/>
+  <text x="766" y="95" fill="#f3e5ab" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.4">MEKANISME INSTITUSIONAL &amp; OTE</text>
+
+  <!-- Section 1: Equilibrium & Discount -->
+  <circle cx="656" cy="126" r="4" fill="#00f0ff"/>
+  <text x="668" y="130" fill="#e2e8f0" font-size="11" font-weight="700">1. Filter Harga: Premium vs Discount</text>
+  <text x="656" y="147" fill="#8e9bb0" font-size="10">• Level <tspan fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-weight="600">0.500</tspan> membagi rentang impuls</text>
+  <text x="656" y="162" fill="#8e9bb0" font-size="10">  menjadi zona Mahal (Premium) &amp; Murah.</text>
+  <text x="656" y="177" fill="#8e9bb0" font-size="10">• Algoritma institusi tidak membeli di atas</text>
+  <text x="656" y="192" fill="#8e9bb0" font-size="10">  0.500 pada struktur korektif normal.</text>
+
+  <line x1="646" y1="205" x2="886" y2="205" stroke="#1e283d" stroke-width="1"/>
+
+  <!-- Section 2: Liquidity Sweep Below 0.500 -->
+  <circle cx="656" cy="224" r="4" fill="#f43f5e"/>
+  <text x="668" y="228" fill="#e2e8f0" font-size="11" font-weight="700">2. Liquidity Sweep di Bawah 0.500</text>
+  <text x="656" y="245" fill="#8e9bb0" font-size="10">• Trader ritel sering melakukan <tspan fill="#e2e8f0" font-style="italic">early buy</tspan></text>
+  <text x="656" y="260" fill="#8e9bb0" font-size="10">  di 0.382 atau 0.500 dan menaruh Stop</text>
+  <text x="656" y="275" fill="#8e9bb0" font-size="10">  Loss tepat di bawah <tspan fill="#00f0ff" font-family="'JetBrains Mono', monospace">0.500</tspan> (<tspan fill="#f43f5e" font-weight="600">SSL Pool</tspan>).</text>
+  <text x="656" y="290" fill="#8e9bb0" font-size="10">• <tspan fill="#f3e5ab" font-weight="600">Smart Money</tspan> menekan harga menembus</text>
+  <text x="656" y="305" fill="#8e9bb0" font-size="10">  0.500 untuk menyapu likuiditas ritel</text>
+  <text x="656" y="320" fill="#8e9bb0" font-size="10">  sebelum melakukan akumulasi besar.</text>
+
+  <line x1="646" y1="333" x2="886" y2="333" stroke="#1e283d" stroke-width="1"/>
+
+  <!-- Section 3: Golden Pocket / OTE Execution -->
+  <circle cx="656" cy="352" r="4" fill="#d4af37"/>
+  <text x="668" y="356" fill="#f3e5ab" font-size="11" font-weight="700">3. Akumulasi di Zona OTE (Golden Pocket)</text>
+  <text x="656" y="373" fill="#8e9bb0" font-size="10">• Rentang <tspan fill="#d4af37" font-family="'JetBrains Mono', monospace" font-weight="700">0.618 – 0.705</tspan> (titik tengah <tspan fill="#f3e5ab" font-family="'JetBrains Mono', monospace">0.650</tspan>)</text>
+  <text x="656" y="388" fill="#8e9bb0" font-size="10">  berhimpitan dengan <tspan fill="#f3e5ab">Bullish Order Block</tspan>.</text>
+  <text x="656" y="403" fill="#8e9bb0" font-size="10">• Memberikan asimetri <tspan fill="#10b981" font-weight="600">Risk-to-Reward</tspan></text>
+  <text x="656" y="418" fill="#8e9bb0" font-size="10">  optimal dengan invalidasi mutlak pada</text>
+  <text x="656" y="433" fill="#8e9bb0" font-size="10">  level <tspan fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-weight="700">1.000 (Swing Low)</tspan>.</text>
+
+</svg>

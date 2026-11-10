@@ -138,9 +138,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  // Pagination Handler
+  // Pagination Handler (Dynamic from available chapters in TOC)
   function updatePagination(id) {
-    const available = ["bab-01", "bab-02"];
+    const available = [];
+    data.toc.forEach(sec => {
+      sec.chapters.forEach(ch => {
+        if (ch.status === 'available') available.push(ch.id);
+      });
+    });
     const currIdx = available.indexOf(id);
 
     if (currIdx > 0) {
@@ -161,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nextBtn.onclick = () => loadChapter(available[currIdx + 1]);
     } else {
       nextBtn.disabled = true;
-      nextTitle.textContent = "Sprint 2 (Segera Hadir)";
+      nextTitle.textContent = "Sprint 3 (Segera Hadir)";
       nextBtn.onclick = null;
     }
   }

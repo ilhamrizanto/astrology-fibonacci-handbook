@@ -1,0 +1,278 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="100%" height="auto" style="background:transparent; font-family:'Inter', system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glow-gold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glow-rose" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Linear Gradients -->
+    <linearGradient id="leptokurtic-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="22%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#00f0ff"/>
+      <stop offset="78%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+
+    <linearGradient id="leptokurtic-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.22"/>
+      <stop offset="65%" stop-color="#d4af37" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0a0f1a" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <linearGradient id="tail-rose-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.08"/>
+    </linearGradient>
+
+    <linearGradient id="hurst-bar-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.85"/>
+      <stop offset="44%" stop-color="#00f0ff" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#f43f5e" stop-opacity="0.9"/>
+      <stop offset="56%" stop-color="#d4af37" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Arrow Markers -->
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#00f0ff"/>
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d4af37"/>
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#8e9bb0"/>
+    </marker>
+  </defs>
+
+  <!-- Main Outer Container -->
+  <rect x="4" y="4" width="912" height="432" rx="10" fill="#0a0f1a" stroke="#1e283d" stroke-width="1.5"/>
+
+  <!-- Top Header Banner -->
+  <rect x="4" y="4" width="912" height="44" rx="10" fill="#0f172a" opacity="0.7"/>
+  <line x1="4" y1="48" x2="916" y2="48" stroke="#1e283d" stroke-width="1"/>
+  <text x="460" y="25" text-anchor="middle" fill="#f3e5ab" font-size="13.5" font-weight="700" letter-spacing="0.06em">
+    DISTRIBUSI FAT-TAILED MANDELBROT vs GAUSSIAN &amp; SPEKTRUM HURST EXPONENT (H)
+  </text>
+  <text x="460" y="41" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="10">
+    FRACTAL MARKET HYPOTHESIS (FMH) • LEVY STABLE PARETIAN (α &lt; 2) • RESCALED RANGE (R/S) ANALYSIS
+  </text>
+
+  <!-- ========================================================================= -->
+  <!-- LEFT PANEL: PROBABILITY DENSITY CHART (x=22..488)                         -->
+  <!-- ========================================================================= -->
+  <rect x="20" y="58" width="468" height="364" rx="8" fill="#0d1424" stroke="#1e283d" stroke-width="1"/>
+  
+  <!-- Left Panel Title -->
+  <text x="36" y="79" fill="#e2e8f0" font-size="11.5" font-weight="700" letter-spacing="0.04em">
+    PROBABILITY DENSITY FUNCTION P(Δx) — FAT TAILS vs GAUSSIAN
+  </text>
+  <text x="36" y="94" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9.5">
+    Kurtosis κ &gt;&gt; 3 (Leptokurtic) vs Normal Bell Curve (κ = 3)
+  </text>
+
+  <!-- Grid Lines (Left Chart: x=45 to 465, y=120 to 345, center x=255) -->
+  <g stroke="#1e283d" stroke-width="0.8" stroke-dasharray="3,3">
+    <line x1="45" y1="150" x2="465" y2="150"/>
+    <line x1="45" y1="200" x2="465" y2="200"/>
+    <line x1="45" y1="250" x2="465" y2="250"/>
+    <line x1="45" y1="300" x2="465" y2="300"/>
+    <!-- Vertical Sigma Grid -->
+    <line x1="95" y1="115" x2="95" y2="345"/>
+    <line x1="175" y1="115" x2="175" y2="345"/>
+    <line x1="255" y1="110" x2="255" y2="345" stroke="#2dd4bf" stroke-opacity="0.35"/>
+    <line x1="335" y1="115" x2="335" y2="345"/>
+    <line x1="415" y1="115" x2="415" y2="345"/>
+  </g>
+
+  <!-- Y-Axis & X-Axis Base Lines -->
+  <line x1="45" y1="345" x2="465" y2="345" stroke="#475569" stroke-width="1.5"/>
+  <text x="42" y="122" text-anchor="end" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5">P(x)</text>
+
+  <!-- Shaded Black Swan Zones (Left & Right Fat Tails: 5σ–20σ) -->
+  <!-- Left Tail Shade (x=48 to 135) -->
+  <path d="M 48 326 Q 90 323 135 305 L 135 345 L 48 345 Z" fill="url(#tail-rose-fill)"/>
+  <!-- Right Tail Shade (x=375 to 462) -->
+  <path d="M 375 305 Q 420 323 462 326 L 462 345 L 375 345 Z" fill="url(#tail-rose-fill)"/>
+
+  <!-- Mandelbrot Curve Subtle Area Fill -->
+  <path d="M 48 326 Q 90 323 135 305 C 185 285 215 245 235 175 C 245 135 250 112 255 112 C 260 112 265 135 275 175 C 295 245 325 285 375 305 Q 420 323 462 326 L 462 345 L 48 345 Z" fill="url(#leptokurtic-fill)"/>
+
+  <!-- Curve 1: Dashed Slate Curve — Gaussian Normal Distribution (EMH) -->
+  <!-- Lower broader peak, drops strictly to 345 before ±3σ (x=135 and x=375) -->
+  <path d="M 48 345 L 125 345 C 155 344 175 315 198 265 C 218 220 235 192 255 192 C 275 192 292 220 312 265 C 335 315 355 344 385 345 L 462 345"
+        fill="none" stroke="#8e9bb0" stroke-width="2.2" stroke-dasharray="6,4"/>
+
+  <!-- Curve 2: Solid Glowing Cyan/Gold Curve — Mandelbrot Leptokurtic (Pasar Riil) -->
+  <!-- High sharp peak at (255, 112), narrower waist, thick elevated tails at edges -->
+  <path d="M 48 326 Q 90 323 135 305 C 185 285 215 245 235 175 C 245 135 250 112 255 112 C 260 112 265 135 275 175 C 295 245 325 285 375 305 Q 420 323 462 326"
+        fill="none" stroke="url(#leptokurtic-grad)" stroke-width="2.8" filter="url(#glow-cyan)"/>
+
+  <!-- Highlight Rose Glow on Fat Tails -->
+  <path d="M 48 326 Q 90 323 135 305" fill="none" stroke="#f43f5e" stroke-width="3" filter="url(#glow-rose)"/>
+  <path d="M 375 305 Q 420 323 462 326" fill="none" stroke="#f43f5e" stroke-width="3" filter="url(#glow-rose)"/>
+
+  <!-- Peak Marker -->
+  <circle cx="255" cy="112" r="3.5" fill="#00f0ff" filter="url(#glow-cyan)"/>
+
+  <!-- Annotations on Left Chart -->
+  <!-- High Peak Callout -->
+  <line x1="262" y1="114" x2="310" y2="126" stroke="#00f0ff" stroke-width="1.2" marker-start="url(#arrow-cyan)"/>
+  <rect x="313" y="112" width="158" height="32" rx="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="0.8" opacity="0.95"/>
+  <text x="320" y="125" fill="#00f0ff" font-size="9.5" font-weight="700">Leptokurtic Peak (Pasar Tenang)</text>
+  <text x="320" y="138" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="8.5">Konsentrasi fluktuasi kecil</text>
+
+  <!-- Gaussian Callout -->
+  <line x1="215" y1="224" x2="170" y2="195" stroke="#8e9bb0" stroke-width="1.2" marker-start="url(#arrow-slate)"/>
+  <rect x="52" y="172" width="122" height="32" rx="4" fill="#0a0f1a" stroke="#475569" stroke-width="0.8" opacity="0.95"/>
+  <text x="59" y="185" fill="#e2e8f0" font-size="9.5" font-weight="600">Gaussian (EMH)</text>
+  <text x="59" y="198" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5">Thin Tails (P ≈ 0 &gt; 3σ)</text>
+
+  <!-- Left Fat Tail Callout (Black Swan) -->
+  <rect x="46" y="242" width="144" height="44" rx="4" fill="#1a0f18" stroke="#f43f5e" stroke-width="1"/>
+  <text x="54" y="256" fill="#f43f5e" font-size="9.5" font-weight="700">FAT TAILS (5σ – 20σ)</text>
+  <text x="54" y="268" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="8.5">Black Swan Zone</text>
+  <text x="54" y="280" fill="#e2e8f0" font-size="8.5">Crash 1929 / 1987 / Covid 2020</text>
+  <line x1="95" y1="286" x2="88" y2="316" stroke="#f43f5e" stroke-width="1.2" marker-end="url(#arrow-rose)"/>
+
+  <!-- Right Fat Tail Callout -->
+  <rect x="336" y="248" width="134" height="36" rx="4" fill="#1a0f18" stroke="#f43f5e" stroke-width="1"/>
+  <text x="344" y="262" fill="#f43f5e" font-size="9.5" font-weight="700">EXTREME RALLY (+5σ–20σ)</text>
+  <text x="344" y="275" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="8.5">Short Squeeze / Melt-up</text>
+  <line x1="415" y1="284" x2="422" y2="316" stroke="#f43f5e" stroke-width="1.2" marker-end="url(#arrow-rose)"/>
+
+  <!-- X-Axis Sigma Labels -->
+  <g fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">
+    <text x="65" y="360" fill="#f43f5e" font-weight="700">-10σ..20σ</text>
+    <text x="125" y="360" fill="#f43f5e">-5σ</text>
+    <text x="175" y="360">-2σ</text>
+    <text x="255" y="360" fill="#e2e8f0">μ (0σ)</text>
+    <text x="335" y="360">+2σ</text>
+    <text x="385" y="360" fill="#f43f5e">+5σ</text>
+    <text x="442" y="360" fill="#f43f5e" font-weight="700">+10σ..20σ</text>
+  </g>
+
+  <!-- Legend Box at Bottom of Left Panel -->
+  <rect x="34" y="372" width="440" height="40" rx="6" fill="#090d16" stroke="#1e283d" stroke-width="1"/>
+  <!-- Legend Row 1: Mandelbrot -->
+  <line x1="48" y1="385" x2="78" y2="385" stroke="url(#leptokurtic-grad)" stroke-width="3"/>
+  <circle cx="63" cy="385" r="2.5" fill="#00f0ff"/>
+  <text x="86" y="388" fill="#f3e5ab" font-size="10" font-weight="600">
+    Mandelbrot Leptokurtic Distribution (Pasar Riil — Power-Law Tails)
+  </text>
+  <!-- Legend Row 2: Gaussian -->
+  <line x1="48" y1="402" x2="78" y2="402" stroke="#8e9bb0" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="86" y="405" fill="#8e9bb0" font-size="10">
+    Gaussian Normal Distribution (EMH Random Walk — Exponential Decay)
+  </text>
+
+  <!-- ========================================================================= -->
+  <!-- RIGHT PANEL: SPEKTRUM HURST EXPONENT (x=502..900)                         -->
+  <!-- ========================================================================= -->
+  <rect x="500" y="58" width="400" height="364" rx="8" fill="#0d1424" stroke="#1e283d" stroke-width="1"/>
+
+  <!-- Right Panel Title -->
+  <text x="516" y="79" fill="#d4af37" font-size="11.5" font-weight="700" letter-spacing="0.04em">
+    SPEKTRUM HURST EXPONENT (H = 2 − D)
+  </text>
+  <text x="516" y="94" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9.5">
+    Dimensi Fraktal (D) &amp; Memori Jangka Panjang Deret Waktu
+  </text>
+
+  <!-- R/S Analysis Formula Card -->
+  <rect x="516" y="106" width="368" height="58" rx="6" fill="#090d16" stroke="#d4af37" stroke-width="1" stroke-opacity="0.6"/>
+  <text x="530" y="123" fill="#8e9bb0" font-size="9.5" font-weight="600" letter-spacing="0.04em">
+    RESCALED RANGE (R/S) ANALYSIS (HURST, 1951; MANDELBROT):
+  </text>
+  <text x="700" y="146" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="700">
+    E[ R(n) / S(n) ] = C · n<tspan baseline-shift="super" font-size="11" fill="#f3e5ab">H</tspan>
+  </text>
+  <text x="700" y="159" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5">
+    R(n): Rentang Kumulatif Deviasi • S(n): Standar Deviasi • n: Window Observasi
+  </text>
+
+  <!-- Horizontal Meter Bar Scale (H = 0.0 to H = 1.0) -->
+  <!-- Bar Coordinates: x=524 to x=876 (width = 352px). Center H=0.50 at x=700 -->
+  <text x="700" y="182" text-anchor="middle" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600">
+    METER SPEKTRUM MEMORI PASAR (0.0 ≤ H ≤ 1.0)
+  </text>
+
+  <!-- Meter Bar Track Background -->
+  <rect x="524" y="192" width="352" height="26" rx="5" fill="#090d16" stroke="#334155" stroke-width="1.2"/>
+
+  <!-- Zone 1: 0.00 to 0.45 (width = 352 * 0.45 = 158.4px -> x=524 to 682.4) -->
+  <rect x="525" y="193" width="157" height="24" rx="4" fill="#00f0ff" fill-opacity="0.22" stroke="#00f0ff" stroke-width="1"/>
+  <text x="603" y="209" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">
+    0.00 – 0.45 (CYAN)
+  </text>
+
+  <!-- Zone 2: Center H=0.50 (0.45 to 0.55 -> x=682 to 718, width=36px) -->
+  <rect x="682" y="190" width="36" height="30" rx="3" fill="#f43f5e" fill-opacity="0.3" stroke="#f43f5e" stroke-width="1.5"/>
+  <line x1="700" y1="186" x2="700" y2="225" stroke="#f43f5e" stroke-width="2" filter="url(#glow-rose)"/>
+
+  <!-- Zone 3: 0.55 to 1.00 (x=718 to 875, width = 157px) -->
+  <rect x="718" y="193" width="157" height="24" rx="4" fill="#d4af37" fill-opacity="0.25" stroke="#d4af37" stroke-width="1"/>
+  <text x="796" y="209" text-anchor="middle" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">
+    0.55 – 1.00 (GOLD)
+  </text>
+
+  <!-- Scale Tick Marks & Values -->
+  <g fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">
+    <text x="528" y="234" fill="#00f0ff" font-weight="700">H=0.0</text>
+    <text x="603" y="234" fill="#8e9bb0">H=0.25</text>
+    <text x="700" y="236" fill="#f43f5e" font-weight="700">H=0.50</text>
+    <text x="796" y="234" fill="#8e9bb0">H=0.75</text>
+    <text x="872" y="234" fill="#d4af37" font-weight="700">H=1.0</text>
+  </g>
+  <g fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">
+    <text x="528" y="245">(D=2.0)</text>
+    <text x="700" y="246" fill="#f43f5e">(D=1.5)</text>
+    <text x="872" y="245">(D=1.0)</text>
+  </g>
+
+  <!-- Three Detailed Regime Breakdown Cards -->
+  <!-- Card 1: Cyan Zone (0.0 - 0.45) -->
+  <rect x="516" y="256" width="368" height="46" rx="5" fill="#091520" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.7"/>
+  <circle cx="530" cy="272" r="4" fill="#00f0ff"/>
+  <text x="540" y="275" fill="#00f0ff" font-size="10.5" font-weight="700">
+    H ∈ [0.00, 0.45] : Anti-Persistent / Mean-Reverting (Rangebound)
+  </text>
+  <text x="540" y="291" fill="#cbd5e1" font-size="9.5">
+    Autokorelasi negatif (Pink Noise). Kenaikan cenderung diikuti penurunan (Reversal).
+  </text>
+
+  <!-- Card 2: Rose Center Point (H = 0.50) -->
+  <rect x="516" y="309" width="368" height="46" rx="5" fill="#1a0f18" stroke="#f43f5e" stroke-width="1" stroke-opacity="0.8"/>
+  <circle cx="530" cy="325" r="4" fill="#f43f5e"/>
+  <text x="540" y="328" fill="#f43f5e" font-size="10.5" font-weight="700">
+    H = 0.50 : Brownian Random Walk (No Memory / EMH)
+  </text>
+  <text x="540" y="344" fill="#cbd5e1" font-size="9.5">
+    White Noise independen (Markov). Varian tumbuh linier σ² ∝ t; asumsi dasar Black-Scholes.
+  </text>
+
+  <!-- Card 3: Gold Zone (0.55 - 1.00) -->
+  <rect x="516" y="362" width="368" height="50" rx="5" fill="#19160d" stroke="#d4af37" stroke-width="1.2"/>
+  <circle cx="530" cy="378" r="4" fill="#d4af37"/>
+  <text x="540" y="381" fill="#f3e5ab" font-size="10.5" font-weight="700">
+    H ∈ [0.55, 1.00] : Persistent / Trending (Fractal Momentum)
+  </text>
+  <text x="540" y="396" fill="#cbd5e1" font-size="9.5">
+    Long-Term Memory (Fractional Brownian Motion). Mayoritas pasar ekuitas/kripto berada
+  </text>
+  <text x="540" y="407" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600">
+    di H ≈ 0.58 – 0.72 → Siklus non-periodik &amp; Trend-Following Alpha.
+  </text>
+</svg>
