@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="100%" height="auto" style="background: transparent; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;">
+  <defs>
+    <!--  Background Gradient  -->
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1a" />
+      <stop offset="50%" stop-color="#0d1424" />
+      <stop offset="100%" stop-color="#080c15" />
+    </linearGradient>
+
+    <!--  Tier Card Gradients  -->
+    <linearGradient id="card-gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a1814" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#111726" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#161b28" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="card-cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0d1d2a" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#111726" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#161b28" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="card-emerald" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0b211d" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#111726" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#161b28" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!--  Funnel Backdrop Gradient  -->
+    <linearGradient id="funnel-mesh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.07" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.09" />
+    </linearGradient>
+
+    <!--  Glow Filters  -->
+    <filter id="glow-gold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-emerald" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!--  Arrowhead Markers  -->
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d4af37" />
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#00f0ff" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981" />
+    </marker>
+
+    <!--  Subtle Grid Pattern  -->
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1e283d" stroke-width="0.4" stroke-opacity="0.5" />
+    </pattern>
+  </defs>
+
+  <!--  Outer Container  -->
+  <rect x="4" y="4" width="912" height="432" rx="12" fill="url(#bg-grad)" stroke="#1e283d" stroke-width="1.5" />
+  <rect x="4" y="4" width="912" height="432" rx="12" fill="url(#grid)" />
+
+  <!--  Decorative Funnel Silhouette in Background  -->
+  <polygon points="24,80 896,80 830,415 240,415" fill="url(#funnel-mesh)" stroke="#1e283d" stroke-width="1" stroke-dasharray="4 4" />
+
+  <!--  Header Section  -->
+  <g transform="translate(28, 34)">
+    <rect x="0" y="-16" width="5" height="22" rx="2" fill="#d4af37" />
+    <text x="14" y="0" fill="#f3e5ab" font-size="14.5" font-weight="800" letter-spacing="1">CORONG EKSEKUSI MULTI-TIMEFRAME: DARI SIKLUS MAKRO HINGGA SNIPER ENTRY</text>
+    <text x="14" y="18" fill="#8e9bb0" font-size="11" font-family="'JetBrains Mono', monospace">Top-Down Filtering Architecture • Reduksi Noise &amp; Kompresi Risiko (SL) Bertingkat</text>
+    <g transform="translate(715, -12)">
+      <rect x="0" y="0" width="145" height="24" rx="4" fill="#111927" stroke="#293548" stroke-width="1" />
+      <circle cx="12" cy="12" r="3.5" fill="#10b981" />
+      <text x="22" y="15.5" fill="#e2e8f0" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="600">PROTOCOL: MTF-3X</text>
+    </g>
+  </g>
+
+  <line x1="28" y1="64" x2="892" y2="64" stroke="#1e283d" stroke-width="1" />
+
+  <!--  =========================================================================  -->
+  <!--  TIER 1: MACRO / SWING (1W / 1D)                                            -->
+  <!--  =========================================================================  -->
+  <g transform="translate(28, 76)">
+    <!--  Main Tier Box (Width: 864)  -->
+    <rect x="0" y="0" width="864" height="86" rx="8" fill="url(#card-gold)" stroke="#d4af37" stroke-width="1.2" stroke-opacity="0.7" />
+    <!--  Left Accent Bar  -->
+    <path d="M 0 8 Q 0 0 8 0 L 12 0 L 12 86 L 8 86 Q 0 86 0 78 Z" fill="#d4af37" />
+
+    <!--  TF Badge & Title  -->
+    <rect x="24" y="12" width="142" height="20" rx="4" fill="#282214" stroke="#d4af37" stroke-width="0.8" />
+    <text x="95" y="25.5" fill="#f3e5ab" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="700" text-anchor="middle">MACRO / SWING • 1W/1D</text>
+    
+    <text x="178" y="27" fill="#ffffff" font-size="13.5" font-weight="700" letter-spacing="0.4">1. PETA KONFLUENSI (POINT OF INTEREST / POI)</text>
+
+    <!--  Input Criteria Pills  -->
+    <!--  Pill 1  -->
+    <rect x="24" y="42" width="145" height="32" rx="5" fill="#0d131f" stroke="#2c384e" stroke-width="1" />
+    <circle cx="38" cy="58" r="4" fill="#d4af37" />
+    <text x="48" y="55" fill="#e2e8f0" font-size="10.5" font-weight="600">Macro Regime</text>
+    <text x="48" y="67" fill="#8e9bb0" font-size="9" font-family="'JetBrains Mono', monospace">Bias &amp; Siklus Utama</text>
+
+    <text x="178" y="63" fill="#d4af37" font-size="14" font-family="'JetBrains Mono', monospace" font-weight="700">+</text>
+
+    <!--  Pill 2  -->
+    <rect x="194" y="42" width="186" height="32" rx="5" fill="#0d131f" stroke="#2c384e" stroke-width="1" />
+    <circle cx="208" cy="58" r="4" fill="#d4af37" />
+    <text x="218" y="55" fill="#e2e8f0" font-size="10.5" font-weight="600">Fibonacci Golden Pocket</text>
+    <text x="218" y="67" fill="#8e9bb0" font-size="9" font-family="'JetBrains Mono', monospace">Zona Retracement 0.618-0.786</text>
+
+    <text x="389" y="63" fill="#d4af37" font-size="14" font-family="'JetBrains Mono', monospace" font-weight="700">+</text>
+
+    <!--  Pill 3  -->
+    <rect x="405" y="42" width="185" height="32" rx="5" fill="#0d131f" stroke="#2c384e" stroke-width="1" />
+    <circle cx="419" cy="58" r="4" fill="#d4af37" />
+    <text x="429" y="55" fill="#e2e8f0" font-size="10.5" font-weight="600">Ephemeris Time Window</text>
+    <text x="429" y="67" fill="#8e9bb0" font-size="9" font-family="'JetBrains Mono', monospace">Konfluensi Waktu &amp; Astro</text>
+
+    <!--  Internal Arrow to Output  -->
+    <line x1="600" y1="58" x2="628" y2="58" stroke="#d4af37" stroke-width="1.8" marker-end="url(#arrow-gold)" />
+
+    <!--  Output Box  -->
+    <rect x="638" y="14" width="212" height="58" rx="6" fill="#1e1910" stroke="#d4af37" stroke-width="1.5" />
+    <text x="650" y="31" fill="#d4af37" font-size="9.5" font-family="'JetBrains Mono', monospace" font-weight="700" letter-spacing="0.8">OUTPUT TIER 1:</text>
+    <text x="650" y="47" fill="#f3e5ab" font-size="12" font-weight="700">Kotak Siaga Confluence Box</text>
+    <text x="650" y="62" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace">Status: High-Alert Zona Pantau</text>
+  </g>
+
+  <!--  =========================================================================  -->
+  <!--  CASCADE CONNECTOR 1 -> 2                                                   -->
+  <!--  =========================================================================  -->
+  <g>
+    <!--  Glowing Cascade Path  -->
+    <path d="M 110 162 L 110 180 L 146 180 L 146 196" fill="none" stroke="#d4af37" stroke-width="2" filter="url(#glow-gold)" marker-end="url(#arrow-gold)" />
+    <circle cx="110" cy="162" r="3.5" fill="#d4af37" />
+    <!--  Filter Label  -->
+    <rect x="160" y="170" width="330" height="19" rx="4" fill="#0d1526" stroke="#26354d" stroke-width="1" />
+    <text x="325" y="183" fill="#f3e5ab" font-size="9.5" font-family="'JetBrains Mono', monospace" text-anchor="middle">▼ FILTER 1: Harga Masuk Zona POI &amp; Time Window Aktif ▼</text>
+  </g>
+
+  <!--  =========================================================================  -->
+  <!--  TIER 2: STRUCTURE & LIQUIDITY (4H)                                         -->
+  <!--  =========================================================================  -->
+  <g transform="translate(114, 200)">
+    <!--  Main Tier Box (Width: 746 - Indented & Narrower)  -->
+    <rect x="0" y="0" width="746" height="86" rx="8" fill="url(#card-cyan)" stroke="#00f0ff" stroke-width="1.2" stroke-opacity="0.7" />
+    <!--  Left Accent Bar  -->
+    <path d="M 0 8 Q 0 0 8 0 L 12 0 L 12 86 L 8 86 Q 0 86 0 78 Z" fill="#00f0ff" />
+
+    <!--  TF Badge & Title  -->
+    <rect x="24" y="12" width="118" height="20" rx="4" fill="#09222c" stroke="#00f0ff" stroke-width="0.8" />
+    <text x="83" y="25.5" fill="#00f0ff" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="700" text-anchor="middle">STRUCTURE • 4H</text>
+    
+    <text x="154" y="27" fill="#ffffff" font-size="13.5" font-weight="700" letter-spacing="0.4">2. VALIDASI LIKUIDITAS &amp; STRUKTUR</text>
+
+    <!--  Input Criteria Pills  -->
+    <!--  Pill 1  -->
+    <rect x="24" y="42" width="162" height="32" rx="5" fill="#0d131f" stroke="#2c384e" stroke-width="1" />
+    <circle cx="38" cy="58" r="4" fill="#00f0ff" />
+    <text x="48" y="55" fill="#e2e8f0" font-size="10.5" font-weight="600">Tunggu Liquidity Sweep</text>
+    <text x="48" y="67" fill="#8e9bb0" font-size="9" font-family="'JetBrains Mono', monospace">Stop Hunt di dalam POI</text>
+
+    <text x="193" y="63" fill="#00f0ff" font-size="14" font-family="'JetBrains Mono', monospace" font-weight="700">+</text>
+
+    <!--  Pill 2  -->
+    <rect x="207" y="42" width="154" height="32" rx="5" fill="#0d131f" stroke="#2c384e" stroke-width="1" />
+    <circle cx="221" cy="58" r="4" fill="#00f0ff" />
+    <text x="231" y="55" fill="#e2e8f0" font-size="10.5" font-weight="600">Change of Character</text>
+    <text x="231" y="67" fill="#8e9bb0" font-size="9" font-family="'JetBrains Mono', monospace">Patah Struktur (ChoCH)</text>
+
+    <text x="368" y="63" fill="#00f0ff" font-size="14" font-family="'JetBrains Mono', monospace" font-weight="700">+</text>
+
+    <!--  Pill 3  -->
+    <rect x="382" y="42" width="118" height="32" rx="5" fill="#0d131f" stroke="#2c384e" stroke-width="1" />
+    <circle cx="396" cy="58" r="4" fill="#00f0ff" />
+    <text x="406" y="55" fill="#e2e8f0" font-size="10.5" font-weight="600">Volume Climax</text>
+    <text x="406" y="67" fill="#8e9bb0" font-size="9" font-family="'JetBrains Mono', monospace">Absorpsi Smart Money</text>
+
+    <!--  Internal Arrow to Output  -->
+    <line x1="507" y1="58" x2="528" y2="58" stroke="#00f0ff" stroke-width="1.8" marker-end="url(#arrow-cyan)" />
+
+    <!--  Output Box  -->
+    <rect x="536" y="14" width="196" height="58" rx="6" fill="#091e28" stroke="#00f0ff" stroke-width="1.5" />
+    <text x="548" y="31" fill="#00f0ff" font-size="9.5" font-family="'JetBrains Mono', monospace" font-weight="700" letter-spacing="0.8">OUTPUT TIER 2:</text>
+    <text x="548" y="47" fill="#e2e8f0" font-size="12" font-weight="700">Konfirmasi Arah Berbalik</text>
+    <text x="548" y="62" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace">Status: Validasi Reversal Sah</text>
+  </g>
+
+  <!--  =========================================================================  -->
+  <!--  CASCADE CONNECTOR 2 -> 3                                                   -->
+  <!--  =========================================================================  -->
+  <g>
+    <!--  Glowing Cascade Path  -->
+    <path d="M 196 286 L 196 304 L 234 304 L 234 320" fill="none" stroke="#00f0ff" stroke-width="2" filter="url(#glow-cyan)" marker-end="url(#arrow-cyan)" />
+    <circle cx="196" cy="286" r="3.5" fill="#00f0ff" />
+    <!--  Filter Label  -->
+    <rect x="248" y="294" width="356" height="19" rx="4" fill="#0d1526" stroke="#26354d" stroke-width="1" />
+    <text x="426" y="307" fill="#00f0ff" font-size="9.5" font-family="'JetBrains Mono', monospace" text-anchor="middle">▼ FILTER 2: Struktur 4H Terkonfirmasi • Zoom In Eksekusi ▼</text>
+  </g>
+
+  <!--  =========================================================================  -->
+  <!--  TIER 3: PRECISION EXECUTION (1H / 15M)                                     -->
+  <!--  =========================================================================  -->
+  <g transform="translate(200, 324)">
+    <!--  Main Tier Box (Width: 632 - Focused Funnel Tip)  -->
+    <rect x="0" y="0" width="632" height="92" rx="8" fill="url(#card-emerald)" stroke="#10b981" stroke-width="1.5" />
+    <!--  Left Accent Bar  -->
+    <path d="M 0 8 Q 0 0 8 0 L 12 0 L 12 92 L 8 92 Q 0 92 0 84 Z" fill="#10b981" />
+
+    <!--  TF Badge & Title  -->
+    <rect x="24" y="12" width="150" height="20" rx="4" fill="#08241c" stroke="#10b981" stroke-width="0.8" />
+    <text x="99" y="25.5" fill="#10b981" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="700" text-anchor="middle">PRECISION • 1H / 15M</text>
+    
+    <text x="186" y="27" fill="#ffffff" font-size="13.5" font-weight="700" letter-spacing="0.4">3. SNIPER ENTRY &amp; LOCK RISIKO</text>
+
+    <!--  Input Criteria Pills  -->
+    <!--  Pill 1  -->
+    <rect x="24" y="42" width="150" height="38" rx="5" fill="#0d131f" stroke="#2c384e" stroke-width="1" />
+    <circle cx="38" cy="56" r="4" fill="#10b981" />
+    <text x="48" y="55" fill="#e2e8f0" font-size="10.5" font-weight="600">Retest OB / FVG</text>
+    <text x="48" y="69" fill="#8e9bb0" font-size="9" font-family="'JetBrains Mono', monospace">Limit Entry Presisi</text>
+
+    <text x="181" y="65" fill="#10b981" font-size="14" font-family="'JetBrains Mono', monospace" font-weight="700">+</text>
+
+    <!--  Pill 2 (With SL Compression Highlight)  -->
+    <rect x="195" y="42" width="194" height="38" rx="5" fill="#0d131f" stroke="#f43f5e" stroke-width="1" stroke-opacity="0.7" />
+    <circle cx="209" cy="55" r="4" fill="#f43f5e" />
+    <text x="219" y="55" fill="#e2e8f0" font-size="10.5" font-weight="600">Tight SL di luar Sweep Wick</text>
+    <text x="219" y="70" fill="#f43f5e" font-size="9" font-family="'JetBrains Mono', monospace" font-weight="700">Hemat 50-70% jarak SL!</text>
+
+    <!--  Internal Arrow to Output  -->
+    <line x1="396" y1="61" x2="416" y2="61" stroke="#10b981" stroke-width="1.8" marker-end="url(#arrow-emerald)" />
+
+    <!--  Output Box (Actionable Trade Card)  -->
+    <rect x="424" y="12" width="194" height="68" rx="6" fill="#07231c" stroke="#10b981" stroke-width="1.8" filter="url(#glow-emerald)" />
+    <rect x="424" y="12" width="194" height="68" rx="6" fill="#07231c" stroke="#10b981" stroke-width="1.5" />
+    <text x="436" y="28" fill="#10b981" font-size="9.5" font-family="'JetBrains Mono', monospace" font-weight="700" letter-spacing="0.8">FINAL OUTPUT TIER 3:</text>
+    <text x="436" y="45" fill="#ffffff" font-size="12" font-weight="800">Actionable Trade Card</text>
+    <rect x="436" y="53" width="170" height="20" rx="3" fill="#0d352a" />
+    <text x="521" y="66.5" fill="#f3e5ab" font-size="10.5" font-family="'JetBrains Mono', monospace" font-weight="700" text-anchor="middle">R:R ≥ 1:2 s/d 1:5</text>
+  </g>
+
+  <!--  =========================================================================  -->
+  <!--  LEFT-SIDE FUNNEL METRICS CALLOUT (FILLS CASCADE SPACE CLEANLY)             -->
+  <!--  =========================================================================  -->
+  <g transform="translate(28, 220)">
+    <rect x="0" y="0" width="150" height="196" rx="8" fill="#0d1422" stroke="#1e283d" stroke-width="1.2" />
+    <text x="14" y="22" fill="#8e9bb0" font-size="9.5" font-family="'JetBrains Mono', monospace" font-weight="700" letter-spacing="0.5">EFISIENSI CORONG</text>
+    <line x1="14" y1="30" x2="136" y2="30" stroke="#1e283d" stroke-width="1" />
+
+    <!--  Visual Funnel Icon  -->
+    <polygon points="22,44 128,44 106,74 44,74" fill="#d4af37" fill-opacity="0.2" stroke="#d4af37" stroke-width="1" />
+    <polygon points="44,78 106,78 90,108 60,108" fill="#00f0ff" fill-opacity="0.2" stroke="#00f0ff" stroke-width="1" />
+    <polygon points="60,112 90,112 82,142 68,142" fill="#10b981" fill-opacity="0.3" stroke="#10b981" stroke-width="1.2" />
+
+    <text x="75" y="63" fill="#f3e5ab" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">1W/1D: Luas</text>
+    <text x="75" y="97" fill="#00f0ff" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">4H: Validasi</text>
+    <text x="75" y="131" fill="#10b981" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">15M: Tajam</text>
+
+    <rect x="12" y="152" width="126" height="34" rx="4" fill="#141c2e" stroke="#2c384e" stroke-width="0.8" />
+    <text x="75" y="166" fill="#e2e8f0" font-size="9.5" font-weight="700" text-anchor="middle">Kompresi Stop Loss</text>
+    <text x="75" y="179" fill="#10b981" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">Lot Size ↑ • Risiko Tetap</text>
+  </g>
+</svg>

@@ -1,0 +1,294 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="auto">
+  <defs>
+    <!--  Gradients  -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1a" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <linearGradient id="cyan-band" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.16" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.18" />
+    </linearGradient>
+
+    <linearGradient id="gold-band" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.18" />
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.09" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.18" />
+    </linearGradient>
+
+    <linearGradient id="confluence-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.32" />
+      <stop offset="50%" stop-color="#10b981" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.38" />
+    </linearGradient>
+
+    <linearGradient id="panel-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0b111e" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!--  Glow Filters  -->
+    <filter id="glow-strong" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glow-subtle" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!--  Markers  -->
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#10b981" />
+    </marker>
+
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#f43f5e" />
+    </marker>
+
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#f3e5ab" />
+    </marker>
+  </defs>
+
+  <!--  Outer Frame  -->
+  <rect x="2" y="2" width="916" height="456" rx="10" fill="url(#bg-grad)" stroke="#1e283d" stroke-width="1.5" />
+
+  <!--  Top Header  -->
+  <g transform="translate(30, 28)">
+    <circle cx="8" cy="6" r="4" fill="#d4af37" />
+    <text x="22" y="11" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#e2e8f0" letter-spacing="0.8">
+      PROTOKOL THE CONFLUENCE BOX: PERTEMUAN <tspan fill="#00f0ff">TIME CLUSTER</tspan> &amp; <tspan fill="#d4af37">PRICE CLUSTER</tspan>
+    </text>
+    <text x="860" y="11" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#8e9bb0" text-anchor="end">
+      INSTITUTIONAL QUANT-ASTRO MATRIX // RIZACORP
+    </text>
+    <line x1="0" y1="22" x2="860" y2="22" stroke="#1e283d" stroke-width="1" />
+  </g>
+
+  <!--  =======================================================================  -->
+  <!--  MAIN CHART AREA (x=55..620, y=68..405)                                   -->
+  <!--  =======================================================================  -->
+  <g id="chart-area">
+    <!--  Chart Background & Grid  -->
+    <rect x="55" y="68" width="565" height="337" fill="#070b13" stroke="#1e283d" stroke-width="1" rx="4" />
+
+    <!--  Subtle Grid Lines  -->
+    <g stroke="#141d2e" stroke-width="1" stroke-dasharray="3,3">
+      <line x1="55" y1="120" x2="620" y2="120" />
+      <line x1="55" y1="175" x2="620" y2="175" />
+      <line x1="55" y1="230" x2="620" y2="230" />
+      <line x1="150" y1="68" x2="150" y2="405" />
+      <line x1="255" y1="68" x2="255" y2="405" />
+      <line x1="540" y1="68" x2="540" y2="405" />
+    </g>
+
+    <!--  Y-Axis & X-Axis Labels  -->
+    <text x="22" y="236" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8e9bb0" text-anchor="middle" transform="rotate(-90 22 236)" letter-spacing="1">
+      PRICE SPACE (P)
+    </text>
+    <text x="337" y="444" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8e9bb0" text-anchor="middle" letter-spacing="1">
+      ASTRO-CYCLIC TIME HORIZON (t)
+    </text>
+
+    <!--  1. HORIZONTAL GOLD BAND: SPACE CLUSTER [P_low, P_high] (y=282..354)  -->
+    <rect x="55" y="282" width="565" height="72" fill="url(#gold-band)" />
+    <line x1="55" y1="282" x2="620" y2="282" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="5,3" />
+    <line x1="55" y1="354" x2="620" y2="354" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="5,3" />
+
+    <!--  Price Bound Tick Labels  -->
+    <text x="50" y="285" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#f3e5ab" text-anchor="end">P_high</text>
+    <text x="50" y="357" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#d4af37" text-anchor="end">P_low</text>
+
+    <!--  Space Cluster Title & Sub-factors inside Gold Band (Left side)  -->
+    <g transform="translate(65, 300)">
+      <rect x="0" y="-11" width="235" height="58" rx="4" fill="#0a0f1a" fill-opacity="0.78" stroke="#d4af37" stroke-width="0.8" stroke-opacity="0.5" />
+      <text x="8" y="3" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#f3e5ab" letter-spacing="0.4">
+        SPACE CLUSTER [P_low, P_high]
+      </text>
+      <text x="8" y="18" font-family="'JetBrains Mono', monospace" font-size="9" fill="#d4af37">
+        • Golden Pocket Fib (0.618 - 0.650)
+      </text>
+      <text x="8" y="31" font-family="'JetBrains Mono', monospace" font-size="9" fill="#d4af37">
+        • Harmonic PRZ + Gann Square of 9
+      </text>
+    </g>
+
+    <!--  2. VERTICAL CYAN BAND: TIME CLUSTER WINDOW [t1, t2] (x=370..475)  -->
+    <rect x="370" y="68" width="105" height="337" fill="url(#cyan-band)" />
+    <line x1="370" y1="68" x2="370" y2="405" stroke="#00f0ff" stroke-width="1.2" stroke-dasharray="5,3" />
+    <line x1="475" y1="68" x2="475" y2="405" stroke="#00f0ff" stroke-width="1.2" stroke-dasharray="5,3" />
+
+    <!--  Time Bound Tick Labels  -->
+    <text x="370" y="422" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#00f0ff" text-anchor="middle">t₁ (t_start)</text>
+    <text x="475" y="422" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#00f0ff" text-anchor="middle">t₂ (t_end)</text>
+
+    <!--  Time Cluster Header Badge (Top of Cyan Column)  -->
+    <g transform="translate(422.5, 76)">
+      <rect x="-112" y="0" width="224" height="44" rx="4" fill="#08121e" fill-opacity="0.92" stroke="#00f0ff" stroke-width="1" />
+      <text x="0" y="16" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#00f0ff" text-anchor="middle" letter-spacing="0.4">
+        TIME CLUSTER WINDOW [t₁, t₂]
+      </text>
+      <text x="0" y="32" font-family="'JetBrains Mono', monospace" font-size="8.8" fill="#e2e8f0" text-anchor="middle">
+        New Moon + Aspect Partile + Bradley Turn
+      </text>
+    </g>
+
+    <!--  3. INTERSECTION: THE CONFLUENCE BOX (x=370..475, y=282..354)  -->
+    <rect x="370" y="282" width="105" height="72" rx="4" fill="url(#confluence-fill)" stroke="#00f0ff" stroke-width="2" filter="url(#glow-subtle)" />
+    <rect x="372" y="284" width="101" height="68" rx="3" fill="none" stroke="#f3e5ab" stroke-width="1.2" stroke-dasharray="4,2" />
+
+    <!--  Target Reticle inside Confluence Box  -->
+    <g opacity="0.45" stroke="#f3e5ab" stroke-width="0.8">
+      <line x1="410" y1="330" x2="430" y2="330" />
+      <line x1="420" y1="320" x2="420" y2="340" />
+      <circle cx="420" cy="330" r="14" fill="none" stroke="#00f0ff" stroke-dasharray="2,2" />
+    </g>
+
+    <!--  4. PRICE ACTION TRAJECTORY & TRAP ILLUSTRATION  -->
+    <!--  Early Trap Callout Box  -->
+    <g transform="translate(152, 162)">
+      <rect x="0" y="0" width="194" height="44" rx="4" fill="#1a0c14" fill-opacity="0.92" stroke="#f43f5e" stroke-width="1.2" />
+      <text x="97" y="16" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#f43f5e" text-anchor="middle">
+        TRAP: EARLY PRICE-ONLY ENTRY
+      </text>
+      <text x="97" y="31" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#e2e8f0" text-anchor="middle">
+        Weak Bounce (Time Not Ready: t &lt; t₁)
+      </text>
+      <!--  Pointer to false bounce peak/entry  -->
+      <path d="M 97 44 L 83 92" fill="none" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="3,2" marker-end="url(#arrow-rose)" />
+    </g>
+
+    <!--  Initial Bearish Impulse & Early Hit + Stop Sweep (Slate/Rose)  -->
+    <path d="M 72 105
+             L 105 148
+             L 128 130
+             L 172 212
+             L 196 194
+             L 232 296"
+          fill="none" stroke="#94a3b8" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!--  Weak False Bounce & Liquidity Sweep into Confluence Box (Alert Rose)  -->
+    <path d="M 232 296
+             L 254 252
+             L 278 272
+             L 294 258
+             L 335 338
+             L 368 318
+             L 396 340
+             L 420 330"
+          fill="none" stroke="#f43f5e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!--  False Entry Node at (232, 296)  -->
+    <circle cx="232" cy="296" r="4.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.5" />
+    <!--  Stop Loss Sweep Label  -->
+    <text x="320" y="369" font-family="'JetBrains Mono', monospace" font-size="8.8" font-weight="600" fill="#f43f5e" text-anchor="middle">
+      Retail Stop-Loss Sweep!
+    </text>
+
+    <!--  Powerful Institutional Bullish Reversal from Confluence Box (Emerald)  -->
+    <path d="M 420 330
+             L 442 276
+             L 458 290
+             L 495 192
+             L 516 210
+             L 562 112"
+          fill="none" stroke="#10b981" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow-subtle)" marker-end="url(#arrow-emerald)" />
+
+    <!--  High-Precision Pivot Node inside Confluence Box (420, 330)  -->
+    <circle cx="420" cy="330" r="6" fill="#00f0ff" filter="url(#glow-strong)" />
+    <circle cx="420" cy="330" r="3.5" fill="#f3e5ab" />
+
+    <!--  THE CONFLUENCE BOX Callout Label  -->
+    <g transform="translate(388, 366)">
+      <rect x="-48" y="0" width="215" height="32" rx="4" fill="#0a1622" stroke="#f3e5ab" stroke-width="1.3" />
+      <text x="59.5" y="14" font-family="'Inter', sans-serif" font-size="10" font-weight="800" fill="#f3e5ab" text-anchor="middle" letter-spacing="0.4">
+        THE CONFLUENCE BOX (B_Conf)
+      </text>
+      <text x="59.5" y="26" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#00f0ff" text-anchor="middle">
+        EXACT PIVOT: SPACE × TIME LOCKED
+      </text>
+      <path d="M 32 0 L 32 -26" fill="none" stroke="#f3e5ab" stroke-width="1.2" marker-end="url(#arrow-gold)" />
+    </g>
+
+    <!--  Bullish Markup Annotation  -->
+    <g transform="translate(546, 178)">
+      <rect x="-52" y="0" width="118" height="36" rx="4" fill="#06221c" fill-opacity="0.9" stroke="#10b981" stroke-width="1" />
+      <text x="7" y="15" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#10b981" text-anchor="middle">
+        TRUE REVERSAL
+      </text>
+      <text x="7" y="28" font-family="'JetBrains Mono', monospace" font-size="8.2" fill="#e2e8f0" text-anchor="middle">
+        Institutional Impulse
+      </text>
+    </g>
+  </g>
+
+  <!--  =======================================================================  -->
+  <!--  RIGHT PANEL: QUANTITATIVE RULES & EQUATION (x=642..894, y=68..405)       -->
+  <!--  =======================================================================  -->
+  <g id="right-panel" transform="translate(642, 68)">
+    <!--  Panel Container  -->
+    <rect x="0" y="0" width="252" height="337" rx="6" fill="url(#panel-grad)" stroke="#1e283d" stroke-width="1.2" />
+
+    <!--  Panel Title  -->
+    <text x="16" y="25" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" fill="#e2e8f0" letter-spacing="0.6">
+      PROTOKOL EKSEKUSI B_Conf
+    </text>
+    <line x1="16" y1="35" x2="236" y2="35" stroke="#1e283d" stroke-width="1" />
+
+    <!--  Formula Card  -->
+    <g transform="translate(14, 47)">
+      <rect x="0" y="0" width="224" height="68" rx="5" fill="#080d17" stroke="#d4af37" stroke-width="1.2" />
+      <text x="112" y="18" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#8e9bb0" text-anchor="middle" letter-spacing="0.5">
+        MATHEMATICAL DEFINITION
+      </text>
+      <text x="112" y="41" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#f3e5ab" text-anchor="middle">
+        B_Conf = <tspan fill="#00f0ff">[t_start, t_end]</tspan>
+      </text>
+      <text x="112" y="58" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#d4af37" text-anchor="middle">
+        × [P_low, P_high]
+      </text>
+    </g>
+
+    <!--  Rule 1 Card: Time Miss (Price Early)  -->
+    <g transform="translate(14, 129)">
+      <rect x="0" y="0" width="224" height="86" rx="5" fill="#160c15" stroke="#f43f5e" stroke-width="1.2" />
+      <circle cx="15" cy="18" r="4" fill="#f43f5e" />
+      <text x="26" y="22" font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" fill="#f43f5e">
+        RULE 1: TIME MISS (PRICE EARLY)
+      </text>
+      <text x="14" y="41" font-family="'JetBrains Mono', monospace" font-size="9.2" fill="#e2e8f0">
+        Kondisi: <tspan fill="#d4af37">P ∈ [P_low, P_high]</tspan>
+      </text>
+      <text x="14" y="55" font-family="'JetBrains Mono', monospace" font-size="9.2" fill="#e2e8f0">
+        Namun  : <tspan fill="#f43f5e">t &lt; t_start (Terlalu Dini)</tspan>
+      </text>
+      <rect x="10" y="63" width="204" height="17" rx="3" fill="#290f1c" />
+      <text x="112" y="75" font-family="'JetBrains Mono', monospace" font-size="9.2" font-weight="700" fill="#f43f5e" text-anchor="middle">
+        → WAIT FOR FINAL SWEEP!
+      </text>
+    </g>
+
+    <!--  Rule 2 Card: Price Miss (Time Ready, No Support)  -->
+    <g transform="translate(14, 229)">
+      <rect x="0" y="0" width="224" height="92" rx="5" fill="#0d1524" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.7" />
+      <circle cx="15" cy="18" r="4" fill="#00f0ff" />
+      <text x="26" y="22" font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" fill="#00f0ff">
+        RULE 2: PRICE MISS (NO SUPPORT)
+      </text>
+      <text x="14" y="41" font-family="'JetBrains Mono', monospace" font-size="9.2" fill="#e2e8f0">
+        Kondisi: <tspan fill="#00f0ff">t ∈ [t_start, t_end]</tspan>
+      </text>
+      <text x="14" y="55" font-family="'JetBrains Mono', monospace" font-size="9.2" fill="#e2e8f0">
+        Namun  : <tspan fill="#8e9bb0">P ∉ [P_low, P_high]</tspan>
+      </text>
+      <rect x="10" y="65" width="204" height="19" rx="3" fill="#162238" />
+      <text x="112" y="78" font-family="'JetBrains Mono', monospace" font-size="9.2" font-weight="700" fill="#f3e5ab" text-anchor="middle">
+        → STAND ASIDE! (NO TRADE)
+      </text>
+    </g>
+  </g>
+</svg>
