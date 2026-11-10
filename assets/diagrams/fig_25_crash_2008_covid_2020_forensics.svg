@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="auto">
+  <defs>
+    <!--  Gradients  -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1a" />
+      <stop offset="50%" stop-color="#0d1424" />
+      <stop offset="100%" stop-color="#080c15" />
+    </linearGradient>
+
+    <linearGradient id="panel-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0b101c" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="drop-area" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="rally-area" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="gold-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0" />
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0" />
+    </linearGradient>
+
+    <!--  Markers  -->
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#d4af37" />
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#00f0ff" />
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f43f5e" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10b981" />
+    </marker>
+
+    <!--  Filters  -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!--  Main Background  -->
+  <rect x="2" y="2" width="916" height="456" rx="10" fill="url(#bg-grad)" stroke="#1e283d" stroke-width="2" />
+
+  <!--  Top Header Banner  -->
+  <text x="460" y="31" text-anchor="middle" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="14" font-weight="800" letter-spacing="1">
+    FORENSIK TITIK BALIK KRISIS 2008 &amp; 2020: KONVERGENSI FIBONACCI &amp; SIKLUS KOSMIK
+  </text>
+  <text x="460" y="48" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="0.5">
+    S&amp;P 500 (SPX) &amp; IHSG MACRO TURNING POINTS — ASTRO-FIBONACCI QUANTITATIVE AUDIT
+  </text>
+  <rect x="100" y="56" width="720" height="1" fill="url(#gold-glow)" />
+
+  <!--  =========================================================================  -->
+  <!--  LEFT PANEL: 2008-2009 LEHMAN CRASH & 666.79 BOTTOM (x=25..445)             -->
+  <!--  =========================================================================  -->
+  <g id="panel-2008">
+    <!--  Panel Container  -->
+    <rect x="25" y="66" width="420" height="372" rx="6" fill="url(#panel-grad)" stroke="#1e283d" stroke-width="1.2" />
+    
+    <!--  Panel Header  -->
+    <rect x="25" y="66" width="420" height="30" rx="6" fill="#131c2e" stroke="#1e283d" stroke-width="1" />
+    <circle cx="42" cy="81" r="4" fill="#f43f5e" />
+    <text x="54" y="85" fill="#f3e5ab" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.4">
+      CRASH LEHMAN BROTHERS 2008 &amp; DASAR 666.79 (MARET 2009)
+    </text>
+
+    <!--  Chart Grid Lines  -->
+    <g stroke="#1e283d" stroke-width="0.7" stroke-dasharray="3,3">
+      <line x1="40" y1="130" x2="430" y2="130" />
+      <line x1="40" y1="185" x2="430" y2="185" />
+      <line x1="40" y1="240" x2="430" y2="240" />
+      <line x1="80" y1="105" x2="80" y2="335" />
+      <line x1="175" y1="105" x2="175" y2="335" />
+      <line x1="255" y1="105" x2="255" y2="335" />
+      <line x1="370" y1="105" x2="370" y2="335" />
+    </g>
+
+    <!--  0.618 Macro Retracement Line (Golden Support)  -->
+    <line x1="35" y1="295" x2="435" y2="295" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="6,3" />
+    <rect x="38" y="301" width="235" height="16" rx="3" fill="#0a0f1a" stroke="#d4af37" stroke-width="0.6" />
+    <text x="44" y="312" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">
+      0.618 MACRO RETRACEMENT (1982 LOW)
+    </text>
+
+    <!--  Area Under Curve (Drop & Rally)  -->
+    <path d="M 55 130 L 80 125 L 115 155 L 145 145 L 175 162 L 205 225 L 228 212 L 255 295 L 255 320 L 55 320 Z" fill="url(#drop-area)" />
+    <path d="M 255 295 L 285 255 L 315 262 L 350 220 L 395 190 L 420 175 L 420 320 L 255 320 Z" fill="url(#rally-area)" />
+
+    <!--  SPX Price Path: Drop (Rose) & Recovery (Emerald)  -->
+    <path d="M 55 130 L 80 125 L 115 155 L 145 145 L 175 162 L 205 225 L 228 212 L 255 295" fill="none" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 255 295 L 285 255 L 315 262 L 350 220 L 395 190 L 420 175" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!--  Peak Node: Oct 2007 (1576)  -->
+    <circle cx="80" cy="125" r="4" fill="#e2e8f0" stroke="#0a0f1a" stroke-width="1.5" />
+    <rect x="42" y="103" width="115" height="17" rx="3" fill="#131c2e" stroke="#8e9bb0" stroke-width="0.6" />
+    <text x="99" y="115" text-anchor="middle" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">
+      PEAK: 1576.09 (Okt '07)
+    </text>
+
+    <!--  Lehman Collapse Node: Sep 2008  -->
+    <circle cx="175" cy="162" r="4" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.5" />
+    <rect x="183" y="108" width="142" height="32" rx="4" fill="#1f121c" stroke="#f43f5e" stroke-width="0.8" />
+    <text x="190" y="121" fill="#f43f5e" font-family="'Inter', sans-serif" font-size="9" font-weight="700">
+      LEHMAN COLLAPSE (Sep '08)
+    </text>
+    <text x="190" y="133" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5">
+      Likuiditas Global Membeku
+    </text>
+    <line x1="183" y1="135" x2="177" y2="158" stroke="#f43f5e" stroke-width="1" stroke-dasharray="2,2" />
+
+    <!--  Drop Magnitude Callout (-57.7%)  -->
+    <rect x="52" y="218" width="118" height="38" rx="4" fill="#1a111a" stroke="#f43f5e" stroke-width="1" />
+    <text x="111" y="234" text-anchor="middle" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">
+      DROP: -57.7%
+    </text>
+    <text x="111" y="248" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5">
+      1576.09 &#8594; 666.79
+    </text>
+
+    <!--  Cosmic Cycle Badge: Saturn-Uranus Opposition  -->
+    <rect x="242" y="148" width="188" height="38" rx="4" fill="#0d1b2a" stroke="#00f0ff" stroke-width="1" />
+    <text x="336" y="163" text-anchor="middle" fill="#00f0ff" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700">
+      SIKLUS KOSMIK: SATURN-URANUS
+    </text>
+    <text x="336" y="177" text-anchor="middle" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5">
+      Opposition (180&#176;) &#8226; Nov '08 - Mar '09
+    </text>
+    <line x1="285" y1="186" x2="259" y2="285" stroke="#00f0ff" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#arrow-cyan)" />
+
+    <!--  MAJOR TURNING POINT: 666.79 (6 Maret 2009)  -->
+    <circle cx="255" cy="295" r="9" fill="#d4af37" fill-opacity="0.25" />
+    <circle cx="255" cy="295" r="5" fill="#d4af37" stroke="#0a0f1a" stroke-width="1.5" filter="url(#glow)" />
+    
+    <!--  Label Pointing to 666.79  -->
+    <rect x="282" y="268" width="148" height="44" rx="4" fill="#171614" stroke="#d4af37" stroke-width="1.2" />
+    <text x="356" y="282" text-anchor="middle" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="800">
+      6 MARET 2009: 666.79
+    </text>
+    <text x="356" y="295" text-anchor="middle" fill="#00f0ff" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600">
+      &#9789; Full Moon in Virgo
+    </text>
+    <text x="356" y="306" text-anchor="middle" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="8">
+      Exact 0.618 Macro Support!
+    </text>
+    <line x1="282" y1="295" x2="265" y2="295" stroke="#d4af37" stroke-width="1.2" marker-end="url(#arrow-gold)" />
+
+    <!--  X-Axis Timeline  -->
+    <line x1="35" y1="335" x2="435" y2="335" stroke="#8e9bb0" stroke-width="0.8" />
+    <text x="80" y="348" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5">Okt 2007</text>
+    <text x="175" y="348" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5">Sep 2008</text>
+    <text x="255" y="348" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">6 Mar 2009</text>
+    <text x="370" y="348" text-anchor="middle" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="8.5">Q4 2009</text>
+
+    <!--  Bottom Forensics Box (Left)  -->
+    <rect x="35" y="358" width="400" height="70" rx="5" fill="#0a0e17" stroke="#d4af37" stroke-width="0.8" />
+    <text x="47" y="374" fill="#d4af37" font-family="'Inter', sans-serif" font-size="9.5" font-weight="800" letter-spacing="0.5">
+      KONVERGENSI FORENSIK 6 MARET 2009 (THE DEVIL'S LOW 666.79):
+    </text>
+    <text x="47" y="390" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="9">
+      &#8226; <tspan fill="#f3e5ab" font-weight="700">Geometri Fibonacci:</tspan> Koreksi -57.7% memantul presisi di 0.618 Macro Retracement (1982 Low).
+    </text>
+    <text x="47" y="405" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="9">
+      &#8226; <tspan fill="#00f0ff" font-weight="700">Siklus Kosmik:</tspan> Puncak ketegangan <tspan font-family="'JetBrains Mono', monospace">Saturn-Uranus Opposition (180&#176;)</tspan> di sumbu Virgo-Pisces.
+    </text>
+    <text x="47" y="420" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="9">
+      &#8226; <tspan fill="#10b981" font-weight="700">Katalis Lunar:</tspan> Terbentuk tepat saat <tspan fill="#f3e5ab" font-weight="600">Full Moon in Virgo</tspan>, memicu sekuler bull run 11 tahun.
+    </text>
+  </g>
+
+  <!--  Center Divider Accent  -->
+  <line x1="460" y1="66" x2="460" y2="438" stroke="#1e283d" stroke-width="1.5" stroke-dasharray="4,4" />
+
+  <!--  =========================================================================  -->
+  <!--  RIGHT PANEL: 2020 COVID-19 CRASH & V-BOTTOM REVERSAL (x=475..895)          -->
+  <!--  =========================================================================  -->
+  <g id="panel-2020">
+    <!--  Panel Container  -->
+    <rect x="475" y="66" width="420" height="372" rx="6" fill="url(#panel-grad)" stroke="#1e283d" stroke-width="1.2" />
+
+    <!--  Panel Header  -->
+    <rect x="475" y="66" width="420" height="30" rx="6" fill="#131c2e" stroke="#1e283d" stroke-width="1" />
+    <circle cx="492" cy="81" r="4" fill="#00f0ff" />
+    <text x="504" y="85" fill="#f3e5ab" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.4">
+      CRASH PANDEMI COVID-19 &amp; REVERSAL 23-24 MARET 2020
+    </text>
+
+    <!--  Chart Grid Lines  -->
+    <g stroke="#1e283d" stroke-width="0.7" stroke-dasharray="3,3">
+      <line x1="490" y1="130" x2="880" y2="130" />
+      <line x1="490" y1="185" x2="880" y2="185" />
+      <line x1="490" y1="240" x2="880" y2="240" />
+      <line x1="530" y1="105" x2="530" y2="335" />
+      <line x1="600" y1="105" x2="600" y2="335" />
+      <line x1="690" y1="105" x2="690" y2="335" />
+      <line x1="825" y1="105" x2="825" y2="335" />
+    </g>
+
+    <!--  V-Bottom Reversal Support Line  -->
+    <line x1="485" y1="295" x2="885" y2="295" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="6,3" />
+    <rect x="488" y="301" width="215" height="16" rx="3" fill="#0a0f1a" stroke="#00f0ff" stroke-width="0.6" />
+    <text x="494" y="312" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">
+      V-BOTTOM HARMONIC SUPPORT ZONE
+    </text>
+
+    <!--  Area Under Curve (Flash Plunge & V-Bottom Explosion)  -->
+    <path d="M 505 140 L 530 135 L 565 128 L 600 120 L 630 175 L 660 235 L 690 295 L 690 320 L 505 320 Z" fill="url(#drop-area)" />
+    <path d="M 690 295 L 725 220 L 755 195 L 790 155 L 835 125 L 865 112 L 865 320 L 690 320 Z" fill="url(#rally-area)" />
+
+    <!--  SPX Price Path: Rapid Plunge (Rose) & V-Bottom Explosion (Emerald)  -->
+    <path d="M 505 140 L 530 135 L 565 128 L 600 120 L 630 175 L 660 235 L 690 295" fill="none" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 690 295 L 725 220 L 755 195 L 790 155 L 835 125 L 865 112" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!--  Saturn-Pluto Conjunction Node (Jan 2020)  -->
+    <circle cx="530" cy="135" r="4" fill="#00f0ff" stroke="#0a0f1a" stroke-width="1.5" />
+    <rect x="488" y="152" width="132" height="34" rx="4" fill="#0d1b2a" stroke="#00f0ff" stroke-width="0.8" />
+    <text x="554" y="165" text-anchor="middle" fill="#00f0ff" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700">
+      SATURN-PLUTO CONJ. (0&#176;)
+    </text>
+    <text x="554" y="178" text-anchor="middle" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8">
+      Jan 2020 in Capricorn
+    </text>
+    <line x1="530" y1="152" x2="530" y2="141" stroke="#00f0ff" stroke-width="1" stroke-dasharray="2,2" />
+
+    <!--  Peak Node: Feb 19, 2020 (3393.52)  -->
+    <circle cx="600" cy="120" r="4" fill="#e2e8f0" stroke="#0a0f1a" stroke-width="1.5" />
+    <rect x="555" y="99" width="122" height="16" rx="3" fill="#131c2e" stroke="#8e9bb0" stroke-width="0.6" />
+    <text x="616" y="110" text-anchor="middle" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">
+      PEAK: 3393.52 (19 Feb)
+    </text>
+
+    <!--  Plunge Magnitude Callout (-35.4% in 23 Trading Days)  -->
+    <rect x="492" y="218" width="145" height="38" rx="4" fill="#1a111a" stroke="#f43f5e" stroke-width="1" />
+    <text x="564" y="233" text-anchor="middle" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">
+      -35.4% IN 23 DAYS!
+    </text>
+    <text x="564" y="247" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5">
+      3393.52 &#8594; 2191.86
+    </text>
+    <line x1="637" y1="237" x2="655" y2="237" stroke="#f43f5e" stroke-width="1" stroke-dasharray="2,2" />
+
+    <!--  V-Bottom Explosion Callout  -->
+    <rect x="688" y="128" width="128" height="32" rx="4" fill="#0d231d" stroke="#10b981" stroke-width="1" />
+    <text x="752" y="142" text-anchor="middle" fill="#10b981" font-family="'Inter', sans-serif" font-size="9.5" font-weight="800">
+      V-BOTTOM EXPLOSION!
+    </text>
+    <text x="752" y="154" text-anchor="middle" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8">
+      Fed Unlimited QE + Astro Shift
+    </text>
+
+    <!--  MAJOR REVERSAL POINT: 23-24 Maret 2020  -->
+    <circle cx="690" cy="295" r="9" fill="#00f0ff" fill-opacity="0.25" />
+    <circle cx="690" cy="295" r="5" fill="#d4af37" stroke="#0a0f1a" stroke-width="1.5" filter="url(#glow)" />
+
+    <!--  Detailed Callout Box for 23-24 March 2020  -->
+    <rect x="712" y="238" width="174" height="68" rx="4" fill="#141824" stroke="#d4af37" stroke-width="1.2" />
+    <text x="799" y="252" text-anchor="middle" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="800">
+      23-24 MARET 2020 REVERSAL
+    </text>
+    <text x="799" y="265" text-anchor="middle" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">
+      SPX: 2191.86 | IHSG: 3911.71
+    </text>
+    <text x="799" y="279" text-anchor="middle" fill="#00f0ff" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600">
+      &#9788; New Moon in Aries (24 Mar)
+    </text>
+    <text x="799" y="291" text-anchor="middle" fill="#10b981" font-family="'Inter', sans-serif" font-size="8" font-weight="600">
+      + Saturn Ingress to Aquarius (0&#176;)
+    </text>
+    <text x="799" y="301" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="7.5">
+      Exact Synchronicity Bottom!
+    </text>
+    <line x1="712" y1="295" x2="699" y2="295" stroke="#d4af37" stroke-width="1.2" marker-end="url(#arrow-gold)" />
+
+    <!--  X-Axis Timeline  -->
+    <line x1="485" y1="335" x2="885" y2="335" stroke="#8e9bb0" stroke-width="0.8" />
+    <text x="530" y="348" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5">Jan 2020</text>
+    <text x="600" y="348" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5">19 Feb</text>
+    <text x="690" y="348" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">23-24 Mar</text>
+    <text x="825" y="348" text-anchor="middle" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="8.5">Agu 2020</text>
+
+    <!--  Bottom Forensics Box (Right)  -->
+    <rect x="485" y="358" width="400" height="70" rx="5" fill="#0a0e17" stroke="#00f0ff" stroke-width="0.8" />
+    <text x="497" y="374" fill="#00f0ff" font-family="'Inter', sans-serif" font-size="9.5" font-weight="800" letter-spacing="0.5">
+      KONVERGENSI FORENSIK 23-24 MARET 2020 (FLASH PANDEMIC BOTTOM):
+    </text>
+    <text x="497" y="390" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="9">
+      &#8226; <tspan fill="#f43f5e" font-weight="700">Katalis Struktur:</tspan> <tspan font-family="'JetBrains Mono', monospace">Saturn-Pluto Conjunction (Jan 2020)</tspan> memicu likuidasi tercepat (-35% / 23 hari).
+    </text>
+    <text x="497" y="405" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="9">
+      &#8226; <tspan fill="#00f0ff" font-weight="700">Pemicu Reversal:</tspan> <tspan fill="#f3e5ab" font-weight="600">Saturn Ingress ke Aquarius (22 Mar)</tspan> + <tspan fill="#f3e5ab" font-weight="600">New Moon in Aries (24 Mar)</tspan>.
+    </text>
+    <text x="497" y="420" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="9">
+      &#8226; <tspan fill="#10b981" font-weight="700">Presisi Lintas Bursa:</tspan> Dasar absolut SPX (<tspan font-family="'JetBrains Mono', monospace">2191.86</tspan>) &amp; IHSG (<tspan font-family="'JetBrains Mono', monospace">3911.71</tspan>) sebelum V-Bottom.
+    </text>
+  </g>
+</svg>

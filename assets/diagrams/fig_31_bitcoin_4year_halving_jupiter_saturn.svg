@@ -1,0 +1,452 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="auto">
+  <defs>
+    <!--  Linear Gradients  -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1424"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+    
+    <linearGradient id="goldPillar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <linearGradient id="bullZone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <linearGradient id="bearZone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <linearGradient id="cyanWave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!--  Glow Filters  -->
+    <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!--  Arrow Markers  -->
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#d4af37"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#00f0ff"/>
+    </marker>
+  </defs>
+
+  <!--  Main Card Background  -->
+  <rect x="2" y="2" width="916" height="456" rx="10" fill="url(#bgGrad)" stroke="#1e283d" stroke-width="1.5"/>
+
+  <!--  Header Section  -->
+  <g font-family="'Inter', sans-serif">
+    <text x="460" y="29" text-anchor="middle" fill="#f3e5ab" font-size="14.5" font-weight="700" letter-spacing="0.8">
+      SIKLUS 4 TAHUN BITCOIN HALVING &amp; HARMONIK 5 TAHUN JUPITER–SATURNUS
+    </text>
+    <text x="460" y="47" text-anchor="middle" fill="#8e9bb0" font-size="10.5">
+      Korelasi Ekuilibrium Kuantitatif Supply-Shock (210.000 Blok) &amp; Kuadran Sinodik 4,96 Tahun (Siklus 19,86 Tahun)
+    </text>
+  </g>
+
+  <!--  Top Legend Bar  -->
+  <g transform="translate(75, 57)" font-family="'Inter', sans-serif" font-size="9.5" fill="#e2e8f0">
+    <!--  Log Price  -->
+    <line x1="0" y1="6" x2="22" y2="6" stroke="#f3e5ab" stroke-width="2.5"/>
+    <circle cx="11" cy="6" r="3" fill="#d4af37"/>
+    <text x="28" y="9">Trajektori Harga Log BTC</text>
+
+    <!--  Halving Pillar  -->
+    <line x1="168" y1="0" x2="168" y2="12" stroke="#d4af37" stroke-width="3"/>
+    <text x="176" y="9" fill="#d4af37" font-weight="600">Pilar Halving (4 Thn)</text>
+
+    <!--  Bull Fib  -->
+    <rect x="292" y="1" width="12" height="10" fill="#10b981" fill-opacity="0.3" stroke="#10b981" stroke-width="1"/>
+    <text x="309" y="9" fill="#10b981">Ekspansi Bull (1.618–2.618 Fib)</text>
+
+    <!--  Bear Retrace  -->
+    <rect x="468" y="1" width="12" height="10" fill="#f43f5e" fill-opacity="0.25" stroke="#f43f5e" stroke-width="1"/>
+    <text x="485" y="9" fill="#f43f5e">Koreksi ~80% (Golden Pocket)</text>
+
+    <!--  Jup-Sat Cycle  -->
+    <path d="M 636 6 Q 644 0, 652 6 T 668 6" fill="none" stroke="#00f0ff" stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="674" y="9" fill="#00f0ff" font-weight="600">Harmonik Jup–Sat (4,96 Thn)</text>
+  </g>
+
+  <!--  Chart Area Grid & Log Y-Axis  -->
+  <!--  X-axis spans 2010 (x=72) to 2027 (x=888), 48px per year  -->
+  <!--  Y-axis spans $0.10 (y=360) to $1,000,000 (y=80), 40px per log10 decade  -->
+  <g font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8e9bb0">
+    <!--  Horizontal Grid Lines  -->
+    <g stroke="#1e283d" stroke-width="0.8" stroke-dasharray="3,3">
+      <line x1="72" y1="80" x2="888" y2="80"/>
+      <line x1="72" y1="120" x2="888" y2="120"/>
+      <line x1="72" y1="160" x2="888" y2="160"/>
+      <line x1="72" y1="200" x2="888" y2="200"/>
+      <line x1="72" y1="240" x2="888" y2="240"/>
+      <line x1="72" y1="280" x2="888" y2="280"/>
+      <line x1="72" y1="320" x2="888" y2="320"/>
+      <line x1="72" y1="360" x2="888" y2="360" stroke-dasharray="none" stroke="#2c3a57" stroke-width="1.2"/>
+    </g>
+
+    <!--  Log Price Labels  -->
+    <text x="65" y="83" text-anchor="end" fill="#d4af37">$1M</text>
+    <text x="65" y="123" text-anchor="end" fill="#e2e8f0">$100k</text>
+    <text x="65" y="163" text-anchor="end">$10k</text>
+    <text x="65" y="203" text-anchor="end">$1,000</text>
+    <text x="65" y="243" text-anchor="end">$100</text>
+    <text x="65" y="283" text-anchor="end">$10</text>
+    <text x="65" y="323" text-anchor="end">$1</text>
+    <text x="65" y="363" text-anchor="end">$0.10</text>
+
+    <!--  Rotated Y-Axis Title  -->
+    <text x="18" y="220" text-anchor="middle" transform="rotate(-90 18 220)" font-family="'Inter', sans-serif" font-size="9.5" fill="#8e9bb0" letter-spacing="0.5">
+      HARGA LOGARITMIK BTC (USD)
+    </text>
+  </g>
+
+  <!--  Logarithmic Growth Corridor (Support & Resistance Channels)  -->
+  <path d="M 72 342 Q 360 205, 888 85" fill="none" stroke="#d4af37" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="4,4"/>
+  <path d="M 72 365 Q 410 265, 888 145" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.35" stroke-dasharray="4,4"/>
+
+  <!--  Bull Expansion & Bear Correction Shaded Background Zones  -->
+  <g>
+    <!--  Epoch 1 Bull (2012.9 to 2013.9) & Bear (2013.9 to 2015.05)  -->
+    <rect x="211" y="198" width="49" height="162" fill="url(#bullZone)"/>
+    <rect x="260" y="198" width="54" height="162" fill="url(#bearZone)"/>
+
+    <!--  Epoch 2 Bull (2016.5 to 2017.95) & Bear (2017.95 to 2018.95)  -->
+    <rect x="385" y="148" width="69" height="212" fill="url(#bullZone)"/>
+    <rect x="454" y="148" width="48" height="212" fill="url(#bearZone)"/>
+
+    <!--  Epoch 3 Bull (2020.36 to 2021.85) & Bear (2021.85 to 2022.88)  -->
+    <rect x="569" y="126" width="72" height="234" fill="url(#bullZone)"/>
+    <rect x="641" y="126" width="49" height="234" fill="url(#bearZone)"/>
+
+    <!--  Epoch 4 Bull Projection (2024.3 to 2025.8)  -->
+    <rect x="758" y="106" width="72" height="254" fill="url(#bullZone)"/>
+  </g>
+
+  <!--  Fibonacci Extension Levels & Golden Pocket Boxes per Cycle  -->
+  <g font-family="'JetBrains Mono', monospace" font-size="8.5">
+    <!--  EPOCH 1 FIBS  -->
+    <line x1="211" y1="198" x2="275" y2="198" stroke="#10b981" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="260" y="182" text-anchor="middle" fill="#10b981" font-weight="600">$1,150</text>
+    <text x="260" y="192" text-anchor="middle" fill="#f3e5ab" font-size="7.5">2.618 Fib</text>
+
+    <!--  Epoch 1 Bear Golden Pocket  -->
+    <rect x="260" y="264" width="58" height="12" fill="#f43f5e" fill-opacity="0.18" stroke="#f43f5e" stroke-width="0.8" stroke-dasharray="2,1"/>
+    <text x="314" y="290" text-anchor="middle" fill="#f43f5e" font-weight="600">-85% ($170)</text>
+    <text x="314" y="299" text-anchor="middle" fill="#8e9bb0" font-size="7.5">0.618–0.786 GP</text>
+
+    <!--  EPOCH 2 FIBS  -->
+    <line x1="385" y1="148" x2="465" y2="148" stroke="#10b981" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="454" y="132" text-anchor="middle" fill="#10b981" font-weight="600">$19,800</text>
+    <text x="454" y="142" text-anchor="middle" fill="#f3e5ab" font-size="7.5">2.618 Fib</text>
+
+    <!--  Epoch 2 Bear Golden Pocket  -->
+    <rect x="454" y="214" width="52" height="12" fill="#f43f5e" fill-opacity="0.18" stroke="#f43f5e" stroke-width="0.8" stroke-dasharray="2,1"/>
+    <text x="502" y="240" text-anchor="middle" fill="#f43f5e" font-weight="600">-84% ($3.1k)</text>
+    <text x="502" y="249" text-anchor="middle" fill="#8e9bb0" font-size="7.5">0.618–0.786 GP</text>
+
+    <!--  EPOCH 3 FIBS  -->
+    <line x1="569" y1="126" x2="655" y2="126" stroke="#10b981" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="641" y="110" text-anchor="middle" fill="#10b981" font-weight="600">$69,000</text>
+    <text x="641" y="120" text-anchor="middle" fill="#f3e5ab" font-size="7.5">1.618 Fib</text>
+
+    <!--  Epoch 3 Bear Golden Pocket  -->
+    <rect x="641" y="186" width="54" height="12" fill="#f43f5e" fill-opacity="0.18" stroke="#f43f5e" stroke-width="0.8" stroke-dasharray="2,1"/>
+    <text x="690" y="211" text-anchor="middle" fill="#f43f5e" font-weight="600">-77% ($15.5k)</text>
+    <text x="690" y="220" text-anchor="middle" fill="#8e9bb0" font-size="7.5">0.618–0.786 GP</text>
+
+    <!--  EPOCH 4 FIB PROJECTION  -->
+    <line x1="758" y1="106" x2="845" y2="106" stroke="#10b981" stroke-width="1" stroke-dasharray="2,2"/>
+    <text x="830" y="90" text-anchor="middle" fill="#00f0ff" font-weight="600">$160k–$220k</text>
+    <text x="830" y="100" text-anchor="middle" fill="#f3e5ab" font-size="7.5">Target 1.618 Fib</text>
+
+    <!--  Epoch 4 Future Golden Pocket  -->
+    <rect x="830" y="143" width="48" height="11" fill="#f43f5e" fill-opacity="0.14" stroke="#f43f5e" stroke-width="0.8" stroke-dasharray="2,1"/>
+    <text x="855" y="167" text-anchor="middle" fill="#f43f5e" font-size="7.5">GP ~$55k–$65k</text>
+  </g>
+
+  <!--  19.86-YEAR JUPITER-SATURN HARMONIC WAVE OVERLAY (4.96-Year Quadrants)  -->
+  <!--  Nodes: 2010.95 (x=118), 2015.91 (x=356), 2020.97 (x=598), 2025.93 (x=837)  -->
+  <g>
+    <!--  Continuous Harmonic Sine Wave  -->
+    <path d="M 72 195
+             C 88 215, 102 250, 118 250
+             C 175 250, 180 140, 237 140
+             C 295 140, 300 250, 356 250
+             C 415 250, 420 140, 477 140
+             C 535 140, 540 250, 598 250
+             C 655 250, 660 140, 717 140
+             C 775 140, 780 250, 837 250
+             C 860 250, 875 215, 888 195"
+          fill="none" stroke="url(#cyanWave)" stroke-width="2.2" stroke-dasharray="5,3" filter="url(#glowCyan)"/>
+
+    <!--  Vertical Synodic Alignment Guides  -->
+    <g stroke="#00f0ff" stroke-width="1" stroke-dasharray="2,4" stroke-opacity="0.55">
+      <line x1="118" y1="250" x2="118" y2="395"/>
+      <line x1="356" y1="250" x2="356" y2="395"/>
+      <line x1="598" y1="80" x2="598" y2="395" stroke-width="1.8" stroke-dasharray="3,2" stroke-opacity="0.9"/>
+      <line x1="837" y1="106" x2="837" y2="395"/>
+    </g>
+
+    <!--  Synodic Harmonic Nodes  -->
+    <circle cx="118" cy="250" r="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="2"/>
+    <circle cx="356" cy="250" r="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="2"/>
+    <circle cx="598" cy="250" r="5.5" fill="#00f0ff" stroke="#ffffff" stroke-width="1.5" filter="url(#glowCyan)"/>
+    <circle cx="837" cy="250" r="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="2"/>
+  </g>
+
+  <!--  4 HALVING GOLDEN VERTICAL PILLARS  -->
+  <!--  H1: Nov 28, 2012 (x=211) | H2: Jul 9, 2016 (x=385) | H3: May 11, 2020 (x=569) | H4: Apr 20, 2024 (x=758)  -->
+  <g font-family="'Inter', sans-serif">
+    <!--  Halving 1 Pillar  -->
+    <rect x="208" y="80" width="6" height="280" fill="url(#goldPillar)"/>
+    <line x1="211" y1="80" x2="211" y2="360" stroke="#d4af37" stroke-width="1.5"/>
+    <rect x="167" y="73" width="88" height="26" rx="4" fill="#111a2e" stroke="#d4af37" stroke-width="1"/>
+    <text x="211" y="84" text-anchor="middle" fill="#f3e5ab" font-size="8.5" font-weight="700">HALVING I (2012)</text>
+    <text x="211" y="94" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="7.5">50 &#8594; 25 BTC</text>
+
+    <!--  Halving 2 Pillar  -->
+    <rect x="382" y="80" width="6" height="280" fill="url(#goldPillar)"/>
+    <line x1="385" y1="80" x2="385" y2="360" stroke="#d4af37" stroke-width="1.5"/>
+    <rect x="341" y="73" width="88" height="26" rx="4" fill="#111a2e" stroke="#d4af37" stroke-width="1"/>
+    <text x="385" y="84" text-anchor="middle" fill="#f3e5ab" font-size="8.5" font-weight="700">HALVING II (2016)</text>
+    <text x="385" y="94" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="7.5">25 &#8594; 12.5 BTC</text>
+
+    <!--  Halving 3 Pillar  -->
+    <rect x="566" y="80" width="6" height="280" fill="url(#goldPillar)"/>
+    <line x1="569" y1="80" x2="569" y2="360" stroke="#d4af37" stroke-width="1.5"/>
+    <rect x="515" y="73" width="90" height="26" rx="4" fill="#111a2e" stroke="#d4af37" stroke-width="1"/>
+    <text x="560" y="84" text-anchor="middle" fill="#f3e5ab" font-size="8.5" font-weight="700">HALVING III (2020)</text>
+    <text x="560" y="94" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="7.5">12.5 &#8594; 6.25 BTC</text>
+
+    <!--  Halving 4 Pillar  -->
+    <rect x="755" y="80" width="6" height="280" fill="url(#goldPillar)"/>
+    <line x1="758" y1="80" x2="758" y2="360" stroke="#d4af37" stroke-width="1.5"/>
+    <rect x="713" y="73" width="90" height="26" rx="4" fill="#111a2e" stroke="#d4af37" stroke-width="1"/>
+    <text x="758" y="84" text-anchor="middle" fill="#f3e5ab" font-size="8.5" font-weight="700">HALVING IV (2024)</text>
+    <text x="758" y="94" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="7.5">6.25 &#8594; 3.125 BTC</text>
+  </g>
+
+  <!--  BITCOIN LOGARITHMIC PRICE TRAJECTORY (2010 - 2026)  -->
+  <g>
+    <!--  Historical Solid Trajectory (2010 to 2024 Halving)  -->
+    <path d="M 96 360
+             L 125 320
+             L 140 260
+             L 162 308
+             L 211 276
+             L 228 225
+             L 238 242
+             L 260 198
+             L 285 245
+             L 314 270
+             L 356 254
+             L 385 207
+             L 418 184
+             L 454 148
+             L 480 185
+             L 502 220
+             L 530 162
+             L 555 174
+             L 569 162
+             L 598 142
+             L 614 128
+             L 626 141
+             L 641 126
+             L 665 158
+             L 690 192
+             L 725 148
+             L 758 128"
+          fill="none" stroke="#f3e5ab" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" filter="url(#glowGold)"/>
+
+    <!--  Post-2024 Projection Trajectory  -->
+    <path d="M 758 128
+             L 785 121
+             L 810 112
+             L 830 106
+             L 855 128
+             L 878 148"
+          fill="none" stroke="#00f0ff" stroke-width="2.2" stroke-dasharray="4,3" stroke-linejoin="round"/>
+
+    <!--  Key Cycle Anchor Dots  -->
+    <!--  Halving Price Dots  -->
+    <circle cx="211" cy="276" r="3.5" fill="#d4af37" stroke="#0a0f1a" stroke-width="1"/>
+    <circle cx="385" cy="207" r="3.5" fill="#d4af37" stroke="#0a0f1a" stroke-width="1"/>
+    <circle cx="569" cy="162" r="3.5" fill="#d4af37" stroke="#0a0f1a" stroke-width="1"/>
+    <circle cx="758" cy="128" r="3.5" fill="#d4af37" stroke="#0a0f1a" stroke-width="1"/>
+
+    <!--  Bull Peak Dots  -->
+    <circle cx="140" cy="260" r="3" fill="#10b981"/>
+    <circle cx="260" cy="198" r="4" fill="#10b981" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="454" cy="148" r="4" fill="#10b981" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="641" cy="126" r="4" fill="#10b981" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="830" cy="106" r="4" fill="#00f0ff" stroke="#ffffff" stroke-width="1"/>
+
+    <!--  Bear Bottom Dots  -->
+    <circle cx="162" cy="308" r="3" fill="#f43f5e"/>
+    <circle cx="314" cy="270" r="3.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1"/>
+    <circle cx="502" cy="220" r="3.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1"/>
+    <circle cx="690" cy="192" r="3.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1"/>
+
+    <!--  Dec 2020 Great Mutation Breakout Point ($29k)  -->
+    <circle cx="598" cy="142" r="5" fill="#00f0ff" stroke="#ffffff" stroke-width="1.5" filter="url(#glowCyan)"/>
+  </g>
+
+  <!--  HIGHLIGHT CALLOUT: DEC 2020 "GREAT MUTATION IN AQUARIUS"  -->
+  <g font-family="'Inter', sans-serif">
+    <!--  Callout Box  -->
+    <rect x="442" y="272" width="312" height="62" rx="6" fill="#0d182c" fill-opacity="0.95" stroke="#00f0ff" stroke-width="1.5" filter="url(#glowCyan)"/>
+    
+    <!--  Pointer Line to Dec 2020 Node (x=598, y=250 & y=142)  -->
+    <line x1="598" y1="272" x2="598" y2="257" stroke="#00f0ff" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+
+    <text x="598" y="287" text-anchor="middle" fill="#00f0ff" font-size="9.5" font-weight="700" letter-spacing="0.4">
+      DES 2020: "GREAT MUTATION IN AQUARIUS" (0&#176; AKUARIUS)
+    </text>
+    <text x="598" y="301" text-anchor="middle" fill="#e2e8f0" font-size="8.5">
+      Konjungsi Agung 20 Tahun Jupiter–Saturnus: Pergeseran Elemen Tanah &#8594; Udara
+    </text>
+    <text x="598" y="314" text-anchor="middle" fill="#f3e5ab" font-size="8.5" font-weight="600">
+      Era Adopsi Korporasi (MicroStrategy, Tesla) &amp; Fondasi Likuiditas Spot ETF
+    </text>
+    <text x="598" y="326" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="7.5">
+      Breakout Makro $20k ATH &#8594; Akselerasi Institusional Global
+    </text>
+  </g>
+
+  <!--  X-AXIS YEAR TIMELINE (2010 - 2027)  -->
+  <g font-family="'JetBrains Mono', monospace" font-size="9" fill="#8e9bb0">
+    <!--  Year Ticks & Labels  -->
+    <g transform="translate(0, 360)">
+      <line x1="72" y1="0" x2="72" y2="5" stroke="#8e9bb0"/>
+      <text x="72" y="16" text-anchor="middle">2010</text>
+
+      <line x1="120" y1="0" x2="120" y2="5" stroke="#8e9bb0"/>
+      <text x="120" y="16" text-anchor="middle">2011</text>
+
+      <line x1="168" y1="0" x2="168" y2="5" stroke="#8e9bb0"/>
+      <text x="168" y="16" text-anchor="middle" fill="#d4af37" font-weight="700">2012</text>
+
+      <line x1="216" y1="0" x2="216" y2="5" stroke="#8e9bb0"/>
+      <text x="216" y="16" text-anchor="middle">2013</text>
+
+      <line x1="264" y1="0" x2="264" y2="5" stroke="#8e9bb0"/>
+      <text x="264" y="16" text-anchor="middle">2014</text>
+
+      <line x1="312" y1="0" x2="312" y2="5" stroke="#8e9bb0"/>
+      <text x="312" y="16" text-anchor="middle">2015</text>
+
+      <line x1="360" y1="0" x2="360" y2="5" stroke="#8e9bb0"/>
+      <text x="360" y="16" text-anchor="middle" fill="#d4af37" font-weight="700">2016</text>
+
+      <line x1="408" y1="0" x2="408" y2="5" stroke="#8e9bb0"/>
+      <text x="408" y="16" text-anchor="middle">2017</text>
+
+      <line x1="456" y1="0" x2="456" y2="5" stroke="#8e9bb0"/>
+      <text x="456" y="16" text-anchor="middle">2018</text>
+
+      <line x1="504" y1="0" x2="504" y2="5" stroke="#8e9bb0"/>
+      <text x="504" y="16" text-anchor="middle">2019</text>
+
+      <line x1="552" y1="0" x2="552" y2="5" stroke="#8e9bb0"/>
+      <text x="552" y="16" text-anchor="middle" fill="#d4af37" font-weight="700">2020</text>
+
+      <line x1="600" y1="0" x2="600" y2="5" stroke="#00f0ff"/>
+      <text x="600" y="16" text-anchor="middle" fill="#00f0ff" font-weight="700">2021</text>
+
+      <line x1="648" y1="0" x2="648" y2="5" stroke="#8e9bb0"/>
+      <text x="648" y="16" text-anchor="middle">2022</text>
+
+      <line x1="696" y1="0" x2="696" y2="5" stroke="#8e9bb0"/>
+      <text x="696" y="16" text-anchor="middle">2023</text>
+
+      <line x1="744" y1="0" x2="744" y2="5" stroke="#8e9bb0"/>
+      <text x="744" y="16" text-anchor="middle" fill="#d4af37" font-weight="700">2024</text>
+
+      <line x1="792" y1="0" x2="792" y2="5" stroke="#8e9bb0"/>
+      <text x="792" y="16" text-anchor="middle">2025</text>
+
+      <line x1="840" y1="0" x2="840" y2="5" stroke="#8e9bb0"/>
+      <text x="840" y="16" text-anchor="middle" fill="#00f0ff">2026</text>
+
+      <line x1="888" y1="0" x2="888" y2="5" stroke="#8e9bb0"/>
+      <text x="888" y="16" text-anchor="middle">2027</text>
+    </g>
+  </g>
+
+  <!--  BOTTOM SYNODIC QUADRANT TIMELINE BAR (19.86-YEAR JUPITER-SATURN CYCLE)  -->
+  <g transform="translate(0, 386)" font-family="'Inter', sans-serif">
+    <!--  Background Track  -->
+    <rect x="72" y="8" width="816" height="44" rx="5" fill="#0c1526" stroke="#1e283d" stroke-width="1"/>
+
+    <!--  Quadrant 1: Opp (2010.9) to Closing Square (2015.9)  -->
+    <rect x="118" y="10" width="238" height="40" fill="#00f0ff" fill-opacity="0.05" stroke="#00f0ff" stroke-width="0.6" stroke-dasharray="2,2"/>
+    <text x="237" y="25" text-anchor="middle" fill="#00f0ff" font-size="8.5" font-weight="700">
+      KUADRAN I (4,96 THN) &#8226; EPOCH 1
+    </text>
+    <text x="237" y="37" text-anchor="middle" fill="#e2e8f0" font-size="8">
+      Oposisi (180&#176;) &#8594; Kuadratur Akhir (270&#176;)
+    </text>
+    <text x="237" y="47" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="7.5">
+      2011–2015: Fase Genesis &amp; Ritel Awal
+    </text>
+
+    <!--  Quadrant 2: Closing Square (2015.9) to Conjunction (2020.97)  -->
+    <rect x="356" y="10" width="242" height="40" fill="#00f0ff" fill-opacity="0.09" stroke="#00f0ff" stroke-width="0.6" stroke-dasharray="2,2"/>
+    <text x="477" y="25" text-anchor="middle" fill="#00f0ff" font-size="8.5" font-weight="700">
+      KUADRAN II (4,96 THN) &#8226; EPOCH 2
+    </text>
+    <text x="477" y="37" text-anchor="middle" fill="#e2e8f0" font-size="8">
+      Kuadratur Akhir (270&#176;) &#8594; Konjungsi Agung (0&#176;)
+    </text>
+    <text x="477" y="47" text-anchor="middle" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="7.5">
+      2016–2020: Maturasi Infrastruktur &amp; Derivatif
+    </text>
+
+    <!--  Quadrant 3: Conjunction (2020.97) to Opening Square (2025.93)  -->
+    <rect x="598" y="10" width="239" height="40" fill="#d4af37" fill-opacity="0.12" stroke="#00f0ff" stroke-width="1.2"/>
+    <text x="717" y="25" text-anchor="middle" fill="#f3e5ab" font-size="8.5" font-weight="700">
+      KUADRAN III (4,96 THN) &#8226; EPOCH 3 &amp; 4
+    </text>
+    <text x="717" y="37" text-anchor="middle" fill="#00f0ff" font-size="8" font-weight="600">
+      Great Mutation (0&#176; Akuarius) &#8594; Kuadratur Awal (90&#176;)
+    </text>
+    <text x="717" y="47" text-anchor="middle" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="7.5">
+      2021–2025: Era Institusional, Spot ETF &amp; Korporasi
+    </text>
+
+    <!--  Synodic Milestone Badges on Timeline  -->
+    <circle cx="118" cy="10" r="3.5" fill="#00f0ff"/>
+    <text x="118" y="4" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="7.5">180&#176; (2011)</text>
+
+    <circle cx="356" cy="10" r="3.5" fill="#00f0ff"/>
+    <text x="356" y="4" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="7.5">270&#176; (2015.9)</text>
+
+    <circle cx="598" cy="10" r="4.5" fill="#00f0ff" stroke="#ffffff" stroke-width="1"/>
+    <text x="598" y="4" text-anchor="middle" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700">0&#176; MUTATION (Des 2020)</text>
+
+    <circle cx="837" cy="10" r="3.5" fill="#00f0ff"/>
+    <text x="837" y="4" text-anchor="middle" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="7.5">90&#176; (2025.9)</text>
+  </g>
+
+  <!--  Footer Attribution / Technical Note  -->
+  <text x="460" y="451" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" fill="#8e9bb0">
+    RizaCorp Quantitative Astro-Economics &#8226; T_Halving = 210.000 Blok (~4,00 Thn) | T_Synodic(Jup-Sat) = 19,859 Thn (Kuadran 90&#176; = 4,965 Thn) &#8226; Rasio Harmonik 4:5
+  </text>
+</svg>

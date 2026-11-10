@@ -1,0 +1,273 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="100%" height="auto">
+  <defs>
+    <!--  Subtle Background Grid  -->
+    <pattern id="bg-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1e283d" stroke-width="0.6" stroke-opacity="0.5"/>
+    </pattern>
+
+    <!--  Card Surface Gradient  -->
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131c2e" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0d1424" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <!--  Risk & Return Bar Gradient  -->
+    <linearGradient id="risk-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="25%" stop-color="#d4af37"/>
+      <stop offset="50%" stop-color="#00f0ff"/>
+      <stop offset="75%" stop-color="#f3e5ab"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+
+    <!--  Soft Glow Filter  -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!--  Arrowhead Markers  -->
+    <marker id="arr-emerald" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#10b981"/>
+    </marker>
+    <marker id="arr-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#d4af37"/>
+    </marker>
+    <marker id="arr-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#00f0ff"/>
+    </marker>
+    <marker id="arr-lightgold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#f3e5ab"/>
+    </marker>
+    <marker id="arr-rose" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8.5 5 L 0 8.5 z" fill="#f43f5e"/>
+    </marker>
+  </defs>
+
+  <!--  Main Canvas Background  -->
+  <rect x="2" y="2" width="916" height="436" rx="12" fill="#0a0f1a" stroke="#1e283d" stroke-width="2"/>
+  <rect x="2" y="2" width="916" height="436" rx="12" fill="url(#bg-grid)"/>
+
+  <!--  Header Section  -->
+  <g transform="translate(28, 30)">
+    <rect x="0" y="-14" width="4" height="32" rx="2" fill="#d4af37"/>
+    <text x="14" y="0" font-family="'Inter', sans-serif" font-size="14.5" font-weight="800" fill="#e2e8f0" letter-spacing="0.6">
+      THE ELEVATOR CONCEPT: <tspan fill="#d4af37">ALUR ROTASI MODAL KRIPTO &amp; SIKLUS DOMINASI (BTC.D)</tspan>
+    </text>
+    <text x="14" y="17" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8e9bb0">
+      CASCADING LIQUIDITY PIPELINE // DARI AKUMULASI STABLECOIN MENUJU KLIMAKS ALTSEASON
+    </text>
+
+    <!--  Legend Top Right  -->
+    <g transform="translate(650, -6)">
+      <rect x="0" y="0" width="214" height="26" rx="5" fill="#111827" stroke="#1e283d" stroke-width="1"/>
+      <line x1="12" y1="13" x2="34" y2="13" stroke="#00f0ff" stroke-width="2.5"/>
+      <circle cx="23" cy="13" r="3" fill="#00f0ff"/>
+      <text x="42" y="16.5" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#e2e8f0">Inflow</text>
+
+      <line x1="94" y1="13" x2="118" y2="13" stroke="#f43f5e" stroke-width="2" stroke-dasharray="4 3"/>
+      <text x="125" y="16.5" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#f43f5e">Profit / Bear Reset</text>
+    </g>
+  </g>
+
+  <!--  BTC Dominance (BTC.D) Macro Trajectory Backdrop Curve  -->
+  <g>
+    <!--  Subtle Horizontal Floor Levels  -->
+    <line x1="28" y1="125" x2="892" y2="125" stroke="#1e283d" stroke-width="1" stroke-dasharray="2 6"/>
+    <line x1="28" y1="225" x2="892" y2="225" stroke="#1e283d" stroke-width="1" stroke-dasharray="2 6"/>
+
+    <!--  BTC.D Trajectory Curve  -->
+    <path d="M 108 118 C 195 105, 220 74, 288 74 C 365 74, 410 105, 468 122 C 540 142, 585 162, 648 182 C 715 202, 765 218, 828 232"
+          fill="none" stroke="#d4af37" stroke-width="2" stroke-dasharray="5 4" opacity="0.55"/>
+
+    <!--  Trajectory Callout Badges  -->
+    <g transform="translate(218, 53)">
+      <rect x="0" y="0" width="142" height="17" rx="4" fill="#0a0f1a" stroke="#d4af37" stroke-width="0.8"/>
+      <text x="71" y="11.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#d4af37">
+        PUNCAK BTC.D (60%+)
+      </text>
+    </g>
+    <g transform="translate(566, 130)">
+      <rect x="0" y="0" width="166" height="17" rx="4" fill="#0a0f1a" stroke="#8e9bb0" stroke-width="0.8"/>
+      <text x="83" y="11.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#f3e5ab">
+        PENURUNAN DOMINASI BTC.D
+      </text>
+    </g>
+  </g>
+
+  <!--  CASCADING LIQUIDITY PIPES (Connecting Stages 1 -> 2 -> 3 -> 4 -> 5)  -->
+  <!--  Pipe 1 to 2  -->
+  <g>
+    <path d="M 188 128 C 200 128, 196 168, 208 168" fill="none" stroke="#10b981" stroke-width="6" stroke-opacity="0.18"/>
+    <path d="M 188 128 C 200 128, 196 168, 209 168" fill="none" stroke="#10b981" stroke-width="2" marker-end="url(#arr-emerald)"/>
+    <circle cx="188" cy="128" r="3.5" fill="#10b981"/>
+  </g>
+
+  <!--  Pipe 2 to 3  -->
+  <g>
+    <path d="M 368 168 C 380 168, 376 208, 388 208" fill="none" stroke="#d4af37" stroke-width="6" stroke-opacity="0.18"/>
+    <path d="M 368 168 C 380 168, 376 208, 389 208" fill="none" stroke="#d4af37" stroke-width="2" marker-end="url(#arr-gold)"/>
+    <circle cx="368" cy="168" r="3.5" fill="#d4af37"/>
+  </g>
+
+  <!--  Pipe 3 to 4  -->
+  <g>
+    <path d="M 548 208 C 560 208, 556 248, 568 248" fill="none" stroke="#00f0ff" stroke-width="6" stroke-opacity="0.18"/>
+    <path d="M 548 208 C 560 208, 556 248, 569 248" fill="none" stroke="#00f0ff" stroke-width="2" marker-end="url(#arr-cyan)"/>
+    <circle cx="548" cy="208" r="3.5" fill="#00f0ff"/>
+  </g>
+
+  <!--  Pipe 4 to 5  -->
+  <g>
+    <path d="M 728 248 C 740 248, 736 288, 748 288" fill="none" stroke="#f3e5ab" stroke-width="6" stroke-opacity="0.18"/>
+    <path d="M 728 248 C 740 248, 736 288, 749 288" fill="none" stroke="#f3e5ab" stroke-width="2" marker-end="url(#arr-lightgold)"/>
+    <circle cx="728" cy="248" r="3.5" fill="#f3e5ab"/>
+  </g>
+
+  <!--  Macro Reset Loop (Stage 5 Exit back to Stage 1 Stablecoin Reserve)  -->
+  <g>
+    <path d="M 828 340 L 828 372 Q 828 382 818 382 L 118 382 Q 108 382 108 372 L 108 185"
+          fill="none" stroke="#f43f5e" stroke-width="5" stroke-opacity="0.12"/>
+    <path d="M 828 340 L 828 372 Q 828 382 818 382 L 118 382 Q 108 382 108 372 L 108 186"
+          fill="none" stroke="#f43f5e" stroke-width="1.8" stroke-dasharray="6 4" marker-end="url(#arr-rose)"/>
+    <circle cx="828" cy="340" r="3.5" fill="#f43f5e"/>
+
+    <!--  Loop Label Pill  -->
+    <rect x="275" y="371" width="390" height="21" rx="10.5" fill="#0d1424" stroke="#f43f5e" stroke-width="1"/>
+    <text x="470" y="385" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#f43f5e">
+      PROFIT TAKING KE STABLECOIN &amp; SIKLUS BEAR MARKET RESET
+    </text>
+  </g>
+
+  <!--  =========================================================  -->
+  <!--  STAGE 1: FIAT & STABLECOINS (X:28, Y:76)                   -->
+  <!--  =========================================================  -->
+  <g transform="translate(28, 76)">
+    <rect x="0" y="0" width="160" height="104" rx="8" fill="url(#card-bg)" stroke="#10b981" stroke-width="1.5"/>
+    <path d="M 0 8 Q 0 0 8 0 L 152 0 Q 160 0 160 8 L 160 23 L 0 23 Z" fill="#10b981" fill-opacity="0.16"/>
+    <text x="10" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#10b981">STAGE 01 // FLOOR B1</text>
+    <circle cx="146" cy="11.5" r="4" fill="#10b981" filter="url(#glow)"/>
+
+    <text x="10" y="41" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#e2e8f0">Fiat &amp; Stablecoins</text>
+    <text x="10" y="57" font-family="'Inter', sans-serif" font-size="10" fill="#8e9bb0">USDT / USDC Reserve</text>
+    <text x="10" y="71" font-family="'Inter', sans-serif" font-size="10" fill="#8e9bb0">Accumulation (Dry Powder)</text>
+
+    <rect x="10" y="81" width="140" height="16" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="1"/>
+    <text x="80" y="92" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#10b981">
+      LIQUIDITY BASE // READY
+    </text>
+  </g>
+
+  <!--  =========================================================  -->
+  <!--  STAGE 2: BITCOIN (BTC) BREAKOUT (X:208, Y:116)             -->
+  <!--  =========================================================  -->
+  <g transform="translate(208, 116)">
+    <rect x="0" y="0" width="160" height="104" rx="8" fill="url(#card-bg)" stroke="#d4af37" stroke-width="1.5"/>
+    <path d="M 0 8 Q 0 0 8 0 L 152 0 Q 160 0 160 8 L 160 23 L 0 23 Z" fill="#d4af37" fill-opacity="0.18"/>
+    <text x="10" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#d4af37">STAGE 02 // FLOOR L1</text>
+    <circle cx="146" cy="11.5" r="4" fill="#d4af37" filter="url(#glow)"/>
+
+    <text x="10" y="41" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#e2e8f0">Bitcoin Breakout</text>
+    <text x="10" y="57" font-family="'Inter', sans-serif" font-size="10" fill="#8e9bb0">BTC.D climbs to 60%+,</text>
+    <text x="10" y="71" font-family="'Inter', sans-serif" font-size="10" fill="#8e9bb0">alts bleed in pair BTC</text>
+
+    <rect x="10" y="81" width="140" height="16" rx="4" fill="#0a0f1a" stroke="#d4af37" stroke-width="0.8"/>
+    <text x="80" y="92" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#d4af37">
+      BTC.D: 60%+ ▲ (ALTS BLEED)
+    </text>
+  </g>
+
+  <!--  =========================================================  -->
+  <!--  STAGE 3: ETHEREUM & MAJOR L1s (X:388, Y:156)               -->
+  <!--  =========================================================  -->
+  <g transform="translate(388, 156)">
+    <rect x="0" y="0" width="160" height="104" rx="8" fill="url(#card-bg)" stroke="#00f0ff" stroke-width="1.5"/>
+    <path d="M 0 8 Q 0 0 8 0 L 152 0 Q 160 0 160 8 L 160 23 L 0 23 Z" fill="#00f0ff" fill-opacity="0.16"/>
+    <text x="10" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#00f0ff">STAGE 03 // FLOOR L2</text>
+    <circle cx="146" cy="11.5" r="4" fill="#00f0ff" filter="url(#glow)"/>
+
+    <text x="10" y="41" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#e2e8f0">ETH &amp; Major L1s</text>
+    <text x="10" y="57" font-family="'Inter', sans-serif" font-size="10" fill="#8e9bb0">SOL, ETH momentum takes</text>
+    <text x="10" y="71" font-family="'Inter', sans-serif" font-size="10" fill="#8e9bb0">over; BTC consolidates ATH</text>
+
+    <rect x="10" y="81" width="140" height="16" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="1"/>
+    <text x="80" y="92" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#00f0ff">
+      BTC.D: ~54% ▼ (L1 SURGE)
+    </text>
+  </g>
+
+  <!--  =========================================================  -->
+  <!--  STAGE 4: MID-CAPS & SECTOR ROTATIONS (X:568, Y:196)        -->
+  <!--  =========================================================  -->
+  <g transform="translate(568, 196)">
+    <rect x="0" y="0" width="160" height="104" rx="8" fill="url(#card-bg)" stroke="#f3e5ab" stroke-width="1.5"/>
+    <path d="M 0 8 Q 0 0 8 0 L 152 0 Q 160 0 160 8 L 160 23 L 0 23 Z" fill="#f3e5ab" fill-opacity="0.16"/>
+    <text x="10" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#f3e5ab">STAGE 04 // FLOOR L3</text>
+    <circle cx="146" cy="11.5" r="4" fill="#f3e5ab" filter="url(#glow)"/>
+
+    <text x="10" y="41" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#e2e8f0">Mid-Caps &amp; Sectors</text>
+    <text x="10" y="57" font-family="'Inter', sans-serif" font-size="10" fill="#8e9bb0">High-beta narratives:</text>
+    <text x="10" y="71" font-family="'Inter', sans-serif" font-size="10" fill="#f3e5ab" font-weight="600">AI Agents, DePIN, RWA</text>
+
+    <rect x="10" y="81" width="140" height="16" rx="4" fill="#0a0f1a" stroke="#1e283d" stroke-width="1"/>
+    <text x="80" y="92" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#f3e5ab">
+      BTC.D: ~47% ▼▼ (ROTATION)
+    </text>
+  </g>
+
+  <!--  =========================================================  -->
+  <!--  STAGE 5: ALTSEASON MANIA & MEMES (X:748, Y:236)            -->
+  <!--  =========================================================  -->
+  <g transform="translate(748, 236)">
+    <rect x="0" y="0" width="160" height="104" rx="8" fill="url(#card-bg)" stroke="#f43f5e" stroke-width="1.8"/>
+    <path d="M 0 8 Q 0 0 8 0 L 152 0 Q 160 0 160 8 L 160 23 L 0 23 Z" fill="#f43f5e" fill-opacity="0.22"/>
+    <text x="10" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#f43f5e">STAGE 05 // PENTHOUSE</text>
+    <circle cx="146" cy="11.5" r="4" fill="#f43f5e" filter="url(#glow)"/>
+
+    <text x="10" y="41" font-family="'Inter', sans-serif" font-size="12.5" font-weight="700" fill="#e2e8f0">Altseason &amp; Memes</text>
+    <text x="10" y="57" font-family="'Inter', sans-serif" font-size="10" fill="#8e9bb0">Euphoric climax, small-caps,</text>
+    <text x="10" y="71" font-family="'Inter', sans-serif" font-size="10" fill="#f43f5e" font-weight="600">final exit before bear cycle</text>
+
+    <rect x="10" y="81" width="140" height="16" rx="4" fill="#2a0a18" stroke="#f43f5e" stroke-width="0.9"/>
+    <text x="80" y="92" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#f43f5e">
+      BTC.D PLUMMETS (&lt;42%) ⚠️
+    </text>
+  </g>
+
+  <!--  Bottom Left Risk & Volatility Spectrum Panel  -->
+  <g transform="translate(28, 224)">
+    <rect x="0" y="0" width="290" height="116" rx="8" fill="#0d1424" stroke="#1e283d" stroke-width="1.2"/>
+    <text x="14" y="20" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0" letter-spacing="0.4">
+      INDIKATOR SIKLUS &amp; SPEKTRUM RISIKO
+    </text>
+
+    <!--  Spectrum Bar  -->
+    <rect x="14" y="30" width="262" height="7" rx="3.5" fill="url(#risk-grad)"/>
+    <text x="14" y="49" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#10b981">LOW RISK (RESERVE)</text>
+    <text x="276" y="49" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#f43f5e">EXTREME EUPHORIA</text>
+
+    <!--  Key Rules  -->
+    <circle cx="19" cy="68" r="3" fill="#d4af37"/>
+    <text x="28" y="71" font-family="'Inter', sans-serif" font-size="9.5" fill="#8e9bb0">
+      <tspan fill="#e2e8f0" font-weight="600">BTC.D Naik (60%+):</tspan> Likuiditas tersedot ke BTC.
+    </text>
+
+    <circle cx="19" cy="86" r="3" fill="#00f0ff"/>
+    <text x="28" y="89" font-family="'Inter', sans-serif" font-size="9.5" fill="#8e9bb0">
+      <tspan fill="#e2e8f0" font-weight="600">BTC Sideways di ATH:</tspan> Rotasi ke ETH, SOL &amp; Mid-Caps.
+    </text>
+
+    <circle cx="19" cy="104" r="3" fill="#f43f5e"/>
+    <text x="28" y="107" font-family="'Inter', sans-serif" font-size="9.5" fill="#8e9bb0">
+      <tspan fill="#f43f5e" font-weight="600">BTC.D Anjlok:</tspan> Retail FOMO di Memes (Waktunya Exit).
+    </text>
+  </g>
+
+  <!--  Bottom Metadata Bar  -->
+  <text x="28" y="418" font-family="'JetBrains Mono', monospace" font-size="9" fill="#8e9bb0">
+    MODEL: THE ELEVATOR CAPITAL ROTATION // METRIK KUNCI: BITCOIN DOMINANCE (BTC.D) &amp; TOTAL3
+  </text>
+  <text x="892" y="418" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="9" fill="#d4af37">
+    RIZACORP QUANTITATIVE VISUALIZATION
+  </text>
+</svg>

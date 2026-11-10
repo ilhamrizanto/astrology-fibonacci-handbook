@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="auto">
+  <defs>
+    <!--  Linear Gradients  -->
+    <linearGradient id="goldArea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.32" />
+      <stop offset="85%" stop-color="#d4af37" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#0a0f1a" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="cyanArea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.25" />
+      <stop offset="75%" stop-color="#00f0ff" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#0a0f1a" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="roseDangerZone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.28" />
+    </linearGradient>
+
+    <!--  Glow Filters  -->
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="roseGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!--  Arrow Markers  -->
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#f3e5ab" />
+    </marker>
+    <marker id="arrowRose" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#f43f5e" />
+    </marker>
+    <marker id="arrowEmerald" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981" />
+    </marker>
+  </defs>
+
+  <!--  Main Canvas Background  -->
+  <rect x="2" y="2" width="916" height="456" rx="10" fill="#0a0f1a" stroke="#1e283d" stroke-width="2" />
+
+  <!--  Subtle Background Grid  -->
+  <g stroke="#1e283d" stroke-width="0.6" stroke-dasharray="2 4">
+    <!--  Vertical Time Synchronization Lines  -->
+    <line x1="140" y1="54" x2="140" y2="432" />
+    <line x1="255" y1="54" x2="255" y2="432" />
+    <line x1="370" y1="54" x2="370" y2="432" />
+    <line x1="465" y1="54" x2="465" y2="432" stroke="#2a3956" stroke-dasharray="3 3" />
+    <line x1="530" y1="54" x2="530" y2="432" />
+    <line x1="650" y1="54" x2="650" y2="432" />
+    <line x1="755" y1="54" x2="755" y2="432" />
+    <line x1="835" y1="54" x2="835" y2="432" />
+  </g>
+
+  <!--  ==================== HEADER ====================  -->
+  <rect x="18" y="12" width="884" height="34" rx="6" fill="#111827" stroke="#1e283d" stroke-width="1" />
+  <circle cx="34" cy="29" r="5" fill="#d4af37" />
+  <circle cx="48" cy="29" r="5" fill="#00f0ff" />
+  <text x="64" y="34" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#e2e8f0" letter-spacing="0.6">
+    SIKLUS KOSMIK EMAS (SUN-VENUS) &amp; MINYAK MENTAH (MARS-OPEC)
+  </text>
+  <text x="888" y="33" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#8e9bb0" text-anchor="end">
+    ASTRO-ECONOMICS // 2011–2025
+  </text>
+
+  <!--  ==================== TOP PANEL: GOLD SPOT (XAU/USD) ====================  -->
+  <g id="gold-panel">
+    <!--  Panel Border & Header  -->
+    <rect x="18" y="54" width="884" height="186" rx="6" fill="#0d1424" fill-opacity="0.6" stroke="#1e283d" stroke-width="1" />
+    
+    <!--  Section Title Banner  -->
+    <rect x="28" y="62" width="445" height="22" rx="4" fill="#172033" stroke="#d4af37" stroke-width="0.6" stroke-opacity="0.5" />
+    <text x="36" y="77" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#f3e5ab" letter-spacing="0.4">
+      &#9737; GOLD SPOT (XAU/USD): ORBIT MATAHARI &amp; EXTENSI FRAKTAL
+    </text>
+
+    <!--  Astro Legend / Note on Right  -->
+    <rect x="615" y="62" width="275" height="22" rx="4" fill="#131c2e" stroke="#1e283d" stroke-width="0.8" />
+    <text x="752" y="76" font-family="'Inter', sans-serif" font-size="9.5" fill="#8e9bb0" text-anchor="middle">
+      &#9792; Venus Retrograde (584d Synodic) &amp; Solar Ingress
+    </text>
+
+    <!--  Y-Axis Labels & Horizontal Fibonacci Gridlines  -->
+    <g font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8e9bb0" text-anchor="end">
+      <!--  $2700+ Level (Fib 2.618)  -->
+      <line x1="72" y1="96" x2="885" y2="96" stroke="#d4af37" stroke-width="0.7" stroke-dasharray="4 3" stroke-opacity="0.5" />
+      <text x="66" y="99" fill="#f3e5ab">$2,800</text>
+      <text x="882" y="92" font-size="8.5" fill="#d4af37" text-anchor="end">FIB EXT 2.618 ($2,790)</text>
+
+      <!--  $2075 Level (Fib 1.618)  -->
+      <line x1="72" y1="142" x2="885" y2="142" stroke="#d4af37" stroke-width="0.7" stroke-dasharray="4 3" stroke-opacity="0.4" />
+      <text x="66" y="145" fill="#e2e8f0">$2,075</text>
+      <text x="882" y="138" font-size="8.5" fill="#d4af37" text-anchor="end">FIB EXT 1.618 ($2,075)</text>
+
+      <!--  $1920 Level (2011 Peak)  -->
+      <line x1="72" y1="158" x2="885" y2="158" stroke="#1e283d" stroke-width="0.8" />
+      <text x="66" y="161">$1,920</text>
+
+      <!--  $1046 Level (2015 Bottom)  -->
+      <line x1="72" y1="214" x2="885" y2="214" stroke="#1e283d" stroke-width="0.8" />
+      <text x="66" y="217">$1,046</text>
+    </g>
+
+    <!--  Cup & Handle / Multi-Year Accumulation Arc (2011 to 2020)  -->
+    <path d="M 140 158 Q 335 256 530 142" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="3 3" stroke-opacity="0.55" />
+    <text x="335" y="228" font-family="'Inter', sans-serif" font-size="9" font-style="italic" fill="#8e9bb0" text-anchor="middle">
+      9-Year Solar-Venus Cup Accumulation (2011–2020)
+    </text>
+
+    <!--  Gold Area Under Curve  -->
+    <path d="M 85 178 L 140 158 L 200 182 L 255 214 L 315 198 L 370 192 L 425 172 L 465 184 L 530 142 L 590 165 L 650 143 L 710 170 L 755 140 L 835 95 L 865 90 L 865 232 L 85 232 Z" fill="url(#goldArea)" />
+
+    <!--  Gold Main Price Trajectory  -->
+    <path d="M 85 178 L 140 158 L 200 182 L 255 214 L 315 198 L 370 192 L 425 172 L 465 184 L 530 142 L 590 165 L 650 143 L 710 170 L 755 140 L 835 95 L 865 90" fill="none" stroke="#d4af37" stroke-width="2.4" filter="url(#goldGlow)" />
+
+    <!--  Key Turning Points & Callouts  -->
+    <!--  1. 2011 Peak ($1920)  -->
+    <circle cx="140" cy="158" r="4" fill="#0a0f1a" stroke="#f3e5ab" stroke-width="2" />
+    <rect x="92" y="114" width="112" height="32" rx="4" fill="#131c2e" stroke="#d4af37" stroke-width="0.8" />
+    <text x="148" y="127" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#f3e5ab" text-anchor="middle">$1,920 (Sep 2011)</text>
+    <text x="148" y="139" font-family="'Inter', sans-serif" font-size="8.5" fill="#8e9bb0" text-anchor="middle">Solar Max Peak</text>
+
+    <!--  2. Dec 2015 Bottom ($1046)  -->
+    <circle cx="255" cy="214" r="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="2" />
+    <rect x="202" y="168" width="106" height="30" rx="4" fill="#131c2e" stroke="#00f0ff" stroke-width="0.7" />
+    <text x="255" y="181" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#00f0ff" text-anchor="middle">$1,046 (Des 2015)</text>
+    <text x="255" y="192" font-family="'Inter', sans-serif" font-size="8" fill="#8e9bb0" text-anchor="middle">&#9792; Perihelion Low</text>
+
+    <!--  3. Aug 2020 Peak ($2075)  -->
+    <circle cx="530" cy="142" r="4.5" fill="#0a0f1a" stroke="#f3e5ab" stroke-width="2" />
+    <rect x="462" y="96" width="136" height="34" rx="4" fill="#131c2e" stroke="#d4af37" stroke-width="0.9" />
+    <text x="530" y="110" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#f3e5ab" text-anchor="middle">$2,075 (Agu 2020)</text>
+    <text x="530" y="122" font-family="'Inter', sans-serif" font-size="8.5" fill="#10b981" text-anchor="middle">Fib 1.618 + &#9792; Retrograde</text>
+
+    <!--  4. Triple Top & Breakout (2022-2023)  -->
+    <circle cx="650" cy="143" r="3.5" fill="#d4af37" />
+    <circle cx="710" cy="170" r="3.5" fill="#00f0ff" />
+    <text x="690" y="184" font-family="'Inter', sans-serif" font-size="8.5" fill="#8e9bb0" text-anchor="middle">Triple Top Test</text>
+
+    <!--  5. 2024 Breakout ($2700+)  -->
+    <circle cx="755" cy="140" r="4" fill="#10b981" stroke="#0a0f1a" stroke-width="1.5" />
+    <circle cx="835" cy="95" r="5" fill="#f3e5ab" stroke="#d4af37" stroke-width="2" filter="url(#goldGlow)" />
+    
+    <!--  Breakout Vector Arrow  -->
+    <path d="M 745 130 L 818 93" fill="none" stroke="#f3e5ab" stroke-width="1.5" stroke-dasharray="2 2" marker-end="url(#arrowGold)" />
+
+    <rect x="645" y="90" width="175" height="34" rx="4" fill="#17223b" stroke="#f3e5ab" stroke-width="1.2" />
+    <text x="732" y="104" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#f3e5ab" text-anchor="middle">$2,700+ (2024 BREAKOUT)</text>
+    <text x="732" y="117" font-family="'Inter', sans-serif" font-size="8.5" fill="#10b981" text-anchor="middle">Aries Solar Ingress + Fib 2.618</text>
+  </g>
+
+  <!--  ==================== SHARED SYNCHRONIZED TIMELINE BAR ====================  -->
+  <g id="timeline-divider">
+    <rect x="18" y="243" width="884" height="18" rx="3" fill="#131c2e" stroke="#1e283d" stroke-width="1" />
+    <g font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#8e9bb0" text-anchor="middle">
+      <text x="140" y="255">2011</text>
+      <text x="255" y="255">2015</text>
+      <text x="370" y="255">2018</text>
+      <text x="465" y="255" fill="#f43f5e">APR 2020</text>
+      <text x="530" y="255" fill="#f3e5ab">AGU 2020</text>
+      <text x="650" y="255">2022</text>
+      <text x="755" y="255">2023</text>
+      <text x="835" y="255" fill="#10b981">2024+</text>
+    </g>
+  </g>
+
+  <!--  ==================== BOTTOM PANEL: CRUDE OIL (WTI) ====================  -->
+  <g id="oil-panel">
+    <!--  Panel Border  -->
+    <rect x="18" y="264" width="884" height="182" rx="6" fill="#0d1424" fill-opacity="0.6" stroke="#1e283d" stroke-width="1" />
+
+    <!--  Sub-Zero Negative Pricing Hazard Zone (Below $0 Line at y=396)  -->
+    <rect x="72" y="396" width="813" height="42" fill="url(#roseDangerZone)" />
+    <text x="880" y="432" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#f43f5e" text-anchor="end" letter-spacing="0.5">
+      ZONA HARGA NEGATIF (SUB-ZERO CONTANGO TRAP &lt; $0.00)
+    </text>
+
+    <!--  Section Title Banner  -->
+    <rect x="28" y="272" width="490" height="22" rx="4" fill="#172033" stroke="#f43f5e" stroke-width="0.7" stroke-opacity="0.6" />
+    <text x="36" y="287" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#00f0ff" letter-spacing="0.4">
+      &#9794; CRUDE OIL (WTI): ANOMALI HARGA NEGATIF -$37.63 (20 APRIL 2020)
+    </text>
+
+    <!--  Astro Legend / Note on Right  -->
+    <rect x="605" y="272" width="285" height="22" rx="4" fill="#131c2e" stroke="#1e283d" stroke-width="0.8" />
+    <text x="747" y="286" font-family="'Inter', sans-serif" font-size="9.5" fill="#8e9bb0" text-anchor="middle">
+      &#9794;&#8211;&#9796; Mars-Saturn Conjunction in Aquarius (0° &#9810;)
+    </text>
+
+    <!--  Y-Axis Labels & Horizontal Price Gridlines  -->
+    <g font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8e9bb0" text-anchor="end">
+      <!--  $120/bbl Level  -->
+      <line x1="72" y1="312" x2="885" y2="312" stroke="#1e283d" stroke-width="0.8" />
+      <text x="66" y="315">$120</text>
+
+      <!--  $75/bbl Level  -->
+      <line x1="72" y1="348" x2="885" y2="348" stroke="#1e283d" stroke-width="0.8" />
+      <text x="66" y="351">$75</text>
+
+      <!--  $0.00 Zero Threshold Line  -->
+      <line x1="72" y1="396" x2="885" y2="396" stroke="#f43f5e" stroke-width="1.2" stroke-dasharray="5 3" />
+      <text x="66" y="399" fill="#f43f5e" font-weight="700">$0.00</text>
+
+      <!--  -$40/bbl Level  -->
+      <line x1="72" y1="428" x2="885" y2="428" stroke="#f43f5e" stroke-width="0.5" stroke-opacity="0.4" />
+      <text x="66" y="431" fill="#f43f5e">-$40</text>
+    </g>
+
+    <!--  Cyan Area Under Curve (Clipped to Zero Line Visually)  -->
+    <path d="M 85 325 L 140 318 L 200 326 L 255 376 L 315 362 L 370 346 L 435 358 L 465 396 L 530 366 L 590 350 L 650 308 L 710 345 L 755 338 L 835 346 L 865 344 L 865 396 L 85 396 Z" fill="url(#cyanArea)" />
+
+    <!--  WTI Crude Main Price Path  -->
+    <path d="M 85 325 L 140 318 L 200 326 L 255 376 L 315 362 L 370 346 L 435 358 L 465 426 L 485 372 L 530 366 L 590 350 L 650 308 L 710 345 L 755 338 L 835 346 L 865 344" fill="none" stroke="#00f0ff" stroke-width="2.2" />
+
+    <!--  Highlighted Negative Plunge Spike (Red Override)  -->
+    <path d="M 435 358 L 465 426 L 485 372" fill="none" stroke="#f43f5e" stroke-width="2.8" filter="url(#roseGlow)" />
+
+    <!--  Key Turning Points & Callouts  -->
+    <!--  1. 2014-2016 Shale Glut ($26)  -->
+    <circle cx="255" cy="376" r="3.5" fill="#0a0f1a" stroke="#00f0ff" stroke-width="2" />
+    <text x="255" y="390" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#8e9bb0" text-anchor="middle">$26.05 (OPEC Glut)</text>
+
+    <!--  2. THE NEGATIVE PLUNGE: -$37.63 (20 April 2020)  -->
+    <circle cx="465" cy="426" r="5.5" fill="#f43f5e" stroke="#e2e8f0" stroke-width="1.8" filter="url(#roseGlow)" />
+
+    <!--  Plunge Callout Box (Left of Spike)  -->
+    <rect x="200" y="302" width="232" height="50" rx="5" fill="#191324" stroke="#f43f5e" stroke-width="1.2" />
+    <text x="316" y="317" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#f43f5e" text-anchor="middle">
+      CRASH: -$37.63/bbl (20 APR 2020)
+    </text>
+    <text x="316" y="331" font-family="'Inter', sans-serif" font-size="8.5" fill="#e2e8f0" text-anchor="middle">
+      Tangki Cushing Penuh 100% (Mei Kontrak Exp)
+    </text>
+    <text x="316" y="344" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#f3e5ab" text-anchor="middle">
+      &#9794; Konjungsi Mars-Saturnus di 0° Aquarius &#9810;
+    </text>
+
+    <!--  Pointer from Callout Box to Negative Spike  -->
+    <path d="M 385 352 L 456 419" fill="none" stroke="#f43f5e" stroke-width="1.3" stroke-dasharray="3 2" marker-end="url(#arrowRose)" />
+
+    <!--  3. 2022 Recovery Peak ($123.70)  -->
+    <circle cx="650" cy="308" r="4.5" fill="#10b981" stroke="#0a0f1a" stroke-width="1.5" />
+    
+    <!--  500%+ Recovery Trajectory Arrow  -->
+    <path d="M 488 412 Q 565 385 642 318" fill="none" stroke="#10b981" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#arrowEmerald)" />
+    
+    <rect x="525" y="374" width="160" height="20" rx="4" fill="#0d2329" stroke="#10b981" stroke-width="0.9" />
+    <text x="605" y="388" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#10b981" text-anchor="middle">
+      +500% V-RECOVERY &#8594; $123.70
+    </text>
+
+    <!--  2022 Peak Label Box  -->
+    <rect x="662" y="300" width="195" height="32" rx="4" fill="#131c2e" stroke="#00f0ff" stroke-width="0.8" />
+    <text x="759" y="314" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#00f0ff" text-anchor="middle">
+      $123.70/bbl (Mar 2022 Peak)
+    </text>
+    <text x="759" y="326" font-family="'Inter', sans-serif" font-size="8.5" fill="#8e9bb0" text-anchor="middle">
+      Siklus Mars-Jupiter + OPEC+ Cut
+    </text>
+  </g>
+</svg>

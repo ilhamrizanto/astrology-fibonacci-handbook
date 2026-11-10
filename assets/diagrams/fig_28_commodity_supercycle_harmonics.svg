@@ -1,0 +1,367 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="100%" height="auto">
+  <defs>
+    <!--  Linear Gradients  -->
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1a" />
+      <stop offset="100%" stop-color="#0d1424" />
+    </linearGradient>
+    
+    <linearGradient id="gold-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="cyan-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="rose-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!--  Markers  -->
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#8e9bb0" />
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#d4af37" />
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#00f0ff" />
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f43f5e" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10b981" />
+    </marker>
+
+    <!--  Glow Filter  -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!--  Main Background  -->
+  <rect x="2" y="2" width="916" height="416" rx="12" fill="url(#bg-grad)" stroke="#1e283d" stroke-width="1.5" />
+
+  <!--  Top Header Banner  -->
+  <g transform="translate(30, 26)">
+    <rect x="0" y="-12" width="4" height="22" fill="#d4af37" rx="1" />
+    <text x="12" y="4" font-family="'Inter', sans-serif" font-size="13.5" font-weight="800" fill="#e2e8f0" letter-spacing="0.06em">
+      ANATOMI SUPERCYCLE KOMODITAS: <tspan fill="#d4af37">BACKWARDATION vs CONTANGO</tspan> &amp; SIKLUS 10–12 TAHUN
+    </text>
+    <text x="860" y="4" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8e9bb0" text-anchor="end">
+      RIZACORP QUANT MACRO // FIG 4.2
+    </text>
+    <line x1="0" y1="16" x2="860" y2="16" stroke="#1e283d" stroke-width="1" />
+  </g>
+
+  <!--  =======================================================================  -->
+  <!--  LEFT PANEL: 10-12 YEAR COMMODITY SUPERCYCLE WAVE (x=30..450)             -->
+  <!--  =======================================================================  -->
+  <g id="left-panel">
+    <!--  Panel Container  -->
+    <rect x="30" y="54" width="420" height="346" rx="8" fill="#0d1424" fill-opacity="0.7" stroke="#1e283d" stroke-width="1" />
+    
+    <!--  Panel Header  -->
+    <text x="46" y="76" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#f3e5ab" letter-spacing="0.04em">
+      I. SIKLUS STRUKTURAL KOMODITAS (10–12 TAHUN)
+    </text>
+    <text x="46" y="92" font-family="'Inter', sans-serif" font-size="10" fill="#8e9bb0">
+      Transisi Capex Starvation menuju Parabolic Demand Shock
+    </text>
+
+    <!--  Background Grid Lines  -->
+    <g stroke="#1e283d" stroke-width="0.75" stroke-dasharray="3,3">
+      <line x1="56" y1="130" x2="430" y2="130" />
+      <line x1="56" y1="185" x2="430" y2="185" />
+      <line x1="56" y1="240" x2="430" y2="240" />
+      <line x1="56" y1="295" x2="430" y2="295" />
+      <!--  Vertical Phase Dividers  -->
+      <line x1="175" y1="110" x2="175" y2="345" />
+      <line x1="275" y1="110" x2="275" y2="345" />
+      <line x1="365" y1="110" x2="365" y2="345" />
+    </g>
+
+    <!--  Incentive Price / Marginal Cost Line  -->
+    <line x1="56" y1="258" x2="430" y2="232" stroke="#00f0ff" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.7" />
+    <text x="426" y="226" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#00f0ff" text-anchor="end">
+      MARJINAL COST &amp; INCENTIVE PRICE
+    </text>
+
+    <!--  Area Under Supercycle Curve  -->
+    <path d="M 60 315 
+             C 100 322, 135 322, 175 305 
+             C 215 288, 245 270, 275 230 
+             C 305 190, 335 122, 365 122 
+             C 388 122, 408 165, 425 215 
+             L 425 345 L 60 345 Z" 
+          fill="url(#gold-fill)" />
+
+    <!--  Supercycle Main Wave Path  -->
+    <path d="M 60 315 
+             C 100 322, 135 322, 175 305 
+             C 215 288, 245 270, 275 230 
+             C 305 190, 335 122, 365 122 
+             C 388 122, 408 165, 425 215" 
+          fill="none" stroke="#d4af37" stroke-width="2.8" filter="url(#glow)" />
+
+    <!--  Axes  -->
+    <line x1="56" y1="345" x2="435" y2="345" stroke="#8e9bb0" stroke-width="1.2" marker-end="url(#arrow-slate)" />
+    <line x1="56" y1="345" x2="56" y2="108" stroke="#8e9bb0" stroke-width="1.2" marker-end="url(#arrow-slate)" />
+    
+    <!--  Y-Axis Label  -->
+    <text x="42" y="228" font-family="'JetBrains Mono', monospace" font-size="9" fill="#8e9bb0" text-anchor="middle" transform="rotate(-90 42 228)">
+      REAL PRICE INDEX (LOG)
+    </text>
+
+    <!--  X-Axis Timeline Ticks & Labels  -->
+    <g font-family="'JetBrains Mono', monospace" font-size="9" fill="#8e9bb0" text-anchor="middle">
+      <text x="65" y="360">T+0</text>
+      <text x="175" y="360">Yr 4</text>
+      <text x="275" y="360">Yr 8</text>
+      <text x="365" y="360">Yr 10.5</text>
+      <text x="418" y="360">Yr 12</text>
+    </g>
+
+    <!--  Phase Bottom Pill Tags  -->
+    <g font-family="'JetBrains Mono', monospace" font-size="8" font-weight="600" text-anchor="middle">
+      <rect x="62" y="368" width="108" height="18" rx="3" fill="#162033" stroke="#1e283d" />
+      <text x="116" y="380" fill="#8e9bb0">FASE 1: AKUMULASI</text>
+
+      <rect x="178" y="368" width="92" height="18" rx="3" fill="#162033" stroke="#1e283d" />
+      <text x="224" y="380" fill="#00f0ff">FASE 2: DEFISIT</text>
+
+      <rect x="278" y="368" width="82" height="18" rx="3" fill="#162033" stroke="#d4af37" stroke-opacity="0.5" />
+      <text x="319" y="380" fill="#f3e5ab">FASE 3: MANIA</text>
+
+      <rect x="368" y="368" width="64" height="18" rx="3" fill="#162033" stroke="#f43f5e" stroke-opacity="0.5" />
+      <text x="400" y="380" fill="#f43f5e">DISTRIBUSI</text>
+    </g>
+
+    <!--  Key Structural Nodes & Callout Annotations  -->
+    
+    <!--  Node 1: Long Accumulation  -->
+    <circle cx="118" cy="318" r="4" fill="#0a0f1a" stroke="#8e9bb0" stroke-width="2" />
+    <line x1="118" y1="312" x2="118" y2="290" stroke="#8e9bb0" stroke-width="1" stroke-dasharray="2,2" />
+    <rect x="62" y="258" width="108" height="30" rx="4" fill="#0a0f1a" fill-opacity="0.9" stroke="#1e283d" />
+    <text x="68" y="271" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#e2e8f0">1. Long Accumulation</text>
+    <text x="68" y="282" font-family="'Inter', sans-serif" font-size="8" fill="#8e9bb0">Harga &lt; Biaya Produksi</text>
+
+    <!--  Node 2: Capex Starvation  -->
+    <circle cx="228" cy="272" r="4.5" fill="#0a0f1a" stroke="#00f0ff" stroke-width="2.2" />
+    <line x1="228" y1="266" x2="210" y2="212" stroke="#00f0ff" stroke-width="1" stroke-dasharray="2,2" />
+    <rect x="136" y="172" width="132" height="38" rx="4" fill="#0a0f1a" fill-opacity="0.92" stroke="#00f0ff" stroke-opacity="0.5" />
+    <text x="143" y="185" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#00f0ff">2. Capex Starvation</text>
+    <text x="143" y="196" font-family="'Inter', sans-serif" font-size="8" fill="#e2e8f0">Underinvestment Tambang</text>
+    <text x="143" y="205" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#8e9bb0">Inelastic Supply Crunch</text>
+
+    <!--  Node 3: Parabolic Demand Shock  -->
+    <circle cx="318" cy="168" r="4.5" fill="#0a0f1a" stroke="#d4af37" stroke-width="2.2" />
+    <line x1="312" y1="165" x2="262" y2="142" stroke="#d4af37" stroke-width="1" stroke-dasharray="2,2" />
+    <rect x="122" y="114" width="138" height="38" rx="4" fill="#0a0f1a" fill-opacity="0.92" stroke="#d4af37" stroke-opacity="0.7" />
+    <text x="129" y="127" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#f3e5ab">3. Parabolic Demand Shock</text>
+    <text x="129" y="138" font-family="'Inter', sans-serif" font-size="8" fill="#e2e8f0">Kelangkaan Fisik Akut</text>
+    <text x="129" y="147" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#10b981">Backwardation Ekstrem</text>
+
+    <!--  Node 4: Exhaustion Top  -->
+    <circle cx="365" cy="122" r="5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.5" />
+    <rect x="315" y="76" width="122" height="36" rx="4" fill="#0a0f1a" fill-opacity="0.92" stroke="#f43f5e" stroke-opacity="0.7" />
+    <text x="322" y="89" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#f43f5e">4. Exhaustion Top</text>
+    <text x="322" y="100" font-family="'Inter', sans-serif" font-size="8" fill="#e2e8f0">Demand Destruction</text>
+    <text x="322" y="109" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#8e9bb0">Substitusi &amp; Capex Baru</text>
+  </g>
+
+  <!--  =======================================================================  -->
+  <!--  RIGHT PANEL: TERM STRUCTURE CURVES (x=480..890)                          -->
+  <!--  =======================================================================  -->
+  <g id="right-panel">
+    <!--  Panel Container  -->
+    <rect x="480" y="54" width="410" height="346" rx="8" fill="#0d1424" fill-opacity="0.7" stroke="#1e283d" stroke-width="1" />
+
+    <!--  Panel Header  -->
+    <text x="496" y="76" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#00f0ff" letter-spacing="0.04em">
+      II. KURVA STRUKTUR BERJANGKA (FUTURES TERM STRUCTURE)
+    </text>
+    <text x="496" y="92" font-family="'Inter', sans-serif" font-size="10" fill="#8e9bb0">
+      Dinamika Harga Spot (M1) vs Kontrak Berjangka (M2–M12)
+    </text>
+
+    <!--  ...................................................................  -->
+    <!--  SUB-CHART A: NORMAL BACKWARDATION (TOP RIGHT)                        -->
+    <!--  ...................................................................  -->
+    <g id="backwardation-chart">
+      <rect x="494" y="104" width="382" height="134" rx="6" fill="#0a0f1a" fill-opacity="0.65" stroke="#1e283d" />
+      
+      <!--  Sub-header  -->
+      <circle cx="508" cy="120" r="4" fill="#10b981" />
+      <text x="518" y="124" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#10b981">
+        NORMAL BACKWARDATION (Spot &gt; Futures)
+      </text>
+      <rect x="760" y="111" width="106" height="17" rx="3" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="0.8" />
+      <text x="813" y="122.5" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" fill="#10b981" text-anchor="middle">
+        BULLISH IMPULSE
+      </text>
+
+      <!--  Grid Lines  -->
+      <g stroke="#1e283d" stroke-width="0.7" stroke-dasharray="2,2">
+        <line x1="535" y1="145" x2="725" y2="145" />
+        <line x1="535" y1="175" x2="725" y2="175" />
+        <line x1="535" y1="205" x2="725" y2="205" />
+      </g>
+
+      <!--  Axes  -->
+      <line x1="535" y1="216" x2="730" y2="216" stroke="#8e9bb0" stroke-width="1" />
+      <line x1="535" y1="216" x2="535" y2="135" stroke="#8e9bb0" stroke-width="1" />
+
+      <!--  Y-Axis Price Labels  -->
+      <g font-family="'JetBrains Mono', monospace" font-size="8" fill="#8e9bb0" text-anchor="end">
+        <text x="530" y="148">$115</text>
+        <text x="530" y="178">$95</text>
+        <text x="530" y="208">$75</text>
+      </g>
+
+      <!--  Area Fill & Curve (Downward Sloping)  -->
+      <path d="M 548 144 C 585 158, 635 186, 715 204 L 715 216 L 548 216 Z" fill="url(#cyan-fill)" />
+      <path d="M 548 144 C 585 158, 635 186, 715 204" fill="none" stroke="#00f0ff" stroke-width="2.4" filter="url(#glow)" />
+
+      <!--  Contract Tenor Nodes  -->
+      <circle cx="548" cy="144" r="4" fill="#10b981" stroke="#0a0f1a" stroke-width="1.2" />
+      <circle cx="595" cy="166" r="3" fill="#00f0ff" />
+      <circle cx="652" cy="189" r="3" fill="#00f0ff" />
+      <circle cx="715" cy="204" r="3.5" fill="#00f0ff" />
+
+      <!--  Tenor X-Axis Labels  -->
+      <g font-family="'JetBrains Mono', monospace" font-size="8" fill="#e2e8f0" text-anchor="middle">
+        <text x="548" y="229" fill="#10b981" font-weight="700">SPOT</text>
+        <text x="595" y="229" fill="#8e9bb0">M3</text>
+        <text x="652" y="229" fill="#8e9bb0">M6</text>
+        <text x="715" y="229" fill="#8e9bb0">M12</text>
+      </g>
+
+      <!--  Spot Premium Callout  -->
+      <text x="556" y="142" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" fill="#10b981">
+        Scarcity Premium
+      </text>
+
+      <!--  Right Info Box inside Sub-chart A  -->
+      <rect x="738" y="135" width="128" height="92" rx="4" fill="#0d1424" stroke="#1e283d" />
+      <text x="746" y="149" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#00f0ff">
+        Katalis &amp; Struktur:
+      </text>
+      <text x="746" y="162" font-family="'Inter', sans-serif" font-size="8" fill="#e2e8f0">
+        • Defisit pasokan fisik
+      </text>
+      <text x="746" y="174" font-family="'Inter', sans-serif" font-size="8" fill="#e2e8f0">
+        • Inventori gudang kritis
+      </text>
+      <text x="746" y="186" font-family="'Inter', sans-serif" font-size="8" fill="#e2e8f0">
+        • Convenience Yield &gt;&gt;
+      </text>
+      <rect x="745" y="196" width="114" height="24" rx="3" fill="#10b981" fill-opacity="0.12" />
+      <text x="802" y="207" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="700" fill="#10b981" text-anchor="middle">
+        POSITIVE ROLL YIELD
+      </text>
+      <text x="802" y="216" font-family="'JetBrains Mono', monospace" font-size="7" fill="#8e9bb0" text-anchor="middle">
+        Buy M3 -&gt; Roll High
+      </text>
+    </g>
+
+    <!--  ...................................................................  -->
+    <!--  SUB-CHART B: SUPER CONTANGO (BOTTOM RIGHT)                           -->
+    <!--  ...................................................................  -->
+    <g id="contango-chart">
+      <rect x="494" y="248" width="382" height="140" rx="6" fill="#0a0f1a" fill-opacity="0.65" stroke="#1e283d" />
+
+      <!--  Sub-header  -->
+      <circle cx="508" cy="264" r="4" fill="#f43f5e" />
+      <text x="518" y="268" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#f43f5e">
+        SUPER CONTANGO (Spot &lt;&lt; Futures)
+      </text>
+      <rect x="746" y="255" width="120" height="17" rx="3" fill="#f43f5e" fill-opacity="0.15" stroke="#f43f5e" stroke-width="0.8" />
+      <text x="806" y="266.5" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="700" fill="#f43f5e" text-anchor="middle">
+        BEARISH EXHAUSTION
+      </text>
+
+      <!--  Grid Lines  -->
+      <g stroke="#1e283d" stroke-width="0.7" stroke-dasharray="2,2">
+        <line x1="535" y1="288" x2="725" y2="288" />
+        <line x1="535" y1="318" x2="725" y2="318" />
+        <line x1="535" y1="348" x2="725" y2="348" />
+      </g>
+
+      <!--  Zero Price Threshold Line (April 2020 Reference)  -->
+      <line x1="535" y1="336" x2="725" y2="336" stroke="#f43f5e" stroke-width="0.9" stroke-dasharray="4,2" opacity="0.75" />
+      <text x="723" y="333" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#f43f5e" text-anchor="end">
+        $0 ZERO BOUND (APR 2020 WTI)
+      </text>
+
+      <!--  Axes  -->
+      <line x1="535" y1="364" x2="730" y2="364" stroke="#8e9bb0" stroke-width="1" />
+      <line x1="535" y1="364" x2="535" y2="280" stroke="#8e9bb0" stroke-width="1" />
+
+      <!--  Y-Axis Price Labels  -->
+      <g font-family="'JetBrains Mono', monospace" font-size="8" fill="#8e9bb0" text-anchor="end">
+        <text x="530" y="291">$45</text>
+        <text x="530" y="321">$20</text>
+        <text x="530" y="356" fill="#f43f5e">-$37</text>
+      </g>
+
+      <!--  Area Fill & Curve (Steep Upward Sloping from Sub-Zero)  -->
+      <path d="M 548 355 C 580 315, 635 294, 715 285 L 715 364 L 548 364 Z" fill="url(#rose-fill)" />
+      <path d="M 548 355 C 580 315, 635 294, 715 285" fill="none" stroke="#f43f5e" stroke-width="2.4" filter="url(#glow)" />
+
+      <!--  Contract Tenor Nodes  -->
+      <circle cx="548" cy="355" r="4.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.2" />
+      <circle cx="595" cy="316" r="3" fill="#f43f5e" />
+      <circle cx="652" cy="296" r="3" fill="#f43f5e" />
+      <circle cx="715" cy="285" r="3.5" fill="#d4af37" />
+
+      <!--  Tenor X-Axis Labels  -->
+      <g font-family="'JetBrains Mono', monospace" font-size="8" fill="#e2e8f0" text-anchor="middle">
+        <text x="548" y="377" fill="#f43f5e" font-weight="700">SPOT</text>
+        <text x="595" y="377" fill="#8e9bb0">M3</text>
+        <text x="652" y="377" fill="#8e9bb0">M6</text>
+        <text x="715" y="377" fill="#8e9bb0">M12</text>
+      </g>
+
+      <!--  Storage Squeeze Annotation  -->
+      <text x="556" y="357" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="700" fill="#f3e5ab">
+        Storage Squeeze!
+      </text>
+
+      <!--  Right Info Box inside Sub-chart B  -->
+      <rect x="738" y="279" width="128" height="98" rx="4" fill="#0d1424" stroke="#1e283d" />
+      <text x="746" y="293" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#f43f5e">
+        Anatomi April 2020:
+      </text>
+      <text x="746" y="306" font-family="'Inter', sans-serif" font-size="8" fill="#e2e8f0">
+        • Tangki timbun penuh
+      </text>
+      <text x="746" y="318" font-family="'Inter', sans-serif" font-size="8" fill="#e2e8f0">
+        • Cost of Carry melambung
+      </text>
+      <text x="746" y="330" font-family="'Inter', sans-serif" font-size="8" fill="#e2e8f0">
+        • Distressed panic dump
+      </text>
+      <rect x="745" y="340" width="114" height="30" rx="3" fill="#f43f5e" fill-opacity="0.12" />
+      <text x="802" y="351" font-family="'JetBrains Mono', monospace" font-size="7.5" font-weight="700" fill="#f43f5e" text-anchor="middle">
+        NEGATIVE ROLL BLEED
+      </text>
+      <text x="802" y="362" font-family="'JetBrains Mono', monospace" font-size="7" fill="#f3e5ab" text-anchor="middle">
+        Sinyal Kapitulasi Siklus
+      </text>
+    </g>
+  </g>
+
+  <!--  Center Divider Connector Accents  -->
+  <g stroke="#1e283d" stroke-width="1">
+    <line x1="465" y1="70" x2="465" y2="385" stroke-dasharray="4,4" />
+    <circle cx="465" cy="170" r="3" fill="#00f0ff" />
+    <circle cx="465" cy="318" r="3" fill="#f43f5e" />
+  </g>
+</svg>

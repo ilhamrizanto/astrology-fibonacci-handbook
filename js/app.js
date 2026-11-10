@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
       nextBtn.onclick = () => loadChapter(available[currIdx + 1]);
     } else {
       nextBtn.disabled = true;
-      nextTitle.textContent = "Sprint 5 (Segera Hadir)";
+      nextTitle.textContent = "Sprint 6 (Segera Hadir)";
       nextBtn.onclick = null;
     }
   }
