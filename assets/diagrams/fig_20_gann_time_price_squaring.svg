@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="auto" style="background:#0a0f1a; font-family:'Inter', system-ui, sans-serif;">
+  <defs>
+    <!--  Radial Glow for the Gann Wheel  -->
+    <radialGradient id="wheelGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.12"/>
+      <stop offset="65%" stop-color="#d4af37" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0a0f1a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!--  Linear Gradient for Chart Area  -->
+    <linearGradient id="chartGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.14"/>
+    </linearGradient>
+
+    <!--  Arrow Markers  -->
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#00f0ff"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#d4af37"/>
+    </marker>
+    <marker id="arrowSlate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 2 L 8 5 L 0 8 z" fill="#8e9bb0"/>
+    </marker>
+  </defs>
+
+  <!--  Outer Frame  -->
+  <rect x="4" y="4" width="912" height="452" rx="10" fill="#0a0f1a" stroke="#1e283d" stroke-width="1.5"/>
+
+  <!--  Header Banner  -->
+  <rect x="16" y="14" width="888" height="36" rx="6" fill="#101829" stroke="#1e283d" stroke-width="1"/>
+  <text x="460" y="37" fill="#f3e5ab" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1.2">
+    GANN WHEEL 360° (KALENDER ALAMI) &amp; KONVERSI PRICE-TIME SQUARING
+  </text>
+
+  <!--  =======================================================================  -->
+  <!--  LEFT PANEL: 360° NATURAL CALENDAR WHEEL (cx=230, cy=255, r=140)          -->
+  <!--  =======================================================================  -->
+  <g id="natural-calendar-wheel">
+    <!--  Panel Subtitle  -->
+    <text x="230" y="72" fill="#00f0ff" font-size="11.5" font-weight="600" text-anchor="middle" letter-spacing="0.8">
+      RODA EKLIPTIKA 360° vs TAHUN TROPIK (365.24 HARI)
+    </text>
+
+    <!--  Wheel Glow & Rings  -->
+    <circle cx="230" cy="245" r="145" fill="url(#wheelGlow)"/>
+    <circle cx="230" cy="245" r="135" fill="#0d1424" stroke="#d4af37" stroke-width="1.8"/>
+    <circle cx="230" cy="245" r="105" fill="none" stroke="#1e283d" stroke-width="1" stroke-dasharray="3,3"/>
+    <circle cx="230" cy="245" r="62" fill="#0a0f1a" stroke="#00f0ff" stroke-width="0.9" stroke-opacity="0.5"/>
+
+    <!--  Inscribed Geometric Squares (0-90-180-270 and 45-135-225-315)  -->
+    <!--  Cardinal Diamond  -->
+    <polygon points="365,245 230,110 95,245 230,380" fill="none" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.35"/>
+    <!--  Ordinal Square  -->
+    <polygon points="325.5,149.5 134.5,149.5 134.5,340.5 325.5,340.5" fill="none" stroke="#d4af37" stroke-width="0.9" stroke-dasharray="4,3" stroke-opacity="0.45"/>
+
+    <!--  Ordinal 45° / 135° / 225° / 315° Cross Axes (Dashed Gold)  -->
+    <line x1="134.5" y1="340.5" x2="325.5" y2="149.5" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="5,4"/>
+    <line x1="134.5" y1="149.5" x2="325.5" y2="340.5" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="5,4"/>
+
+    <!--  Cardinal 0° / 90° / 180° / 270° Cross Axes (Solid Cyan)  -->
+    <line x1="90" y1="245" x2="370" y2="245" stroke="#00f0ff" stroke-width="1.5"/>
+    <line x1="230" y1="105" x2="230" y2="385" stroke="#00f0ff" stroke-width="1.5"/>
+
+    <!--  Counter-Clockwise Rotation Direction Arc  -->
+    <path d="M 282 225 A 56 56 0 0 0 250 193" fill="none" stroke="#f3e5ab" stroke-width="1.3" marker-end="url(#arrowGold)"/>
+    <text x="278" y="202" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="8.5" text-anchor="start">+Δθ</text>
+
+    <!--  Cardinal Nodes (0°, 90°, 180°, 270°)  -->
+    <!--  0° East: Vernal Equinox  -->
+    <circle cx="365" cy="245" r="5" fill="#00f0ff" stroke="#0a0f1a" stroke-width="1.5"/>
+    <rect x="373" y="227" width="68" height="36" rx="4" fill="#101829" stroke="#00f0ff" stroke-width="1"/>
+    <text x="407" y="242" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" text-anchor="middle">0° / 360°</text>
+    <text x="407" y="256" fill="#e2e8f0" font-size="9.5" font-weight="600" text-anchor="middle">21 Mar (Aries)</text>
+
+    <!--  90° Top: Summer Solstice  -->
+    <circle cx="230" cy="110" r="5" fill="#00f0ff" stroke="#0a0f1a" stroke-width="1.5"/>
+    <rect x="165" y="79" width="130" height="24" rx="4" fill="#101829" stroke="#00f0ff" stroke-width="1"/>
+    <text x="230" y="95" fill="#e2e8f0" font-size="10" font-weight="600" text-anchor="middle">
+      <tspan fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-weight="700">90°</tspan> • 21 Jun (Solstis)
+    </text>
+
+    <!--  180° West: Autumn Equinox  -->
+    <circle cx="95" cy="245" r="5" fill="#00f0ff" stroke="#0a0f1a" stroke-width="1.5"/>
+    <rect x="15" y="227" width="74" height="36" rx="4" fill="#101829" stroke="#00f0ff" stroke-width="1"/>
+    <text x="52" y="242" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" text-anchor="middle">180°</text>
+    <text x="52" y="256" fill="#e2e8f0" font-size="9.5" font-weight="600" text-anchor="middle">23 Sep (Libra)</text>
+
+    <!--  270° Bottom: Winter Solstice  -->
+    <circle cx="230" cy="380" r="5" fill="#00f0ff" stroke="#0a0f1a" stroke-width="1.5"/>
+    <rect x="165" y="387" width="130" height="24" rx="4" fill="#101829" stroke="#00f0ff" stroke-width="1"/>
+    <text x="230" y="403" fill="#e2e8f0" font-size="10" font-weight="600" text-anchor="middle">
+      <tspan fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-weight="700">270°</tspan> • 21 Des (Solstis)
+    </text>
+
+    <!--  Ordinal Mid-point Nodes & Callouts (45°, 135°, 225°, 315°)  -->
+    <!--  45° NE  -->
+    <circle cx="325.5" cy="149.5" r="4" fill="#d4af37" stroke="#0a0f1a" stroke-width="1.2"/>
+    <text x="334" y="142" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">45°</text>
+    <text x="334" y="153" fill="#8e9bb0" font-size="9">5 Mei</text>
+
+    <!--  135° NW  -->
+    <circle cx="134.5" cy="149.5" r="4" fill="#d4af37" stroke="#0a0f1a" stroke-width="1.2"/>
+    <text x="126" y="142" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="end">135°</text>
+    <text x="126" y="153" fill="#8e9bb0" font-size="9" text-anchor="end">7 Agu</text>
+
+    <!--  225° SW  -->
+    <circle cx="134.5" cy="340.5" r="4" fill="#d4af37" stroke="#0a0f1a" stroke-width="1.2"/>
+    <text x="126" y="343" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="end">225°</text>
+    <text x="126" y="354" fill="#8e9bb0" font-size="9" text-anchor="end">7 Nov</text>
+
+    <!--  315° SE  -->
+    <circle cx="325.5" cy="340.5" r="4" fill="#d4af37" stroke="#0a0f1a" stroke-width="1.2"/>
+    <text x="334" y="343" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">315°</text>
+    <text x="334" y="354" fill="#8e9bb0" font-size="9">4 Feb</text>
+
+    <!--  Center Hub  -->
+    <circle cx="230" cy="245" r="24" fill="#101829" stroke="#d4af37" stroke-width="1.5"/>
+    <text x="230" y="242" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="middle">SUN</text>
+    <text x="230" y="253" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8" text-anchor="middle">360°</text>
+
+    <!--  Bottom Solar Constant Pill  -->
+    <rect x="48" y="418" width="364" height="24" rx="4" fill="#101829" stroke="#1e283d" stroke-width="1"/>
+    <text x="230" y="434" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">
+      Laju Surya: <tspan fill="#00f0ff" font-weight="700">0.9856°/hari</tspan> • <tspan fill="#f3e5ab">45° ≈ 45.6 hari</tspan> • <tspan fill="#10b981">180° ≈ 182.6 hari</tspan>
+    </text>
+  </g>
+
+  <!--  Vertical Divider  -->
+  <line x1="450" y1="60" x2="450" y2="442" stroke="#1e283d" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!--  =======================================================================  -->
+  <!--  RIGHT PANEL: SQUARING PRICE & TIME (x=462..904)                          -->
+  <!--  =======================================================================  -->
+  <g id="price-time-squaring">
+    <!--  Panel Subtitle  -->
+    <text x="683" y="72" fill="#d4af37" font-size="11.5" font-weight="600" text-anchor="middle" letter-spacing="0.8">
+      SQUARING PRICE &amp; TIME (SUDUT 1×1 = 45° HARMONIC BALANCE)
+    </text>
+
+    <!--  Plot Coordinate System (Origin at x=535, y=285; Width=240, Height=195)  -->
+    <!--  Square Box Area for 1x1  -->
+    <rect x="535" y="95" width="190" height="190" fill="url(#chartGlow)" stroke="#1e283d" stroke-width="1"/>
+
+    <!--  Harmonic Grid Lines (4x4 subdivisions inside the 190x190 square)  -->
+    <g stroke="#1e283d" stroke-width="0.8" stroke-dasharray="2,2">
+      <!--  Vertical Time Grid  -->
+      <line x1="582.5" y1="95" x2="582.5" y2="285"/>
+      <line x1="630.0" y1="95" x2="630.0" y2="285"/>
+      <line x1="677.5" y1="95" x2="677.5" y2="285"/>
+      <!--  Horizontal Price Grid  -->
+      <line x1="535" y1="237.5" x2="725" y2="237.5"/>
+      <line x1="535" y1="190.0" x2="725" y2="190.0"/>
+      <line x1="535" y1="142.5" x2="725" y2="142.5"/>
+    </g>
+
+    <!--  Secondary Gann Fan Angles (2x1 = 63.75° and 1x2 = 26.25°)  -->
+    <line x1="535" y1="285" x2="630" y2="95" stroke="#10b981" stroke-width="1.1" stroke-dasharray="4,3" stroke-opacity="0.7"/>
+    <text x="615" y="108" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="end">2×1 (63.75°)</text>
+
+    <line x1="535" y1="285" x2="725" y2="190" stroke="#f43f5e" stroke-width="1.1" stroke-dasharray="4,3" stroke-opacity="0.7"/>
+    <text x="720" y="205" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" text-anchor="end">1×2 (26.25°)</text>
+
+    <!--  Target Projection Lines (+180° and +360° Harmonic Squaring Levels)  -->
+    <!--  Mid Target (+180° / +1.0 Root) at (630, 190)  -->
+    <line x1="535" y1="190" x2="630" y2="190" stroke="#00f0ff" stroke-width="1.2" stroke-dasharray="4,3"/>
+    <line x1="630" y1="190" x2="630" y2="285" stroke="#00f0ff" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+    <!--  Full Square Target (+360° / +2.0 Root) at (725, 95)  -->
+    <line x1="535" y1="95" x2="725" y2="95" stroke="#d4af37" stroke-width="1.3" stroke-dasharray="4,3"/>
+    <line x1="725" y1="95" x2="725" y2="285" stroke="#d4af37" stroke-width="1.3" stroke-dasharray="4,3"/>
+
+    <!--  Primary 1x1 Gann Line (45° Diagonal)  -->
+    <line x1="535" y1="285" x2="732" y2="88" stroke="#d4af37" stroke-width="2.5" marker-end="url(#arrowGold)"/>
+
+    <!--  45° Angle Arc Indicator  -->
+    <path d="M 578 285 A 43 43 0 0 0 565.4 254.6" fill="none" stroke="#f3e5ab" stroke-width="1.3"/>
+    <text x="583" y="274" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700">45° (1×1)</text>
+
+    <!--  Main Axes (Price Vertical, Time Horizontal)  -->
+    <line x1="535" y1="290" x2="535" y2="83" stroke="#8e9bb0" stroke-width="1.5" marker-end="url(#arrowSlate)"/>
+    <line x1="530" y1="285" x2="748" y2="285" stroke="#8e9bb0" stroke-width="1.5" marker-end="url(#arrowSlate)"/>
+
+    <!--  Axis Labels  -->
+    <text x="528" y="88" fill="#8e9bb0" font-size="9.5" font-weight="600" text-anchor="end">HARGA (P)</text>
+    <text x="748" y="300" fill="#8e9bb0" font-size="9.5" font-weight="600" text-anchor="end">WAKTU (T)</text>
+
+    <!--  Key Intersection Points & Labels on Y-Axis  -->
+    <!--  P0 Swing Low  -->
+    <circle cx="535" cy="285" r="4.5" fill="#10b981" stroke="#0a0f1a" stroke-width="1.5"/>
+    <text x="527" y="283" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" text-anchor="end">P₀=$25,000</text>
+    <text x="527" y="294" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5" text-anchor="end">(√P₀=15.81)</text>
+
+    <!--  P1 (+180°)  -->
+    <circle cx="630" cy="190" r="4.5" fill="#00f0ff" stroke="#0a0f1a" stroke-width="1.5"/>
+    <text x="527" y="188" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" text-anchor="end">P₁=$28,258</text>
+    <text x="527" y="199" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5" text-anchor="end">(√P₁=16.81)</text>
+
+    <!--  P2 (+360°)  -->
+    <circle cx="725" cy="95" r="5" fill="#d4af37" stroke="#0a0f1a" stroke-width="1.5"/>
+    <text x="527" y="95" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" text-anchor="end">P₂=$31,720</text>
+    <text x="527" y="106" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5" text-anchor="end">(√P₂=17.81)</text>
+
+    <!--  Time Labels on X-Axis  -->
+    <text x="535" y="302" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="middle">T₀ (0°)</text>
+
+    <text x="630" y="301" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="middle">Δθ = +180°</text>
+    <text x="630" y="312" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5" text-anchor="middle">≈ 182.6 hari</text>
+
+    <text x="725" y="301" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" text-anchor="middle">Δθ = +360°</text>
+    <text x="725" y="312" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="8.5" text-anchor="middle">≈ 365.2 hari</text>
+
+    <!--  Right-side Formula Callout Cards (x=742..902)  -->
+    <!--  Card 1: Price Target Formula  -->
+    <rect x="742" y="95" width="158" height="86" rx="6" fill="#101829" stroke="#d4af37" stroke-width="1.2"/>
+    <text x="821" y="113" fill="#f3e5ab" font-size="10" font-weight="700" text-anchor="middle">RUMUS TARGET HARGA</text>
+    <line x1="752" y1="120" x2="890" y2="120" stroke="#1e283d" stroke-width="1"/>
+    <text x="821" y="138" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="middle">
+      P = (√P₀ ± Δθ/180°)²
+    </text>
+    <text x="821" y="156" fill="#8e9bb0" font-size="9" text-anchor="middle">180° = +1.0 unit pada √P₀</text>
+    <text x="821" y="170" fill="#8e9bb0" font-size="9" text-anchor="middle">360° = +2.0 unit pada √P₀</text>
+
+    <!--  Card 2: Time Target Formula  -->
+    <rect x="742" y="193" width="158" height="92" rx="6" fill="#101829" stroke="#00f0ff" stroke-width="1.2"/>
+    <text x="821" y="211" fill="#00f0ff" font-size="10" font-weight="700" text-anchor="middle">KONVERSI SIKLUS WAKTU</text>
+    <line x1="752" y1="218" x2="890" y2="218" stroke="#1e283d" stroke-width="1"/>
+    <text x="821" y="236" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="middle">
+      ΔT = Δθ / 0.9856°
+    </text>
+    <text x="821" y="254" fill="#8e9bb0" font-size="9" text-anchor="middle">Squaring tercapai saat</text>
+    <text x="821" y="267" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="8.5" text-anchor="middle">Δ√P (unit) ≡ Δθ (siklus)</text>
+
+    <!--  ===================================================================  -->
+    <!--  BOTTOM WORKED EXAMPLE CARD: BITCOIN ($25,000 SWING LOW)              -->
+    <!--  ===================================================================  -->
+    <rect x="466" y="324" width="434" height="118" rx="6" fill="#101829" stroke="#1e283d" stroke-width="1.2"/>
+    <!--  Left Accent Bar  -->
+    <rect x="466" y="324" width="4" height="118" rx="2" fill="#d4af37"/>
+
+    <text x="480" y="343" fill="#f3e5ab" font-size="10.5" font-weight="700" letter-spacing="0.5">
+      STUDI KASUS BITCOIN (BTC): SWING LOW P₀ = $25,000 (FAKTOR SKALA ×100)
+    </text>
+    <line x1="480" y1="350" x2="888" y2="350" stroke="#1e283d" stroke-width="1"/>
+
+    <!--  Step 1: Base Root  -->
+    <circle cx="486" cy="367" r="3.5" fill="#10b981"/>
+    <text x="496" y="370" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="9.5">
+      <tspan fill="#10b981" font-weight="700">1. Akar Harga Dasar:</tspan> P₀ = 250 (×100) &#8594; √250 = <tspan fill="#00f0ff" font-weight="700">15.811</tspan>
+    </text>
+
+    <!--  Step 2: +180 deg  -->
+    <circle cx="486" cy="390" r="3.5" fill="#00f0ff"/>
+    <text x="496" y="393" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="9.5">
+      <tspan fill="#00f0ff" font-weight="700">2. Rotasi +180° (+1.0):</tspan> (15.81 + 1.0)² × 100 = 16.81² × 100 = <tspan fill="#00f0ff" font-weight="700">$28,258</tspan>
+    </text>
+
+    <!--  Step 3: +360 deg  -->
+    <circle cx="486" cy="413" r="3.5" fill="#d4af37"/>
+    <text x="496" y="416" fill="#e2e8f0" font-family="'JetBrains Mono', monospace" font-size="9.5">
+      <tspan fill="#f3e5ab" font-weight="700">3. Rotasi +360° (+2.0):</tspan> (15.81 + 2.0)² × 100 = 17.81² × 100 = <tspan fill="#f3e5ab" font-weight="700">$31,720</tspan>
+    </text>
+
+    <!--  Footer Note inside Worked Example  -->
+    <text x="496" y="434" fill="#8e9bb0" font-size="8.5" font-style="italic">
+      *Harmoni Gann: Setiap +90° (+0.5 unit akar) dan +180° (+1.0 unit akar) bertindak sebagai resistensi/support geometris.
+    </text>
+  </g>
+</svg>

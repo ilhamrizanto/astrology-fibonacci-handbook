@@ -1,0 +1,308 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="100%" height="auto">
+  <defs>
+    <!--  Glow Filters  -->
+    <filter id="glow-gold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-rose" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!--  Linear Gradients  -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1a" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+    <linearGradient id="retro-zone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.12" />
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.10" />
+    </linearGradient>
+    <linearGradient id="trap-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!--  Arrow Markers  -->
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d4af37" />
+    </marker>
+    <marker id="arrow-cyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#00f0ff" />
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#f43f5e" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#10b981" />
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M 0 2 L 7 5 L 0 8 z" fill="#8e9bb0" />
+    </marker>
+  </defs>
+
+  <!--  Main Institutional Background  -->
+  <rect x="2" y="2" width="916" height="436" rx="10" fill="url(#bg-grad)" stroke="#1e283d" stroke-width="1.5" />
+
+  <!--  Top Header Banner  -->
+  <rect x="18" y="14" width="884" height="44" rx="6" fill="#0f1626" stroke="#1e283d" stroke-width="1" />
+  <text x="32" y="34" font-family="'Inter', sans-serif" font-size="13.5" font-weight="700" fill="#e2e8f0" letter-spacing="0.6">
+    KINEMATIKA APPARENT RETROGRADE, TITIK STASIONER (<tspan fill="#d4af37" font-family="'JetBrains Mono', monospace">dλ/dt = 0</tspan>) &amp; EFEK WHIPSAW
+  </text>
+  <text x="32" y="50" font-family="'JetBrains Mono', monospace" font-size="10" fill="#8e9bb0">
+    GEOCENTRIC ECLIPTIC LONGITUDE (λ) VS. MARKET LIQUIDITY TRAP &amp; REGIME SHIFT
+  </text>
+  <rect x="768" y="24" width="120" height="24" rx="4" fill="#131c31" stroke="#d4af37" stroke-width="0.8" />
+  <text x="828" y="40" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#f3e5ab" text-anchor="middle">
+    RIZACORP QUANT
+  </text>
+
+  <!--  =========================================================================  -->
+  <!--  LEFT PANEL: APPARENT RETROGRADE KINEMATICS (x=18..448)                     -->
+  <!--  =========================================================================  -->
+  <rect x="18" y="68" width="430" height="304" rx="6" fill="#0b111e" stroke="#1e283d" stroke-width="1" />
+  
+  <!--  Panel 1 Header  -->
+  <text x="32" y="88" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#f3e5ab" letter-spacing="0.4">
+    1. LINTASAN SEMU (Z-LOOP) &amp; FASE KECEPATAN SUDUT (ω)
+  </text>
+  <line x1="32" y1="96" x2="434" y2="96" stroke="#1e283d" stroke-width="1" />
+
+  <!--  Subtle Celestial Grid  -->
+  <g stroke="#162032" stroke-width="0.8" stroke-dasharray="3,3">
+    <line x1="55" y1="130" x2="430" y2="130" />
+    <line x1="55" y1="185" x2="430" y2="185" />
+    <line x1="55" y1="240" x2="430" y2="240" />
+    <line x1="55" y1="295" x2="430" y2="295" />
+    <line x1="120" y1="110" x2="120" y2="335" />
+    <line x1="370" y1="110" x2="370" y2="335" />
+  </g>
+
+  <!--  Axes Labels Left Panel  -->
+  <line x1="55" y1="108" x2="55" y2="338" stroke="#475569" stroke-width="1.2" marker-start="url(#arrow-slate)" />
+  <line x1="55" y1="338" x2="432" y2="338" stroke="#475569" stroke-width="1.2" marker-end="url(#arrow-slate)" />
+  <text x="24" y="225" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8e9bb0" transform="rotate(-90, 24, 225)" text-anchor="middle">
+    BUJUR EKLIPTIKA (λ°)
+  </text>
+  <text x="245" y="356" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8e9bb0" text-anchor="middle">
+    INDEKS WAKTU (t) &#8594;
+  </text>
+
+  <!--  Shaded Retrograde Window (Between SR x=292 and SD x=188 in Longitude band y=160..255)  -->
+  <rect x="188" y="160" width="104" height="95" fill="url(#retro-zone)" />
+
+  <!--  Horizontal Shadow Zone Bound Lines (λ_SD and λ_SR)  -->
+  <!--  Upper Bound: λ_SR (y=160)  -->
+  <line x1="55" y1="160" x2="425" y2="160" stroke="#d4af37" stroke-width="1" stroke-dasharray="4,4" opacity="0.65" />
+  <text x="60" y="154" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#d4af37">
+    λ_SR (Batas Atas Bayangan)
+  </text>
+
+  <!--  Lower Bound: λ_SD (y=255)  -->
+  <line x1="55" y1="255" x2="425" y2="255" stroke="#00f0ff" stroke-width="1" stroke-dasharray="4,4" opacity="0.65" />
+  <text x="60" y="268" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#00f0ff">
+    λ_SD (Batas Bawah Bayangan)
+  </text>
+
+  <!--  Glowing Vertical Trigger Lines for SR & SD  -->
+  <!--  Station Direct (SD) Vertical Line at x=188  -->
+  <line x1="188" y1="108" x2="188" y2="338" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="3,2" filter="url(#glow-cyan)" opacity="0.85" />
+  <!--  Station Retrograde (SR) Vertical Line at x=292  -->
+  <line x1="292" y1="108" x2="292" y2="338" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="3,2" filter="url(#glow-gold)" opacity="0.85" />
+
+  <!--  S-SHAPED APPARENT PATH OF MERCURY ACROSS ECLIPTIC  -->
+  <!--  Segment 1: Direct Pre-Shadow & Shadow Entry (ω > 0)  -->
+  <path d="M 70 315 C 105 292, 130 272, 148 255 C 185 218, 255 160, 292 160" 
+        fill="none" stroke="#10b981" stroke-width="2.6" marker-mid="url(#arrow-emerald)" />
+
+  <!--  Segment 2: Retrograde Loop (ω < 0, Apparent Backward Motion in λ)  -->
+  <path d="M 292 160 C 265 160, 215 255, 188 255" 
+        fill="none" stroke="#f43f5e" stroke-width="3.2" filter="url(#glow-rose)" />
+  <!--  Mid-retrograde directional arrow  -->
+  <path d="M 250 198 L 232 216" fill="none" stroke="#f43f5e" stroke-width="2.5" marker-end="url(#arrow-rose)" />
+
+  <!--  Segment 3: Post-Retrograde Direct Recovery & Shadow Exit (ω > 0)  -->
+  <path d="M 188 255 C 225 255, 295 195, 336 160 C 365 135, 392 120, 418 112" 
+        fill="none" stroke="#00f0ff" stroke-width="2.6" />
+  <!--  Post-SD directional arrow  -->
+  <path d="M 358 142 L 382 127" fill="none" stroke="#00f0ff" stroke-width="2.4" marker-end="url(#arrow-cyan)" />
+
+  <!--  Key Nodes on the S-Curve  -->
+  <!--  1. Pre-Retrograde Shadow Entry Node  -->
+  <circle cx="148" cy="255" r="4.5" fill="#0b111e" stroke="#10b981" stroke-width="2" />
+  <text x="142" y="283" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#10b981" text-anchor="end">
+    1. Pre-Shadow Entry
+  </text>
+
+  <!--  2. Station Retrograde (SR) Node  -->
+  <circle cx="292" cy="160" r="6" fill="#d4af37" stroke="#0a0f1a" stroke-width="1.5" filter="url(#glow-gold)" />
+  <rect x="232" y="112" width="124" height="34" rx="4" fill="#161f33" stroke="#d4af37" stroke-width="1.2" />
+  <text x="294" y="126" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#f3e5ab" text-anchor="middle">
+    2. Station Retro (SR)
+  </text>
+  <text x="294" y="140" font-family="'JetBrains Mono', monospace" font-size="9" fill="#d4af37" text-anchor="middle">
+    ω = dλ/dt = 0
+  </text>
+
+  <!--  3. Retrograde Loop Label  -->
+  <rect x="196" y="196" width="90" height="28" rx="4" fill="#23121b" stroke="#f43f5e" stroke-width="0.9" opacity="0.9" />
+  <text x="241" y="208" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#f43f5e" text-anchor="middle">
+    3. Retrograde Loop
+  </text>
+  <text x="241" y="219" font-family="'JetBrains Mono', monospace" font-size="8" fill="#fca5a5" text-anchor="middle">
+    ω &lt; 0 (Mundur Semu)
+  </text>
+
+  <!--  4. Station Direct (SD) Node  -->
+  <circle cx="188" cy="255" r="6" fill="#00f0ff" stroke="#0a0f1a" stroke-width="1.5" filter="url(#glow-cyan)" />
+  <rect x="126" y="294" width="124" height="34" rx="4" fill="#102230" stroke="#00f0ff" stroke-width="1.2" />
+  <text x="188" y="308" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#e2e8f0" text-anchor="middle">
+    4. Station Direct (SD)
+  </text>
+  <text x="188" y="322" font-family="'JetBrains Mono', monospace" font-size="9" fill="#00f0ff" text-anchor="middle">
+    ω = dλ/dt = 0
+  </text>
+
+  <!--  5. Post-Retrograde Shadow Exit Node  -->
+  <circle cx="336" cy="160" r="4.5" fill="#0b111e" stroke="#00f0ff" stroke-width="2" />
+  <text x="344" y="175" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#00f0ff" text-anchor="start">
+    5. Post-Shadow Exit
+  </text>
+  <text x="344" y="187" font-family="'JetBrains Mono', monospace" font-size="8" fill="#8e9bb0" text-anchor="start">
+    (ω &gt; 0 Normal)
+  </text>
+
+  <!--  =========================================================================  -->
+  <!--  RIGHT PANEL: MARKET PRICE ACTION & WHIPSAW CHART (x=462..902)              -->
+  <!--  =========================================================================  -->
+  <rect x="462" y="68" width="440" height="304" rx="6" fill="#0b111e" stroke="#1e283d" stroke-width="1" />
+
+  <!--  Panel 2 Header  -->
+  <text x="476" y="88" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" fill="#f3e5ab" letter-spacing="0.4">
+    2. STRUKTUR HARGA PASAR: BULL TRAP (SR) &amp; TREND RESUMPTION (SD)
+  </text>
+  <line x1="476" y1="96" x2="888" y2="96" stroke="#1e283d" stroke-width="1" />
+
+  <!--  Chart Grid  -->
+  <g stroke="#162032" stroke-width="0.8" stroke-dasharray="3,3">
+    <line x1="490" y1="135" x2="885" y2="135" />
+    <line x1="490" y1="225" x2="885" y2="225" />
+    <line x1="490" y1="315" x2="885" y2="315" />
+  </g>
+
+  <!--  Price Chart Axes  -->
+  <line x1="490" y1="108" x2="490" y2="338" stroke="#475569" stroke-width="1.2" />
+  <line x1="490" y1="338" x2="888" y2="338" stroke="#475569" stroke-width="1.2" marker-end="url(#arrow-slate)" />
+  <text x="474" y="225" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8e9bb0" transform="rotate(-90, 474, 225)" text-anchor="middle">
+    HARGA ASET (P)
+  </text>
+
+  <!--  Shaded Retrograde Whipsaw Window on Price Chart (x=605 to x=755)  -->
+  <rect x="605" y="108" width="150" height="230" fill="url(#retro-zone)" />
+  <text x="680" y="354" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#f43f5e" text-anchor="middle">
+    &#8592; JENDELA RETROGRADE (CHOP / MEAN-REVERSION) &#8594;
+  </text>
+
+  <!--  Resistance & Support Horizontal Levels  -->
+  <!--  Key Resistance Line (y=185)  -->
+  <line x1="490" y1="185" x2="885" y2="185" stroke="#f43f5e" stroke-width="1.3" stroke-dasharray="5,3" />
+  <rect x="495" y="169" width="92" height="14" rx="2" fill="#0b111e" opacity="0.85" />
+  <text x="498" y="179" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#f43f5e">
+    RESISTANCE (R1)
+  </text>
+
+  <!--  Key Support Line (y=280)  -->
+  <line x1="490" y1="280" x2="885" y2="280" stroke="#10b981" stroke-width="1.3" stroke-dasharray="5,3" />
+  <rect x="495" y="283" width="82" height="14" rx="2" fill="#0b111e" opacity="0.85" />
+  <text x="498" y="293" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#10b981">
+    SUPPORT (S1)
+  </text>
+
+  <!--  Equilibrium Mean Line (y=232)  -->
+  <line x1="605" y1="232" x2="755" y2="232" stroke="#8e9bb0" stroke-width="1" stroke-dasharray="2,3" opacity="0.7" />
+  <text x="680" y="227" font-family="'JetBrains Mono', monospace" font-size="8" fill="#8e9bb0" text-anchor="middle">
+    VWAP / MEAN EQUILIBRIUM
+  </text>
+
+  <!--  Glowing Trigger Line 1: Station Retrograde (SR) at x=605  -->
+  <line x1="605" y1="108" x2="605" y2="338" stroke="#d4af37" stroke-width="1.8" stroke-dasharray="4,2" filter="url(#glow-gold)" />
+  <rect x="572" y="316" width="66" height="18" rx="3" fill="#161f33" stroke="#d4af37" stroke-width="1" />
+  <text x="605" y="328" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#f3e5ab" text-anchor="middle">
+    SR (ω = 0)
+  </text>
+
+  <!--  Glowing Trigger Line 2: Station Direct (SD) at x=755  -->
+  <line x1="755" y1="108" x2="755" y2="338" stroke="#00f0ff" stroke-width="1.8" stroke-dasharray="4,2" filter="url(#glow-cyan)" />
+  <rect x="722" y="316" width="66" height="18" rx="3" fill="#102230" stroke="#00f0ff" stroke-width="1" />
+  <text x="755" y="328" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#00f0ff" text-anchor="middle">
+    SD (ω = 0)
+  </text>
+
+  <!--  False Breakout Trap Highlight Fill Above R1  -->
+  <path d="M 587 185 L 605 136 L 624 185 Z" fill="url(#trap-grad)" />
+
+  <!--  PRICE ACTION POLYLINE  -->
+  <!--  1. Pre-Retrograde Build-up & Breakout Trap at SR  -->
+  <polyline points="500,262 522,244 540,254 562,212 578,220 587,185 605,136" 
+            fill="none" stroke="#d4af37" stroke-width="2.4" stroke-linejoin="round" />
+
+  <!--  2. Sharp Whipsaw Reversal & Chop Inside Range (Retrograde Window)  -->
+  <polyline points="605,136 624,185 638,266 658,205 680,272 704,196 728,258 755,288" 
+            fill="none" stroke="#f43f5e" stroke-width="2.5" stroke-linejoin="round" filter="url(#glow-rose)" />
+
+  <!--  3. True Trend Resumption After SD  -->
+  <polyline points="755,288 776,235 792,245 812,185 832,155 850,164 878,118" 
+            fill="none" stroke="#00f0ff" stroke-width="2.8" stroke-linejoin="round" marker-end="url(#arrow-cyan)" />
+
+  <!--  Critical Market Structure Annotations  -->
+  <!--  False Breakout Node at SR Peak (605, 136)  -->
+  <circle cx="605" cy="136" r="5.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.5" filter="url(#glow-rose)" />
+  <rect x="616" y="109" width="166" height="32" rx="4" fill="#261019" stroke="#f43f5e" stroke-width="1.2" />
+  <text x="699" y="123" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#f43f5e" text-anchor="middle">
+    FALSE BREAKOUT / WHIPSAW TRAP
+  </text>
+  <text x="699" y="135" font-family="'JetBrains Mono', monospace" font-size="8" fill="#fda4af" text-anchor="middle">
+    Likuiditas Tersapu Tepat Saat SR
+  </text>
+
+  <!--  Liquidity Spring / SD Bottom Node (755, 288)  -->
+  <circle cx="755" cy="288" r="5.5" fill="#00f0ff" stroke="#0a0f1a" stroke-width="1.5" filter="url(#glow-cyan)" />
+  <text x="688" y="305" font-family="'JetBrains Mono', monospace" font-size="8" fill="#00f0ff" text-anchor="middle">
+    Spring / Akumulasi Akhir (SD)
+  </text>
+
+  <!--  True Breakout Confirmation Node (812, 185)  -->
+  <circle cx="812" cy="185" r="4.5" fill="#10b981" stroke="#0a0f1a" stroke-width="1.5" />
+  <rect x="768" y="196" width="114" height="30" rx="4" fill="#0d2321" stroke="#10b981" stroke-width="1" />
+  <text x="825" y="209" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#10b981" text-anchor="middle">
+    REAL TREND RESUMPTION
+  </text>
+  <text x="825" y="220" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#a7f3d0" text-anchor="middle">
+    Valid Breakout Pasca-SD
+  </text>
+
+  <!--  =========================================================================  -->
+  <!--  BOTTOM INSTITUTIONAL EXECUTION RULE BOX (y=382..426)                       -->
+  <!--  =========================================================================  -->
+  <rect x="18" y="382" width="884" height="44" rx="6" fill="#11192c" stroke="#d4af37" stroke-width="1.3" />
+  
+  <!--  Left Badge  -->
+  <rect x="28" y="391" width="152" height="26" rx="4" fill="#d4af37" />
+  <text x="104" y="408" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#0a0f1a" text-anchor="middle">
+    PROTOKOL EKSEKUSI
+  </text>
+
+  <!--  Main Rule Text  -->
+  <text x="194" y="402" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#f3e5ab">
+    Hindari Breakout Trading saat Retrograde; Prioritaskan Mean-Reversion
+  </text>
+  <text x="194" y="418" font-family="'JetBrains Mono', monospace" font-size="9.5" fill="#8e9bb0">
+    FADE EKSTREM R1/S1 SAAT FASE <tspan fill="#f43f5e">ω &lt; 0</tspan> • TUNGGU KONFIRMASI <tspan fill="#00f0ff">STATION DIRECT (SD)</tspan> UNTUK POSITION SIZING TREND-FOLLOWING
+  </text>
+</svg>

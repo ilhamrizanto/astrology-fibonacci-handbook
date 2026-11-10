@@ -1,0 +1,338 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" width="100%" height="auto">
+  <defs>
+    <!--  Clip path for the main declination plot area  -->
+    <clipPath id="plot-clip">
+      <rect x="85" y="65" width="715" height="230" />
+    </clipPath>
+
+    <!--  Clip path for OOB regions (above +23.44 deg and below -23.44 deg)  -->
+    <clipPath id="oob-clip">
+      <rect x="85" y="65" width="715" height="25.9" />
+      <rect x="85" y="269.1" width="715" height="25.9" />
+    </clipPath>
+
+    <!--  Clip path for standard Ecliptic Bound region (between -23.44 and +23.44 deg)  -->
+    <clipPath id="inbounds-clip">
+      <rect x="85" y="90.9" width="715" height="178.2" />
+    </clipPath>
+
+    <!--  Gradients  -->
+    <linearGradient id="solar-band-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.12" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0.12" />
+    </linearGradient>
+
+    <linearGradient id="oob-top-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.04" />
+    </linearGradient>
+
+    <linearGradient id="oob-bot-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.32" />
+    </linearGradient>
+
+    <linearGradient id="vol-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.45" />
+      <stop offset="65%" stop-color="#00f0ff" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0a0f1a" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!--  Glow Filters  -->
+    <filter id="glow-rose" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!--  Markers  -->
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f43f5e" />
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#d4af37" />
+    </marker>
+  </defs>
+
+  <!--  Main Card Background  -->
+  <rect x="2" y="2" width="916" height="416" rx="10" fill="#0a0f1a" stroke="#1e283d" stroke-width="1.5" />
+
+  <!--  Header & Legend Block  -->
+  <text x="28" y="30" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#e2e8f0" letter-spacing="0.4">
+    KURVA DEKLINASI LUNAR (δ) &amp; ANOMALI VOLATILITAS OUT-OF-BOUNDS (OOB)
+  </text>
+  <text x="28" y="48" font-family="'Inter', sans-serif" font-size="11" fill="#8e9bb0">
+    Siklus Bulanan Drakonik/Tropis (27.3 – 29.5 Hari) &#183; Batas Ekliptika Surya ±23.44° vs. Ekstrem Deklinasi Lunar ±28.5°
+  </text>
+
+  <!--  Compact Legend Top-Right  -->
+  <g transform="translate(545, 18)">
+    <rect x="0" y="0" width="350" height="34" rx="5" fill="#0f172a" stroke="#1e283d" stroke-width="1" />
+    <!--  Lunar Curve  -->
+    <line x1="12" y1="17" x2="30" y2="17" stroke="#00f0ff" stroke-width="2.5" />
+    <text x="36" y="21" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#e2e8f0">Deklinasi (δ)</text>
+    <!--  Solar Bound  -->
+    <line x1="115" y1="17" x2="133" y2="17" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="4 2" />
+    <text x="139" y="21" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#f3e5ab">Batas ±23.44°</text>
+    <!--  OOB Anomaly  -->
+    <line x1="225" y1="17" x2="243" y2="17" stroke="#f43f5e" stroke-width="3" />
+    <circle cx="234" cy="17" r="3" fill="#f43f5e" />
+    <text x="249" y="21" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#f43f5e">Zona OOB (&gt;23.4°)</text>
+  </g>
+
+  <!--  =================================================================  -->
+  <!--  UPPER PANEL: LUNAR DECLINATION (Y: 65 to 295, Center 0° at Y=180)  -->
+  <!--  Scale: 1 deg = 3.803 px | +28.5° = 71.6 | +23.44° = 90.9 | 0° = 180 | -23.44° = 269.1 | -28.5° = 288.4  -->
+  <!--  =================================================================  -->
+
+  <!--  Plot Area Background  -->
+  <rect x="85" y="65" width="715" height="230" fill="#0d1424" stroke="#1e283d" stroke-width="1" />
+
+  <!--  Solar Ecliptic Shaded Band (-23.44° to +23.44°)  -->
+  <rect x="85" y="90.9" width="715" height="178.2" fill="url(#solar-band-grad)" />
+
+  <!--  Out-Of-Bounds (OOB) Alert Shaded Zones  -->
+  <!--  North OOB Window (X: 199.7 to 326.8)  -->
+  <rect x="199.7" y="65" width="127.1" height="25.9" fill="url(#oob-top-grad)" />
+  <!--  South OOB Window (X: 557.2 to 684.3)  -->
+  <rect x="557.2" y="269.1" width="127.1" height="25.9" fill="url(#oob-bot-grad)" />
+
+  <!--  Vertical Grid Lines (Days 0 to 29.5)  -->
+  <g stroke="#1e283d" stroke-width="1" stroke-dasharray="2 3">
+    <line x1="199.7" y1="65" x2="199.7" y2="380" stroke="#f43f5e" stroke-opacity="0.35" />
+    <line x1="263.2" y1="65" x2="263.2" y2="380" stroke="#f43f5e" stroke-opacity="0.65" />
+    <line x1="326.8" y1="65" x2="326.8" y2="380" stroke="#f43f5e" stroke-opacity="0.35" />
+    <line x1="442.5" y1="65" x2="442.5" y2="380" stroke="#d4af37" stroke-opacity="0.55" />
+    <line x1="557.2" y1="65" x2="557.2" y2="380" stroke="#f43f5e" stroke-opacity="0.35" />
+    <line x1="620.8" y1="65" x2="620.8" y2="380" stroke="#f43f5e" stroke-opacity="0.65" />
+    <line x1="684.3" y1="65" x2="684.3" y2="380" stroke="#f43f5e" stroke-opacity="0.35" />
+  </g>
+
+  <!--  Horizontal Reference Lines  -->
+  <!--  +28.5° Max Lunar Standstill Limit  -->
+  <line x1="85" y1="71.6" x2="800" y2="71.6" stroke="#f43f5e" stroke-width="1" stroke-dasharray="2 4" stroke-opacity="0.6" />
+  <!--  +23.44° Tropic of Cancer  -->
+  <line x1="85" y1="90.9" x2="800" y2="90.9" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="6 4" />
+  <!--  0° Celestial Equator  -->
+  <line x1="85" y1="180" x2="800" y2="180" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="8 4" stroke-opacity="0.75" />
+  <!--  -23.44° Tropic of Capricorn  -->
+  <line x1="85" y1="269.1" x2="800" y2="269.1" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="6 4" />
+  <!--  -28.5° Min Lunar Standstill Limit  -->
+  <line x1="85" y1="288.4" x2="800" y2="288.4" stroke="#f43f5e" stroke-width="1" stroke-dasharray="2 4" stroke-opacity="0.6" />
+
+  <!--  Y-Axis Labels (Left)  -->
+  <g font-family="'JetBrains Mono', monospace" font-size="10.5" text-anchor="end">
+    <text x="78" y="75" fill="#f43f5e" font-weight="700">+28.50°</text>
+    <text x="78" y="94" fill="#d4af37" font-weight="600">+23.44°</text>
+    <text x="78" y="138" fill="#8e9bb0">+12.00°</text>
+    <text x="78" y="184" fill="#e2e8f0" font-weight="700">0.00°</text>
+    <text x="78" y="228" fill="#8e9bb0">-12.00°</text>
+    <text x="78" y="273" fill="#d4af37" font-weight="600">-23.44°</text>
+    <text x="78" y="292" fill="#f43f5e" font-weight="700">-28.50°</text>
+  </g>
+
+  <!--  Rotated Y-Axis Title  -->
+  <text x="20" y="180" font-family="'Inter', sans-serif" font-size="10.5" font-weight="600" fill="#8e9bb0" text-anchor="middle" transform="rotate(-90, 20, 180)" letter-spacing="0.8">
+    DEKLINASI SELESTIAL (δ)
+  </text>
+
+  <!--  Right-Side Astronomical Boundary Labels  -->
+  <g font-family="'Inter', sans-serif" font-size="9.5" text-anchor="start">
+    <text x="806" y="74" fill="#f43f5e" font-weight="700">Major Standstill (+28.5°)</text>
+    <text x="806" y="91" fill="#d4af37" font-weight="600">Tropic of Cancer</text>
+    <text x="806" y="102" fill="#8e9bb0" font-size="8.5">(Batas Ekliptika Utara)</text>
+
+    <text x="806" y="178" fill="#e2e8f0" font-weight="600">Celestial Equator</text>
+    <text x="806" y="189" fill="#8e9bb0" font-size="8.5">(Ekuator Langit 0°)</text>
+
+    <text x="806" y="267" fill="#d4af37" font-weight="600">Tropic of Capricorn</text>
+    <text x="806" y="278" fill="#8e9bb0" font-size="8.5">(Batas Ekliptika Selatan)</text>
+    <text x="806" y="293" fill="#f43f5e" font-weight="700">Major Standstill (-28.5°)</text>
+  </g>
+
+  <!--  Watermark Label for Solar Ecliptic Band  -->
+  <text x="620" y="166" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#d4af37" fill-opacity="0.45" text-anchor="middle" letter-spacing="1.2">
+    ZONA NORMAL EKLIPTIKA SURYA (|δ| &lt; 23.44°)
+  </text>
+
+  <!--  =================================================================  -->
+  <!--  SINUSOIDAL DECLINATION WAVE: In-Bounds (Cyan) & OOB (Glowing Rose) -->
+  <!--  =================================================================  -->
+
+  <!--  Base Cyan Wave (Clipped to In-Bounds ±23.44°)  -->
+  <path d="M 85 180 C 143 111.4, 198 71.6, 263.25 71.6 C 328.5 71.6, 383.5 111.4, 442.5 180 C 501.5 248.6, 556.5 288.4, 620.75 288.4 C 685 288.4, 741 248.6, 800 180"
+        fill="none" stroke="#00f0ff" stroke-width="2.8" clip-path="url(#inbounds-clip)" filter="url(#glow-cyan)" />
+
+  <!--  Glowing Rose Wave (Clipped to OOB > ±23.44°)  -->
+  <path d="M 85 180 C 143 111.4, 198 71.6, 263.25 71.6 C 328.5 71.6, 383.5 111.4, 442.5 180 C 501.5 248.6, 556.5 288.4, 620.75 288.4 C 685 288.4, 741 248.6, 800 180"
+        fill="none" stroke="#f43f5e" stroke-width="4" clip-path="url(#oob-clip)" filter="url(#glow-rose)" />
+
+  <!--  Key Inflection & Boundary Points  -->
+  <!--  Ascending Node / 0° Start  -->
+  <circle cx="85" cy="180" r="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="2.5" />
+
+  <!--  OOB North Entry & Exit Dots (+23.44°)  -->
+  <circle cx="199.7" cy="90.9" r="3.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.5" />
+  <circle cx="326.8" cy="90.9" r="3.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.5" />
+
+  <!--  Max North Peak (+28.5°)  -->
+  <circle cx="263.25" cy="71.6" r="5.5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.5" filter="url(#glow-rose)" />
+
+  <!--  Celestial Equator Crossing (0° Center Inflection)  -->
+  <circle cx="442.5" cy="180" r="5.5" fill="#d4af37" stroke="#0a0f1a" stroke-width="2" />
+  <circle cx="442.5" cy="180" r="9" fill="none" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="2 2" />
+
+  <!--  OOB South Entry & Exit Dots (-23.44°)  -->
+  <circle cx="557.2" cy="269.1" r="3.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.5" />
+  <circle cx="684.3" cy="269.1" r="3.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.5" />
+
+  <!--  Max South Trough (-28.5°)  -->
+  <circle cx="620.75" cy="288.4" r="5.5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.5" filter="url(#glow-rose)" />
+
+  <!--  Ascending Node / 0° End  -->
+  <circle cx="800" cy="180" r="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="2.5" />
+
+  <!--  =================================================================  -->
+  <!--  CALLOUT ANNOTATIONS IN DECLINATION PANEL                           -->
+  <!--  =================================================================  -->
+
+  <!--  North OOB Callout Badge  -->
+  <g transform="translate(263.25, 118)">
+    <rect x="-132" y="0" width="264" height="34" rx="5" fill="#160d18" stroke="#f43f5e" stroke-width="1.2" />
+    <text x="0" y="14" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#f43f5e" text-anchor="middle" letter-spacing="0.4">
+      OUT-OF-BOUNDS (OOB) EXTREME VOLATILITY WINDOW
+    </text>
+    <text x="0" y="27" font-family="'JetBrains Mono', monospace" font-size="9" fill="#f3e5ab" text-anchor="middle">
+      Max North (+δ = +28.5°) &#183; Hari 4.7 – 10.0
+    </text>
+    <line x1="0" y1="0" x2="0" y2="-38" stroke="#f43f5e" stroke-width="1.2" marker-end="url(#arrow-rose)" />
+  </g>
+
+  <!--  Celestial Equator Crossing Callout Badge  -->
+  <g transform="translate(442.5, 204)">
+    <rect x="-115" y="0" width="230" height="34" rx="5" fill="#111a2e" stroke="#d4af37" stroke-width="1.2" />
+    <text x="0" y="14" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#f3e5ab" text-anchor="middle">
+      CELESTIAL EQUATOR CROSSING (0°)
+    </text>
+    <text x="0" y="27" font-family="'Inter', sans-serif" font-size="9" fill="#00f0ff" text-anchor="middle">
+      Titik Pembalikan Momentum (Hari 14.8)
+    </text>
+    <line x1="0" y1="0" x2="0" y2="-15" stroke="#d4af37" stroke-width="1.2" marker-end="url(#arrow-gold)" />
+  </g>
+
+  <!--  South OOB Callout Badge  -->
+  <g transform="translate(620.75, 208)">
+    <rect x="-132" y="0" width="264" height="34" rx="5" fill="#160d18" stroke="#f43f5e" stroke-width="1.2" />
+    <text x="0" y="14" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#f43f5e" text-anchor="middle" letter-spacing="0.4">
+      OUT-OF-BOUNDS (OOB) EXTREME VOLATILITY WINDOW
+    </text>
+    <text x="0" y="27" font-family="'JetBrains Mono', monospace" font-size="9" fill="#f3e5ab" text-anchor="middle">
+      Max South (-δ = -28.5°) &#183; Hari 19.5 – 24.7
+    </text>
+    <line x1="0" y1="34" x2="0" y2="71" stroke="#f43f5e" stroke-width="1.2" marker-end="url(#arrow-rose)" />
+  </g>
+
+  <!--  =================================================================  -->
+  <!--  LOWER PANEL: REALIZED VOLATILITY SPIKES (Y: 312 to 380)            -->
+  <!--  =================================================================  -->
+
+  <rect x="85" y="312" width="715" height="68" fill="#0d1424" stroke="#1e283d" stroke-width="1" />
+
+  <!--  Volatility Panel Title & Axis Labels  -->
+  <text x="93" y="325" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#e2e8f0" letter-spacing="0.5">
+    INDEKS VOLATILITAS PASAR (σ) &amp; AMPLITUDO DISLOKASI HARGA
+  </text>
+
+  <g font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="end">
+    <text x="78" y="325" fill="#f43f5e" font-weight="700">3.2σ</text>
+    <text x="78" y="352" fill="#d4af37">1.8σ</text>
+    <text x="78" y="376" fill="#8e9bb0">0.5σ</text>
+  </g>
+
+  <!--  Baseline Volatility Threshold Line  -->
+  <line x1="85" y1="355" x2="800" y2="355" stroke="#1e283d" stroke-width="1" stroke-dasharray="4 2" />
+
+  <!--  Volatility Area Fill & Curve  -->
+  <path d="M 85 360
+           L 115 368 L 155 369 L 185 365
+           L 199.7 352 L 225 340 L 245 322 L 254 334 L 263.25 316 L 273 332 L 283 324 L 305 342 L 326.8 352
+           L 355 367 L 395 369 L 422 365
+           L 434 352 L 442.5 334 L 451 352
+           L 478 366 L 515 369 L 542 365
+           L 557.2 352 L 580 339 L 602 323 L 612 335 L 620.75 315 L 630 333 L 640 325 L 662 343 L 684.3 352
+           L 715 367 L 755 369 L 785 364 L 800 358
+           L 800 380 L 85 380 Z"
+        fill="url(#vol-grad)" />
+
+  <path d="M 85 360
+           L 115 368 L 155 369 L 185 365
+           L 199.7 352 L 225 340 L 245 322 L 254 334 L 263.25 316 L 273 332 L 283 324 L 305 342 L 326.8 352
+           L 355 367 L 395 369 L 422 365
+           L 434 352 L 442.5 334 L 451 352
+           L 478 366 L 515 369 L 542 365
+           L 557.2 352 L 580 339 L 602 323 L 612 335 L 620.75 315 L 630 333 L 640 325 L 662 343 L 684.3 352
+           L 715 367 L 755 369 L 785 364 L 800 358"
+        fill="none" stroke="#00f0ff" stroke-width="1.6" />
+
+  <!--  Highlighted Rose Spikes in OOB Windows  -->
+  <path d="M 199.7 352 L 225 340 L 245 322 L 254 334 L 263.25 316 L 273 332 L 283 324 L 305 342 L 326.8 352"
+        fill="none" stroke="#f43f5e" stroke-width="2.4" filter="url(#glow-rose)" />
+
+  <path d="M 557.2 352 L 580 339 L 602 323 L 612 335 L 620.75 315 L 630 333 L 640 325 L 662 343 L 684.3 352"
+        fill="none" stroke="#f43f5e" stroke-width="2.4" filter="url(#glow-rose)" />
+
+  <!--  Highlighted Gold Spike at Equator Crossing  -->
+  <path d="M 434 352 L 442.5 334 L 451 352"
+        fill="none" stroke="#d4af37" stroke-width="2.2" />
+
+  <!--  Spike Peak Markers & Labels  -->
+  <circle cx="263.25" cy="316" r="3.5" fill="#f43f5e" />
+  <text x="263.25" y="373" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#f43f5e" text-anchor="middle">
+    OOB N-SPIKE (3.1σ)
+  </text>
+
+  <circle cx="442.5" cy="334" r="3.5" fill="#d4af37" />
+  <text x="442.5" y="373" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#f3e5ab" text-anchor="middle">
+    INFLECTION PIVOT (2.1σ)
+  </text>
+
+  <circle cx="620.75" cy="315" r="3.5" fill="#f43f5e" />
+  <text x="620.75" y="373" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700" fill="#f43f5e" text-anchor="middle">
+    OOB S-SPIKE (3.2σ)
+  </text>
+
+  <!--  Right-side Volatility Annotation  -->
+  <text x="806" y="325" font-family="'Inter', sans-serif" font-size="9.5" font-weight="700" fill="#f43f5e">Ekstrem Volatilitas</text>
+  <text x="806" y="337" font-family="'Inter', sans-serif" font-size="8.5" fill="#8e9bb0">Breakout &amp; Ekor Gemuk</text>
+  <text x="806" y="358" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#10b981">Regim Normal (&lt;1σ)</text>
+
+  <!--  =================================================================  -->
+  <!--  X-AXIS: TIMELINE (DAYS 0 TO 29.5)                                  -->
+  <!--  =================================================================  -->
+  <g font-family="'JetBrains Mono', monospace" font-size="10" fill="#8e9bb0" text-anchor="middle">
+    <text x="85" y="396" fill="#e2e8f0" font-weight="600">Hari 0.0</text>
+    <text x="199.7" y="396" fill="#f43f5e">H 4.7</text>
+    <text x="263.25" y="396" fill="#f43f5e" font-weight="700">H 7.4 (Max +δ)</text>
+    <text x="326.8" y="396" fill="#f43f5e">H 10.0</text>
+    <text x="442.5" y="396" fill="#f3e5ab" font-weight="700">H 14.8 (0° Cross)</text>
+    <text x="557.2" y="396" fill="#f43f5e">H 19.5</text>
+    <text x="620.75" y="396" fill="#f43f5e" font-weight="700">H 22.1 (Max -δ)</text>
+    <text x="684.3" y="396" fill="#f43f5e">H 24.7</text>
+    <text x="800" y="396" fill="#e2e8f0" font-weight="600">Hari 29.5</text>
+  </g>
+
+  <text x="442.5" y="412" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#8e9bb0" text-anchor="middle" letter-spacing="0.6">
+    FASE SIKLUS DEKLINASI LUNAR (HARI SINODIS / TROPIS) &#8594; KORELASI LANGSUNG ANOMALI LIKUIDITAS &amp; VOLATILITAS
+  </text>
+</svg>

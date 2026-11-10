@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="auto">
+  <defs>
+    <radialGradient id="bgGlow" cx="27%" cy="54%" r="55%">
+      <stop offset="0%" stop-color="#152238" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0a0f1a" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="orbGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.05"/>
+      <stop offset="35%" stop-color="#00f0ff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.55"/>
+      <stop offset="65%" stop-color="#f43f5e" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#d4af37"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#00f0ff"/>
+    </marker>
+  </defs>
+
+  <!--  Background Card  -->
+  <rect x="2" y="2" width="916" height="456" rx="12" fill="url(#bgGlow)" stroke="#1e283d" stroke-width="1.5"/>
+
+  <!--  Header  -->
+  <text x="28" y="34" fill="#f3e5ab" font-family="'Inter', sans-serif" font-size="14" font-weight="700" letter-spacing="0.8">RODA GEOMETRI SUDUT PLANET PTOLEMAIK (360°) &amp; DINAMIKA ORB</text>
+  <text x="892" y="34" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">ASTRONOMICAL HARMONICS // MODUL 04</text>
+  <line x1="28" y1="46" x2="892" y2="46" stroke="#1e283d" stroke-width="1"/>
+
+  <!--  ================= LEFT PANEL: 360° ECLIPTIC WHEEL =================  -->
+  <!--  Center: (240, 255), Outer Ring R=162, Main Ring R=145  -->
+  <g id="ecliptic-wheel">
+    <!--  Subtle Grid Circles  -->
+    <circle cx="240" cy="255" r="164" fill="none" stroke="#1e283d" stroke-width="1" stroke-dasharray="2 4"/>
+    <circle cx="240" cy="255" r="145" fill="#0d1424" fill-opacity="0.6" stroke="#2c3b59" stroke-width="2"/>
+    <circle cx="240" cy="255" r="115" fill="none" stroke="#1e283d" stroke-width="0.8" stroke-dasharray="3 3"/>
+    <circle cx="240" cy="255" r="4" fill="#8e9bb0"/>
+
+    <!--  30° Zodiac Sector Ticks (R=145 to 153)  -->
+    <!--  0° Top (240, 110)  -->
+    <line x1="240" y1="91" x2="240" y2="110" stroke="#d4af37" stroke-width="2"/>
+    <!--  30° (312.5, 129.4)  -->
+    <line x1="312.5" y1="129.4" x2="317.5" y2="120.8" stroke="#2c3b59" stroke-width="1.2"/>
+    <!--  60° (365.6, 182.5)  -->
+    <line x1="365.6" y1="182.5" x2="374.2" y2="177.5" stroke="#00f0ff" stroke-width="1.8"/>
+    <!--  90° (385, 255)  -->
+    <line x1="385" y1="255" x2="396" y2="255" stroke="#f43f5e" stroke-width="1.8"/>
+    <!--  120° (365.6, 327.5)  -->
+    <line x1="365.6" y1="327.5" x2="374.2" y2="332.5" stroke="#10b981" stroke-width="1.8"/>
+    <!--  150° (312.5, 380.6)  -->
+    <line x1="312.5" y1="380.6" x2="317.5" y2="389.2" stroke="#2c3b59" stroke-width="1.2"/>
+    <!--  180° (240, 400)  -->
+    <line x1="240" y1="400" x2="240" y2="411" stroke="#f43f5e" stroke-width="1.8"/>
+    <!--  210° (167.5, 380.6)  -->
+    <line x1="167.5" y1="380.6" x2="162.5" y2="389.2" stroke="#2c3b59" stroke-width="1.2"/>
+    <!--  240° (114.4, 327.5)  -->
+    <line x1="114.4" y1="327.5" x2="105.8" y2="332.5" stroke="#10b981" stroke-width="1.8"/>
+    <!--  270° (95, 255)  -->
+    <line x1="95" y1="255" x2="84" y2="255" stroke="#f43f5e" stroke-width="1.8"/>
+    <!--  300° (114.4, 182.5)  -->
+    <line x1="114.4" y1="182.5" x2="105.8" y2="177.5" stroke="#00f0ff" stroke-width="1.8"/>
+    <!--  330° (167.5, 129.4)  -->
+    <line x1="167.5" y1="129.4" x2="162.5" y2="120.8" stroke="#2c3b59" stroke-width="1.2"/>
+
+    <!--  Background Symmetric Harmonic Polygons (Subtle)  -->
+    <!--  Grand Trine (0 - 120 - 240)  -->
+    <polygon points="240,110 365.6,327.5 114.4,327.5" fill="#10b981" fill-opacity="0.04" stroke="#10b981" stroke-width="1" stroke-dasharray="4 4"/>
+    <!--  Grand Cross (0 - 90 - 180 - 270)  -->
+    <polygon points="240,110 385,255 240,400 95,255" fill="#f43f5e" fill-opacity="0.03" stroke="#f43f5e" stroke-width="0.8" stroke-dasharray="2 4"/>
+
+    <!--  Active Chord Lines from Planet A (0° at 240,110)  -->
+    <!--  60° Sextile Chords (Cyan)  -->
+    <line x1="240" y1="110" x2="365.6" y2="182.5" stroke="#00f0ff" stroke-width="2" opacity="0.9"/>
+    <line x1="240" y1="110" x2="114.4" y2="182.5" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.75"/>
+
+    <!--  120° Trine Chords (Emerald)  -->
+    <line x1="240" y1="110" x2="365.6" y2="327.5" stroke="#10b981" stroke-width="2.4" opacity="0.95"/>
+    <line x1="240" y1="110" x2="114.4" y2="327.5" stroke="#10b981" stroke-width="1.6" stroke-dasharray="5 3" opacity="0.75"/>
+
+    <!--  90° Square Chords (Alert Rose)  -->
+    <line x1="240" y1="110" x2="385" y2="255" stroke="#f43f5e" stroke-width="2.2" opacity="0.95"/>
+    <line x1="240" y1="110" x2="95" y2="255" stroke="#f43f5e" stroke-width="1.6" stroke-dasharray="5 3" opacity="0.75"/>
+
+    <!--  180° Opposition Diameter (Alert Rose)  -->
+    <line x1="240" y1="110" x2="240" y2="400" stroke="#f43f5e" stroke-width="2.8" filter="url(#glow)"/>
+
+    <!--  Chord Internal Labels (Clean Pill Badges)  -->
+    <!--  60° Badge  -->
+    <rect x="285" y="132" width="52" height="16" rx="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="1"/>
+    <text x="311" y="143" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" text-anchor="middle">60° SX</text>
+
+    <!--  90° Badge  -->
+    <rect x="302" y="177" width="52" height="16" rx="4" fill="#0a0f1a" stroke="#f43f5e" stroke-width="1"/>
+    <text x="328" y="188" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" text-anchor="middle">90° SQ</text>
+
+    <!--  120° Badge  -->
+    <rect x="288" y="232" width="56" height="16" rx="4" fill="#0a0f1a" stroke="#10b981" stroke-width="1"/>
+    <text x="316" y="243" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" text-anchor="middle">120° TR</text>
+
+    <!--  180° Badge  -->
+    <rect x="208" y="286" width="64" height="18" rx="4" fill="#0a0f1a" stroke="#f43f5e" stroke-width="1.2"/>
+    <text x="240" y="298" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="middle">180° OPP</text>
+
+    <!--  Aspect Nodes on Perimeter  -->
+    <!--  0° Reference Planet A + Conjunction Node  -->
+    <circle cx="240" cy="110" r="9" fill="#d4af37" fill-opacity="0.25" filter="url(#glow)"/>
+    <circle cx="240" cy="110" r="5.5" fill="#d4af37" stroke="#0a0f1a" stroke-width="1.5"/>
+
+    <!--  60° & 300° Nodes  -->
+    <circle cx="365.6" cy="182.5" r="4.5" fill="#00f0ff" stroke="#0a0f1a" stroke-width="1.5"/>
+    <circle cx="114.4" cy="182.5" r="4" fill="#0a0f1a" stroke="#00f0ff" stroke-width="1.5"/>
+
+    <!--  90° & 270° Nodes  -->
+    <circle cx="385" cy="255" r="5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.5"/>
+    <circle cx="95" cy="255" r="4" fill="#0a0f1a" stroke="#f43f5e" stroke-width="1.5"/>
+
+    <!--  120° & 240° Nodes  -->
+    <circle cx="365.6" cy="327.5" r="5" fill="#10b981" stroke="#0a0f1a" stroke-width="1.5"/>
+    <circle cx="114.4" cy="327.5" r="4" fill="#0a0f1a" stroke="#10b981" stroke-width="1.5"/>
+
+    <!--  180° Node  -->
+    <circle cx="240" cy="400" r="5.5" fill="#f43f5e" stroke="#0a0f1a" stroke-width="1.5"/>
+
+    <!--  Outer Degree Callouts  -->
+    <!--  0° Conjunction  -->
+    <rect x="155" y="64" width="170" height="22" rx="4" fill="#131c2e" stroke="#d4af37" stroke-width="1"/>
+    <text x="240" y="79" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" text-anchor="middle">☉ PLANET A : 0° (KONJUNGSI)</text>
+
+    <!--  Right-side Angles (60, 90, 120)  -->
+    <text x="382" y="176" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">60°</text>
+    <text x="382" y="189" fill="#8e9bb0" font-family="'Inter', sans-serif" font-size="9.5">Sextile</text>
+
+    <text x="403" y="253" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">90°</text>
+    <text x="403" y="266" fill="#8e9bb0" font-family="'Inter', sans-serif" font-size="9.5">Square</text>
+
+    <text x="382" y="335" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">120°</text>
+    <text x="382" y="348" fill="#8e9bb0" font-family="'Inter', sans-serif" font-size="9.5">Trine</text>
+
+    <!--  Bottom 180°  -->
+    <text x="240" y="427" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" text-anchor="middle">180° OPPOSITION (OPOSISI)</text>
+
+    <!--  Left-side Angles (300, 270, 240)  -->
+    <text x="98" y="176" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" text-anchor="end">300°</text>
+    <text x="98" y="189" fill="#8e9bb0" font-family="'Inter', sans-serif" font-size="9.5" text-anchor="end">Δθ = 60°</text>
+
+    <text x="77" y="253" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" text-anchor="end">270°</text>
+    <text x="77" y="266" fill="#8e9bb0" font-family="'Inter', sans-serif" font-size="9.5" text-anchor="end">Δθ = 90°</text>
+
+    <text x="98" y="335" fill="#10b981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" text-anchor="end">240°</text>
+    <text x="98" y="348" fill="#8e9bb0" font-family="'Inter', sans-serif" font-size="9.5" text-anchor="end">Δθ = 120°</text>
+  </g>
+
+  <!--  ================= RIGHT PANEL: ASPECT TAXONOMY, FORMULA & ORB CURVE =================  -->
+  
+  <!--  Box 1: Klasifikasi Aspek Ptolemaik  -->
+  <rect x="468" y="62" width="424" height="126" rx="8" fill="#0e1626" stroke="#1e283d" stroke-width="1.2"/>
+  <text x="484" y="83" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5">KLASIFIKASI ASPEK MAYOR PTOLEMAIK &amp; EFEK PASAR</text>
+  <line x1="484" y1="91" x2="876" y2="91" stroke="#1e283d" stroke-width="1"/>
+
+  <!--  Row 1: Conjunction  -->
+  <circle cx="492" cy="109" r="5" fill="#d4af37"/>
+  <text x="506" y="113" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">0° Conjunction</text>
+  <text x="625" y="113" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="11">Penyatuan Energi / Reset Siklus &amp; Tren Baru</text>
+
+  <!--  Row 2: Soft Aspects  -->
+  <circle cx="489" cy="136" r="4.5" fill="#00f0ff"/>
+  <circle cx="496" cy="136" r="4.5" fill="#10b981"/>
+  <text x="506" y="140" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">60° / 120° Soft</text>
+  <text x="625" y="140" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="11">Harmonis / Likuiditas Mengalir (Trend Continuation)</text>
+
+  <!--  Row 3: Hard Aspects  -->
+  <circle cx="492" cy="163" r="5" fill="#f43f5e"/>
+  <text x="506" y="167" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">90° / 180° Hard</text>
+  <text x="625" y="167" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="11">Friksi Maksimal / Volatilitas Ekstrem &amp; Pivot Reversal</text>
+
+  <!--  Box 2: Shortest Angle Formula  -->
+  <rect x="468" y="198" width="424" height="58" rx="8" fill="#111a2e" stroke="#2c3b59" stroke-width="1.2"/>
+  <rect x="468" y="198" width="5" height="58" rx="2" fill="#d4af37"/>
+  <text x="486" y="217" fill="#8e9bb0" font-family="'Inter', sans-serif" font-size="10" font-weight="600" letter-spacing="0.6">FORMULA JARAK SUDUT TERPENDEK (SHORTEST ECLIPTIC ARC):</text>
+  <text x="486" y="241" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="13.5" font-weight="700">Δθ = min( |λ₁ - λ₂|, 360° - |λ₁ - λ₂| )</text>
+  <text x="878" y="241" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="10.5" text-anchor="end">Δθ ∈ [0°, 180°]</text>
+
+  <!--  Box 3: Dinamika Orb & Kurva Tekanan Siklus  -->
+  <rect x="468" y="266" width="424" height="172" rx="8" fill="#0e1626" stroke="#1e283d" stroke-width="1.2"/>
+  <text x="484" y="286" fill="#e2e8f0" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5">DINAMIKA ORB: KURVA TEKANAN SIKLUS (GAUSSIAN INTENSITY)</text>
+  <text x="876" y="286" fill="#d4af37" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="end">PARTILE PEAK = 0°00'</text>
+
+  <!--  Bell Curve Graph Area: x=500 to 860 (center=680), y_base=398, y_peak=312  -->
+  <!--  Grid & Baseline  -->
+  <line x1="495" y1="398" x2="865" y2="398" stroke="#2c3b59" stroke-width="1.5"/>
+  <line x1="560" y1="315" x2="560" y2="398" stroke="#1e283d" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="800" y1="315" x2="800" y2="398" stroke="#1e283d" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <!--  Bell Curve Shaded Fill  -->
+  <path d="M 505 398 C 565 398, 610 392, 638 352 C 655 326, 667 312, 680 312 C 693 312, 705 326, 722 352 C 750 392, 795 398, 855 398 Z" fill="url(#orbGrad)"/>
+
+  <!--  Bell Curve Stroke  -->
+  <path d="M 505 398 C 565 398, 610 392, 638 352 C 655 326, 667 312, 680 312 C 693 312, 705 326, 722 352 C 750 392, 795 398, 855 398" fill="none" stroke="#d4af37" stroke-width="2.2"/>
+
+  <!--  Center Partile Axis & Node  -->
+  <line x1="680" y1="312" x2="680" y2="398" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="3 2"/>
+  <circle cx="680" cy="312" r="5" fill="#d4af37" stroke="#0a0f1a" stroke-width="1.5" filter="url(#glow)"/>
+
+  <!--  Applying Phase Annotations (Left)  -->
+  <text x="575" y="340" fill="#00f0ff" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">APPLYING ORB</text>
+  <text x="575" y="353" fill="#8e9bb0" font-family="'Inter', sans-serif" font-size="9.5" text-anchor="middle">(Menuju Eksak / Akumulasi)</text>
+  <path d="M 535 364 L 620 364" stroke="#00f0ff" stroke-width="1.5" marker-end="url(#arrowCyan)"/>
+
+  <!--  Partile Label (Top Center)  -->
+  <rect x="632" y="290" width="96" height="17" rx="3" fill="#152238" stroke="#d4af37" stroke-width="1"/>
+  <text x="680" y="302" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" text-anchor="middle">PARTILE (0° EXACT)</text>
+
+  <!--  Separating Phase Annotations (Right)  -->
+  <text x="785" y="340" fill="#f43f5e" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" text-anchor="middle">SEPARATING ORB</text>
+  <text x="785" y="353" fill="#8e9bb0" font-family="'Inter', sans-serif" font-size="9.5" text-anchor="middle">(Melebar / Disipasi Energi)</text>
+  <path d="M 740 364 L 825 364" stroke="#d4af37" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+
+  <!--  X-Axis Orb Degree Ticks  -->
+  <text x="515" y="414" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">-8°</text>
+  <text x="575" y="414" fill="#00f0ff" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">-5° (Masuk Orb)</text>
+  <text x="680" y="415" fill="#f3e5ab" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="middle">0° (Puncak Siklus)</text>
+  <text x="785" y="414" fill="#f43f5e" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">+5° (Keluar Orb)</text>
+  <text x="845" y="414" fill="#8e9bb0" font-family="'JetBrains Mono', monospace" font-size="9.5" text-anchor="middle">+8°</text>
+
+  <!--  Bottom Caption inside Box 3  -->
+  <text x="680" y="431" fill="#8e9bb0" font-family="'Inter', sans-serif" font-size="9.5" font-style="italic" text-anchor="middle">Tekanan volatilitas memuncak saat selisih sudut mencapai Partile (|Δθ - θ_aspect| = 0°)</text>
+</svg>
