@@ -1,129 +1,204 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ASTRONACCI: The Quantum Synthesis of Cosmic Time & Fractal Space in Financial Markets</title>
-  <meta name="description" content="Karya referensi institusional dan buku pegangan komprehensif sintesis waktu kosmik dan geometri fraktal di pasar keuangan oleh Ilham Rizanto.">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
-  
-  <!-- KaTeX -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
-  
-  <!-- Marked.js -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  
-  <!-- Styles -->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body class="dark-theme">
-  <!-- Reading Progress Bar -->
-  <div id="reading-progress-bar" class="progress-bar"></div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ASTRONACCI — The Quantum Synthesis of Cosmic Time & Fractal Space in Financial Markets. Monografi Komprehensif Siklus Waktu Finansial & Geometri Fraktal." />
+  <title>ASTRONACCI — The Quantum Synthesis of Cosmic Time &amp; Fractal Space in Financial Markets</title>
 
-  <!-- Top Institutional Bar -->
-  <header class="masthead">
-    <div class="masthead-left">
-      <button id="sidebar-toggle" class="icon-btn" title="Toggle Navigasi Bab">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-      </button>
-      <div class="brand">
-        <div class="seal">
-          <span class="seal-icon">✦</span>
-          <span class="seal-text">RIZACORP FINANCIAL INTELLIGENCE</span>
-        </div>
-        <h1 class="book-title">ASTRONACCI</h1>
-        <span class="subtitle">The Quantum Synthesis of Cosmic Time & Fractal Space in Financial Markets</span>
-      </div>
+  <!-- Google Fonts: Playfair Display, Newsreader, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+
+  <!-- KaTeX 0.16.9 for Mathematical Typesetting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+
+  <!-- Marked.js for Markdown Rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Primary Editorial Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="theme-broadsheet">
+
+  <!-- Top Reading Progress Hairline -->
+  <div class="progress-rail" aria-hidden="true">
+    <div id="reading-progress-bar" class="reading-progress-bar"></div>
+  </div>
+
+  <!-- Editorial Masthead -->
+  <header class="masthead" role="banner">
+    <!-- Top Institutional Dateline Strip -->
+    <div class="dateline-bar">
+      <div class="dateline-left">EDISI MONOGRAFI &bull; BAGIAN I–VI</div>
+      <div class="dateline-center">SINTESIS WAKTU KOSMIK &amp; GEOMETRI FRAKTAL</div>
+      <div class="dateline-right">17 BAB LENGKAP</div>
     </div>
-    
-    <div class="masthead-right">
-      <div class="sprint-badge">
-        <span class="badge-dot"></span>
-        <span class="badge-text">EDISI PARIPURNA : 17 BAB LENGKAP</span>
+
+    <!-- Main Masthead Bar -->
+    <div class="masthead-main">
+      <div class="masthead-brand-group">
+        <button id="sidebar-toggle" class="icon-btn" type="button" aria-label="Buka atau tutup indeks kurikulum" title="Indeks Kurikulum">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="square">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="15" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="masthead-title-block">
+          <h1 class="masthead-title">ASTRONACCI</h1>
+          <p class="masthead-subtitle">The Quantum Synthesis of Cosmic Time &amp; Fractal Space in Financial Markets</p>
+        </div>
       </div>
-      <button id="sim-drawer-toggle" class="btn btn-outline" title="Buka Simulator Interaktif">
-        <span class="btn-icon">⚡</span>
-        <span>Simulator Lab</span>
-      </button>
+
+      <!-- Right Toolbar Controls -->
+      <div class="masthead-controls">
+        <button id="search-modal-btn" class="toolbar-btn search-trigger-btn" type="button" title="Cari seluruh bab dan konsep (⌘K / Ctrl+K)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="btn-label">Cari Materi</span>
+          <kbd class="kbd-hint">⌘K</kbd>
+        </button>
+
+        <div class="typography-scaler" role="group" aria-label="Ukuran Tipografi">
+          <button id="font-dec" class="toolbar-btn scaler-btn" type="button" title="Kecilkan ukuran teks" aria-label="Kecilkan ukuran teks">A&minus;</button>
+          <span class="scaler-divider" aria-hidden="true"></span>
+          <button id="font-inc" class="toolbar-btn scaler-btn" type="button" title="Besarkan ukuran teks" aria-label="Besarkan ukuran teks">A+</button>
+        </div>
+
+        <button id="theme-toggle" class="toolbar-btn theme-btn" type="button" title="Ganti mode kertas (Broadsheet / Midnight Ink)">
+          <svg class="theme-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+          </svg>
+          <span class="theme-label">Mode Malam</span>
+        </button>
+
+        <button id="sim-drawer-toggle" class="toolbar-btn lab-trigger-btn" type="button" title="Buka Laboratorium Simulasi Siklus &amp; Fibonacci">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square">
+            <circle cx="12" cy="12" r="9"></circle>
+            <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(30 12 12)"></ellipse>
+            <circle cx="12" cy="12" r="1.5" fill="currentColor"></circle>
+          </svg>
+          <span>Lab Simulasi</span>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Interactive Simulation Stage (Collapsible) -->
-  <section id="sim-drawer" class="sim-drawer collapsed">
-    <div class="sim-drawer-header">
-      <div class="sim-tabs">
-        <button class="sim-tab-btn active" data-sim="lunar">
-          <span>🌙 Siklus Lunar & Jam Kosmik</span>
-        </button>
-        <button class="sim-tab-btn" data-sim="fibonacci">
-          <span>📐 Geometri Fraktal Fibonacci</span>
+  <!-- Collapsible Observatory & Fractal Lab Drawer -->
+  <section id="sim-drawer" class="sim-drawer collapsed" aria-label="Laboratorium Simulasi Interaktif">
+    <div class="sim-drawer-inner">
+      <div class="sim-drawer-header">
+        <div class="sim-drawer-title-group">
+          <span class="sim-kicker">INSTRUMEN KUANTITATIF INTERAKTIF</span>
+          <div class="sim-tabs" role="tablist">
+            <button type="button" class="sim-tab-btn active" data-sim="lunar" role="tab" aria-selected="true">
+              I. Geometri Elongasi Sinodik Bulan (Φ)
+            </button>
+            <button type="button" class="sim-tab-btn" data-sim="fibonacci" role="tab" aria-selected="false">
+              II. Kalkulator Golden Pocket &amp; Ekstensi Fraktal
+            </button>
+          </div>
+        </div>
+        <button id="sim-close-btn" class="toolbar-btn sim-close-btn" type="button" aria-label="Tutup Laboratorium">
+          Tutup Lab &times;
         </button>
       </div>
-      <button id="sim-close-btn" class="icon-btn-sm" title="Tutup Simulator">✕</button>
-    </div>
 
-    <div class="sim-stage-body">
-      <!-- 1. Lunar Orbit & Market Sentiment Simulator -->
-      <div id="sim-lunar" class="sim-panel active">
+      <!-- Panel 1: Synodic Lunar Phase & Market Inflection Simulator -->
+      <div id="sim-lunar" class="sim-panel active" role="tabpanel">
         <div class="sim-grid">
-          <div class="canvas-container">
-            <canvas id="lunarCanvas" width="500" height="320"></canvas>
-            <div class="canvas-caption">Simulasi Orbit Geosentris Bulan terhadap Matahari & Proyeksi Fase</div>
+          <div class="sim-canvas-wrap">
+            <canvas id="lunarCanvas" width="520" height="320"></canvas>
           </div>
-          <div class="sim-controls">
-            <h4 class="sim-control-title">KONTROL FASE LUNAR</h4>
-            <div class="control-row">
-              <label for="lunarAngleSlider">Sudut Fase ($\theta$ Bujur Elongasi):</label>
-              <input type="range" id="lunarAngleSlider" min="0" max="360" value="0" step="1">
-              <div class="slider-val"><span id="lunarAngleVal">0</span>°</div>
+          <div class="sim-controls-wrap">
+            <div class="sim-panel-heading">
+              <h3>Simulasi Elongasi Geosentris Matahari–Bulan</h3>
+              <p class="sim-panel-desc">
+                Ubah sudut elongasi $\Delta \lambda = (\lambda_{\text{Moon}} - \lambda_{\text{Sun}}) \pmod{360^\circ}$ untuk mengamati titik kulminasi pasang-surut gravitasi dan korelasi perilaku likuiditas pasar.
+              </p>
             </div>
-            <div class="phase-indicator-card">
-              <div class="phase-name" id="lunarPhaseName">New Moon (Bulan Baru)</div>
-              <div class="phase-behavior" id="lunarBehaviorDesc">
-                • <strong>Bias Perilaku Pasar</strong>: Akumulasi Smart Money, titik balik lembah (local pivot low).<br>
-                • <strong>Korelasi Neurokimia</strong>: Penurunan sekresi melatonin, toleransi risiko institusional pulih.
+
+            <div class="sim-control-block">
+              <div class="slider-header">
+                <label for="lunarAngleSlider">Sudut Elongasi Sinodik ($\Delta\lambda$)</label>
+                <span id="lunarAngleVal" class="mono-readout">0.0°</span>
+              </div>
+              <input id="lunarAngleSlider" type="range" min="0" max="360" step="1" value="0" class="editorial-slider" />
+              <div class="quick-chips">
+                <button type="button" class="btn-chip" data-deg="0">0° New Moon (Konjungsi)</button>
+                <button type="button" class="btn-chip" data-deg="90">90° First Quarter (Kuadratur)</button>
+                <button type="button" class="btn-chip" data-deg="180">180° Full Moon (Oposisi)</button>
+                <button type="button" class="btn-chip" data-deg="270">270° Third Quarter (Kuadratur)</button>
               </div>
             </div>
-            <div class="quick-jump-btns">
-              <button class="btn-chip" data-deg="0">0° New Moon</button>
-              <button class="btn-chip" data-deg="90">90° First Qtr</button>
-              <button class="btn-chip" data-deg="180">180° Full Moon</button>
-              <button class="btn-chip" data-deg="270">270° Last Qtr</button>
+
+            <div class="sim-readout-card">
+              <div class="readout-row">
+                <span class="readout-label">FASE ASTRONOMIS AKTIF</span>
+                <strong id="lunarPhaseName" class="readout-value">New Moon (Konjungsi 0°)</strong>
+              </div>
+              <div class="readout-row readout-behavior">
+                <span class="readout-label">IMPLIKASI MIKROSTRUKTUR &amp; SIKLUS PASAR</span>
+                <p id="lunarBehaviorDesc" class="readout-desc">
+                  Kompresi volatilitas mencapai titik jenuh jual/beli; probabilitas tinggi pembentukan Swing Low primer atau akumulasi institusional awal (Time Support).
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 2. Fibonacci Wave & Golden Pocket Simulator -->
-      <div id="sim-fibonacci" class="sim-panel">
+      <!-- Panel 2: Fibonacci Harmonic Price Grid & Golden Pocket Calculator -->
+      <div id="sim-fibonacci" class="sim-panel" role="tabpanel">
         <div class="sim-grid">
-          <div class="canvas-container">
-            <canvas id="fibCanvas" width="500" height="320"></canvas>
-            <div class="canvas-caption">Kalkulasi Dinamis Golden Pocket (0.618 - 0.65) & Ekstensi 1.618</div>
+          <div class="sim-canvas-wrap">
+            <canvas id="fibCanvas" width="520" height="320"></canvas>
           </div>
-          <div class="sim-controls">
-            <h4 class="sim-control-title">PARAMETER HARGA GELOMBANG IMPULSIF</h4>
-            <div class="control-row">
-              <label for="fibSwingLow">Swing Low ($P_0$):</label>
-              <input type="range" id="fibSwingLow" min="1000" max="50000" value="20000" step="500">
-              <div class="slider-val">$<span id="fibSwingLowVal">20,000</span></div>
+          <div class="sim-controls-wrap">
+            <div class="sim-panel-heading">
+              <h3>Geometri Proporsi Fibonacci &amp; Zona Konfluensi Harga</h3>
+              <p class="sim-panel-desc">
+                Tentukan titik ekstrem impuls harga ($P_{\text{Low}}$ dan $P_{\text{High}}$) untuk memetakan struktur retracement harmonik, <em>Golden Pocket</em> ($61.8\% - 65.0\%$), dan target ekspansi.
+              </p>
             </div>
-            <div class="control-row">
-              <label for="fibSwingHigh">Swing High ($P_1$):</label>
-              <input type="range" id="fibSwingHigh" min="1000" max="100000" value="60000" step="500">
-              <div class="slider-val">$<span id="fibSwingHighVal">60,000</span></div>
+
+            <div class="sim-control-block">
+              <div class="slider-header">
+                <label for="fibSwingLow">Titik Ekstrem Bawah ($P_{\text{Swing Low}}$)</label>
+                <span id="fibSwingLowVal" class="mono-readout">4,500</span>
+              </div>
+              <input id="fibSwingLow" type="range" min="1000" max="50000" step="100" value="4500" class="editorial-slider" />
+
+              <div class="slider-header" style="margin-top: 0.85rem;">
+                <label for="fibSwingHigh">Titik Ekstrem Atas ($P_{\text{Swing High}}$)</label>
+                <span id="fibSwingHighVal" class="mono-readout">9,200</span>
+              </div>
+              <input id="fibSwingHigh" type="range" min="1000" max="100000" step="100" value="9200" class="editorial-slider" />
             </div>
-            <div class="fib-readout-card">
-              <div class="readout-title">ZONA OPTIMAL TRADE ENTRY (OTE):</div>
-              <div class="readout-stat">
-                • <strong>Golden Pocket (0.618 - 0.650)</strong>: <span id="goldenPocketRange" class="highlight-gold">$34,000 - $35,280</span><br>
-                • <strong>Target Ekstensi TP1 (1.618)</strong>: <span id="fibExt1618" class="highlight-cyan">$124,720</span>
+
+            <div class="sim-readout-card">
+              <div class="readout-grid-2">
+                <div class="readout-box">
+                  <span class="readout-label">ZONA GOLDEN POCKET (0.618 – 0.650)</span>
+                  <strong id="goldenPocketRange" class="readout-value mono-val">6,145 – 6,296</strong>
+                </div>
+                <div class="readout-box">
+                  <span class="readout-label">TARGET EKSPANSI 1.618 ($\Phi$)</span>
+                  <strong id="fibExt1618" class="readout-value mono-val">12,105</strong>
+                </div>
               </div>
             </div>
           </div>
@@ -132,73 +207,138 @@
     </div>
   </section>
 
-  <!-- Main Container (Sidebar + Content) -->
+  <!-- 3-Column Editorial Workspace -->
   <div class="app-layout">
-    <!-- Sidebar Navigation -->
-    <aside id="sidebar" class="sidebar">
+
+    <!-- 1. Left Curriculum Sidebar -->
+    <aside id="sidebar" class="sidebar" aria-label="Indeks Kurikulum Buku">
       <div class="sidebar-header">
-        <div class="sidebar-title">DAFTAR ISI MASTER</div>
-        <div class="sidebar-sub">17 Bab / 6 Bagian Utama</div>
+        <div class="sidebar-title-row">
+          <span class="sidebar-kicker">INDEKS KURIKULUM</span>
+          <span class="sidebar-badge">17 BAB</span>
+        </div>
+        <div class="toc-filter-wrap">
+          <input
+            id="toc-filter-input"
+            type="search"
+            class="toc-filter-input"
+            placeholder="Saring bab atau topik..."
+            aria-label="Saring bab kurikulum"
+            autocomplete="off"
+          />
+        </div>
       </div>
-      <nav id="toc-nav" class="toc-nav">
-        <!-- Rendered dynamically by app.js -->
+
+      <nav id="toc-nav" class="toc-nav" aria-label="Daftar Isi Bab">
+        <!-- Populated dynamically by js/app.js -->
       </nav>
-      <div class="sidebar-footer">
-        <div class="footer-meta">
-          <div><strong>Prinsipal</strong>: Ilham Rizanto ("Bos")</div>
-          <div><strong>Arsitektur</strong>: Gemini 4 Argon</div>
-          <div><strong>Sistem</strong>: RizaCorp DIV-FIN</div>
+
+      <footer class="sidebar-colophon">
+        <div class="colophon-line">Ilham Rizanto &bull; Edisi Referensi Pasar Modal</div>
+        <div class="colophon-sub">Monografi Kuantitatif Waktu &amp; Fraktal</div>
+      </footer>
+    </aside>
+
+    <!-- 2. Center Broadsheet Reading Column -->
+    <main class="main-content" role="main">
+      <div class="reading-container">
+
+        <!-- Chapter Kicker & Metadata Strip -->
+        <div class="chapter-kicker-bar">
+          <div class="kicker-meta-left">
+            <span id="chapter-part-label" class="chapter-part-kicker">BAGIAN I — FONDASI PARADIGMA</span>
+            <span class="meta-sep" aria-hidden="true">&bull;</span>
+            <span id="chapter-read-time" class="chapter-meta-stat">15 mnt baca</span>
+            <span class="meta-sep" aria-hidden="true">&bull;</span>
+            <span id="chapter-word-count" class="chapter-meta-stat">2,800 kata</span>
+          </div>
+          <div class="kicker-meta-right">
+            <button id="focus-mode-btn" class="toolbar-btn focus-btn" type="button" title="Sembunyikan panel samping untuk fokus membaca (Mode Fokus)">
+              Mode Fokus
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Chapter Content Article -->
+        <article id="chapter-content" class="chapter-article">
+          <!-- Rendered Markdown, SVG Blueprints, Callout Dossiers & KaTeX Equations injected here -->
+        </article>
+
+        <!-- Chapter Pagination Footer -->
+        <nav class="chapter-nav-footer" aria-label="Navigasi Antar Bab">
+          <button id="prev-chapter-btn" class="chapter-page-btn prev-btn" type="button">
+            <span class="page-btn-dir">&larr; BAB SEBELUMNYA</span>
+            <span id="prev-chapter-title" class="page-btn-title">—</span>
+          </button>
+
+          <button id="next-chapter-btn" class="chapter-page-btn next-btn" type="button">
+            <span class="page-btn-dir">BAB SELANJUTNYA &rarr;</span>
+            <span id="next-chapter-title" class="page-btn-title">—</span>
+          </button>
+        </nav>
+
+      </div>
+    </main>
+
+    <!-- 3. Right Sticky On-Page Section Outline Rail -->
+    <aside id="outline-rail" class="outline-rail" aria-label="Struktur Bab Ini">
+      <div class="outline-rail-inner">
+        <div class="outline-header">STRUKTUR BAB INI</div>
+        <nav id="section-outline" class="section-outline" aria-label="Sub-bagian Bab">
+          <!-- Populated dynamically from H2/H3/H4 headings -->
+        </nav>
+        <div class="outline-footer">
+          <button id="back-to-top" class="back-to-top-btn" type="button">
+            &uarr; Kembali ke Atas Bab
+          </button>
         </div>
       </div>
     </aside>
 
-    <!-- Main Content Reader -->
-    <main class="main-content">
-      <div class="reading-container">
-        <!-- Chapter Header Meta -->
-        <div class="chapter-meta-bar">
-          <span id="chapter-part-label" class="part-label">BAGIAN I</span>
-          <span class="meta-separator">•</span>
-          <span id="chapter-read-time" class="read-time">Estimasi Baca: 25 Menit</span>
-          <span class="meta-separator">•</span>
-          <span class="institutional-tag">INSTITUTIONAL GRADE</span>
-        </div>
+  </div>
 
-        <!-- Rendered Chapter Body -->
-        <article id="chapter-content" class="chapter-article">
-          <div class="loading-spinner">Memuat materi kurikulum...</div>
-        </article>
-
-        <!-- Chapter Pagination -->
-        <div class="chapter-nav-footer">
-          <button id="prev-chapter-btn" class="nav-btn prev-btn">
-            <span class="nav-arrow">←</span>
-            <div class="nav-label-box">
-              <span class="nav-dir">Bab Sebelumnya</span>
-              <span id="prev-chapter-title" class="nav-title">-</span>
-            </div>
-          </button>
-
-          <button id="next-chapter-btn" class="nav-btn next-btn">
-            <div class="nav-label-box">
-              <span class="nav-dir">Bab Selanjutnya</span>
-              <span id="next-chapter-title" class="nav-title">-</span>
-            </div>
-            <span class="nav-arrow">→</span>
-          </button>
-        </div>
+  <!-- Quick Search Modal (⌘K / Ctrl+K) -->
+  <div id="search-modal" class="search-modal hidden" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+    <div class="search-modal-backdrop"></div>
+    <div class="search-modal-dialog">
+      <div class="search-modal-header">
+        <span id="search-modal-title" class="sr-only">Pencarian Cepat Ensiklopedia Astronacci</span>
+        <svg class="search-input-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          id="global-search-input"
+          type="search"
+          class="global-search-input"
+          placeholder="Cari konsep, siklus planet, rasio Fibonacci, studi kasus IHSG / BTC..."
+          autocomplete="off"
+        />
+        <button id="search-close" class="toolbar-btn search-close-btn" type="button" aria-label="Tutup pencarian">
+          ESC
+        </button>
       </div>
-    </main>
+      <div id="search-results" class="search-results" role="region" aria-live="polite">
+        <!-- Populated dynamically by js/app.js -->
+      </div>
+    </div>
   </div>
 
-  <!-- Lightbox Modal for Diagrams & Archival Plates -->
-  <div id="lightbox-modal" class="lightbox-modal hidden" role="dialog" aria-modal="true">
-    <button id="lightbox-close" class="lightbox-close" title="Tutup">✕</button>
-    <img id="lightbox-img" class="lightbox-img" src="" alt="">
-    <div id="lightbox-caption" class="lightbox-caption"></div>
+  <!-- Diagram & Blueprint Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal hidden" role="dialog" aria-modal="true" aria-label="Perbesar Diagram Teknis">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button id="lightbox-close" class="toolbar-btn lightbox-close-btn" type="button" aria-label="Tutup tampilan penuh">
+        Tutup Diagram &times;
+      </button>
+      <div class="lightbox-stage">
+        <img id="lightbox-img" src="" alt="Diagram Teknis" class="lightbox-img" />
+      </div>
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
   </div>
 
-  <!-- Data & Logic Scripts -->
+  <!-- Application Scripts -->
   <script src="js/chapters-data.js"></script>
   <script src="js/simulations.js"></script>
   <script src="js/app.js"></script>
