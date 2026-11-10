@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASTRONACCI: The Quantum Synthesis of Cosmic Time & Fractal Space in Financial Markets</title>
+  <meta name="description" content="Karya referensi institusional dan buku pegangan komprehensif sintesis waktu kosmik dan geometri fraktal di pasar keuangan oleh Ilham Rizanto.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  
+  <!-- Marked.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dark-theme">
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress-bar" class="progress-bar"></div>
+
+  <!-- Top Institutional Bar -->
+  <header class="masthead">
+    <div class="masthead-left">
+      <button id="sidebar-toggle" class="icon-btn" title="Toggle Navigasi Bab">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+      <div class="brand">
+        <div class="seal">
+          <span class="seal-icon">✦</span>
+          <span class="seal-text">RIZACORP FINANCIAL INTELLIGENCE</span>
+        </div>
+        <h1 class="book-title">ASTRONACCI</h1>
+        <span class="subtitle">The Quantum Synthesis of Cosmic Time & Fractal Space in Financial Markets</span>
+      </div>
+    </div>
+    
+    <div class="masthead-right">
+      <div class="sprint-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">SPRINT 1 : BAGIAN I AKTIF</span>
+      </div>
+      <button id="sim-drawer-toggle" class="btn btn-outline" title="Buka Simulator Interaktif">
+        <span class="btn-icon">⚡</span>
+        <span>Simulator Lab</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Interactive Simulation Stage (Collapsible) -->
+  <section id="sim-drawer" class="sim-drawer collapsed">
+    <div class="sim-drawer-header">
+      <div class="sim-tabs">
+        <button class="sim-tab-btn active" data-sim="lunar">
+          <span>🌙 Siklus Lunar & Jam Kosmik</span>
+        </button>
+        <button class="sim-tab-btn" data-sim="fibonacci">
+          <span>📐 Geometri Fraktal Fibonacci</span>
+        </button>
+      </div>
+      <button id="sim-close-btn" class="icon-btn-sm" title="Tutup Simulator">✕</button>
+    </div>
+
+    <div class="sim-stage-body">
+      <!-- 1. Lunar Orbit & Market Sentiment Simulator -->
+      <div id="sim-lunar" class="sim-panel active">
+        <div class="sim-grid">
+          <div class="canvas-container">
+            <canvas id="lunarCanvas" width="500" height="320"></canvas>
+            <div class="canvas-caption">Simulasi Orbit Geosentris Bulan terhadap Matahari & Proyeksi Fase</div>
+          </div>
+          <div class="sim-controls">
+            <h4 class="sim-control-title">KONTROL FASE LUNAR</h4>
+            <div class="control-row">
+              <label for="lunarAngleSlider">Sudut Fase ($\theta$ Bujur Elongasi):</label>
+              <input type="range" id="lunarAngleSlider" min="0" max="360" value="0" step="1">
+              <div class="slider-val"><span id="lunarAngleVal">0</span>°</div>
+            </div>
+            <div class="phase-indicator-card">
+              <div class="phase-name" id="lunarPhaseName">New Moon (Bulan Baru)</div>
+              <div class="phase-behavior" id="lunarBehaviorDesc">
+                • <strong>Bias Perilaku Pasar</strong>: Akumulasi Smart Money, titik balik lembah (local pivot low).<br>
+                • <strong>Korelasi Neurokimia</strong>: Penurunan sekresi melatonin, toleransi risiko institusional pulih.
+              </div>
+            </div>
+            <div class="quick-jump-btns">
+              <button class="btn-chip" data-deg="0">0° New Moon</button>
+              <button class="btn-chip" data-deg="90">90° First Qtr</button>
+              <button class="btn-chip" data-deg="180">180° Full Moon</button>
+              <button class="btn-chip" data-deg="270">270° Last Qtr</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Fibonacci Wave & Golden Pocket Simulator -->
+      <div id="sim-fibonacci" class="sim-panel">
+        <div class="sim-grid">
+          <div class="canvas-container">
+            <canvas id="fibCanvas" width="500" height="320"></canvas>
+            <div class="canvas-caption">Kalkulasi Dinamis Golden Pocket (0.618 - 0.65) & Ekstensi 1.618</div>
+          </div>
+          <div class="sim-controls">
+            <h4 class="sim-control-title">PARAMETER HARGA GELOMBANG IMPULSIF</h4>
+            <div class="control-row">
+              <label for="fibSwingLow">Swing Low ($P_0$):</label>
+              <input type="range" id="fibSwingLow" min="1000" max="50000" value="20000" step="500">
+              <div class="slider-val">$<span id="fibSwingLowVal">20,000</span></div>
+            </div>
+            <div class="control-row">
+              <label for="fibSwingHigh">Swing High ($P_1$):</label>
+              <input type="range" id="fibSwingHigh" min="1000" max="100000" value="60000" step="500">
+              <div class="slider-val">$<span id="fibSwingHighVal">60,000</span></div>
+            </div>
+            <div class="fib-readout-card">
+              <div class="readout-title">ZONA OPTIMAL TRADE ENTRY (OTE):</div>
+              <div class="readout-stat">
+                • <strong>Golden Pocket (0.618 - 0.650)</strong>: <span id="goldenPocketRange" class="highlight-gold">$34,000 - $35,280</span><br>
+                • <strong>Target Ekstensi TP1 (1.618)</strong>: <span id="fibExt1618" class="highlight-cyan">$124,720</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Container (Sidebar + Content) -->
+  <div class="app-layout">
+    <!-- Sidebar Navigation -->
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">DAFTAR ISI MASTER</div>
+        <div class="sidebar-sub">17 Bab / 6 Bagian Utama</div>
+      </div>
+      <nav id="toc-nav" class="toc-nav">
+        <!-- Rendered dynamically by app.js -->
+      </nav>
+      <div class="sidebar-footer">
+        <div class="footer-meta">
+          <div><strong>Prinsipal</strong>: Ilham Rizanto ("Bos")</div>
+          <div><strong>Arsitektur</strong>: Gemini 4 Argon</div>
+          <div><strong>Sistem</strong>: RizaCorp DIV-FIN</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Reader -->
+    <main class="main-content">
+      <div class="reading-container">
+        <!-- Chapter Header Meta -->
+        <div class="chapter-meta-bar">
+          <span id="chapter-part-label" class="part-label">BAGIAN I</span>
+          <span class="meta-separator">•</span>
+          <span id="chapter-read-time" class="read-time">Estimasi Baca: 25 Menit</span>
+          <span class="meta-separator">•</span>
+          <span class="institutional-tag">INSTITUTIONAL GRADE</span>
+        </div>
+
+        <!-- Rendered Chapter Body -->
+        <article id="chapter-content" class="chapter-article">
+          <div class="loading-spinner">Memuat materi kurikulum...</div>
+        </article>
+
+        <!-- Chapter Pagination -->
+        <div class="chapter-nav-footer">
+          <button id="prev-chapter-btn" class="nav-btn prev-btn">
+            <span class="nav-arrow">←</span>
+            <div class="nav-label-box">
+              <span class="nav-dir">Bab Sebelumnya</span>
+              <span id="prev-chapter-title" class="nav-title">-</span>
+            </div>
+          </button>
+
+          <button id="next-chapter-btn" class="nav-btn next-btn">
+            <div class="nav-label-box">
+              <span class="nav-dir">Bab Selanjutnya</span>
+              <span id="next-chapter-title" class="nav-title">-</span>
+            </div>
+            <span class="nav-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Data & Logic Scripts -->
+  <script src="js/chapters-data.js"></script>
+  <script src="js/simulations.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
