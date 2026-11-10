@@ -19,7 +19,7 @@ $$S(t) = M \cdot [P(t) + D(t)] + L(t)$$
 
 Di mana setiap variabel didefinisikan secara ketat sebagai berikut:
 1. **$P(t)$ (*Intermediate/Short-Term Planetary Term*)**: Penjumlahan aljabar dari intensitas aspek geosentris yang terbentuk antara pasangan planet dalam (*inner planets*: Merkurius, Venus, Mars) dan Matahari terhadap seluruh planet luar (*outer planets*: Jupiter, Saturnus, Uranus, Neptunus, Pluto), ditambah interaksi antar-planet dalam itu sendiri.
-2. **$D(t)$ (*Declination Term*)**: Komponen ekuatorial yang mengukur posisi deklinasi ($\delta$) geosentris dari dua planet penggerak emosi jangka pendek terkuat dalam tradisi astro-finansial, yaitu **Venus ($\venus$)** dan **Mars ($\mars$)**.
+2. **$D(t)$ (*Declination Term*)**: Komponen ekuatorial yang mengukur posisi deklinasi ($\delta$) geosentris dari dua planet penggerak emosi jangka pendek terkuat dalam tradisi astro-finansial, yaitu **Venus ($♀$)** dan **Mars ($♂$)**.
 3. **$L(t)$ (*Long-Term Planetary Term*)**: Penjumlahan aljabar tertimbang dari seluruh aspek geosentris yang terbentuk secara eksklusif di antara lima planet lambat (*outer planets*: Jupiter, Saturnus, Uranus, Neptunus, dan Pluto). Komponen ini bertindak sebagai gelombang pembawa (*carrier wave* atau *secular trend baseline*) berfrekuensi rendah.
 4. **$M$ (*Multiplier Constant*)**: Konstanta pengali skalar untuk menyamakan varians amplitudo antara osilasi frekuensi tinggi ($P(t) + D(t)$) terhadap tren frekuensi rendah ($L(t)$). Dalam monograf asli tahun 1947, Bradley menetapkan nilai empiris $M = 1$ untuk perhitungan mentah standar, atau menggunakan faktor skala $M = 3.5$ hingga $M = 4.0$ ketika memplot *Siderograph* pada grafik kertas milimeter agar fluktuasi harian terlihat seimbang terhadap pergeseran lambat kurva $L(t)$. Dalam perangkat lunak algoritma modern (seperti *Financial Trader* milik siklus analis Donald Bradley dan adaptasi *Microcycles* oleh Alphee Lavoie), rasio standar yang dipertahankan adalah:
 
@@ -78,13 +78,13 @@ Berikut adalah **Tabel Matriks Valensi Aspek dan Konjungsi Bradley Siderograph**
 
 **Matriks Valensi Khusus Konjungsi ($0^\circ$) Antar-Planet dalam Algoritma Bradley:**
 Dalam monograf 1947, Bradley mengklasifikasikan 45 kemungkinan pasangan konjungsi dari 10 benda langit ($\binom{10}{2} = 45$ pasangan) ke dalam grup konstruktif ($+1$) dan destruktif ($-1$):
-1. **Konjungsi Bervalensi Positif ($V_{ij} = +1$)**: Setiap konjungsi yang melibatkan **Venus ($\venus$)** atau **Jupiter ($\jupiter$)** dengan Matahari ($\odot$), Merkurius ($\mercury$), Uranus ($\uranus$), Neptunus ($\neptune$), atau Pluto ($\pluto$), *kecuali* jika berpasangan dengan Mars ($\mars$) atau Saturnus ($\saturn$). Selain itu, konjungsi Matahari-Merkurius ($\odot\conjunction\mercury$) dan Uranus-Neptunus ($\uranus\conjunction\neptune$) diberi valensi $+1$.
-2. **Konjungsi Bervalensi Negatif ($V_{ij} = -1$)**: Setiap konjungsi yang melibatkan **Mars ($\mars$)** atau **Saturnus ($\saturn$)** dengan planet mana pun (termasuk $\venus\conjunction\mars$, $\venus\conjunction\saturn$, $\jupiter\conjunction\mars$, dan $\jupiter\conjunction\saturn$), serta konjungsi yang melibatkan Pluto ($\pluto$) dengan Matahari, Merkurius, Uranus, atau Neptunus.
+1. **Konjungsi Bervalensi Positif ($V_{ij} = +1$)**: Setiap konjungsi yang melibatkan **Venus ($♀$)** atau **Jupiter ($♃$)** dengan Matahari ($\odot$), Merkurius ($☿$), Uranus ($♅$), Neptunus ($♆$), atau Pluto ($♇$), *kecuali* jika berpasangan dengan Mars ($♂$) atau Saturnus ($♄$). Selain itu, konjungsi Matahari-Merkurius ($\odot\conjunction☿$) dan Uranus-Neptunus ($♅\conjunction♆$) diberi valensi $+1$.
+2. **Konjungsi Bervalensi Negatif ($V_{ij} = -1$)**: Setiap konjungsi yang melibatkan **Mars ($♂$)** atau **Saturnus ($♄$)** dengan planet mana pun (termasuk $♀\conjunction♂$, $♀\conjunction♄$, $♃\conjunction♂$, dan $♃\conjunction♄$), serta konjungsi yang melibatkan Pluto ($♇$) dengan Matahari, Merkurius, Uranus, atau Neptunus.
 
 ##### B. Formulasi Eksplisit Komponen Jangka Menengah $P(t)$ dan Jangka Panjang $L(t)$
 Misalkan himpunan benda langit dibagi menjadi dua sub-himpunan yang saling lepas:
-- **Planet Dalam ($\mathcal{I}$)**: $\{\text{Matahari } (\odot), \text{Merkurius } (\mercury), \text{Venus } (\venus), \text{Mars } (\mars)\}$ (4 benda langit).
-- **Planet Luar ($\mathcal{O}$)**: $\{\text{Jupiter } (\jupiter), \text{Saturnus } (\saturn), \text{Uranus } (\uranus), \text{Neptunus } (\neptune), \text{Pluto } (\pluto)\}$ (5 benda langit).
+- **Planet Dalam ($\mathcal{I}$)**: $\{\text{Matahari } (\odot), \text{Merkurius } (☿), \text{Venus } (♀), \text{Mars } (♂)\}$ (4 benda langit).
+- **Planet Luar ($\mathcal{O}$)**: $\{\text{Jupiter } (♃), \text{Saturnus } (♄), \text{Uranus } (♅), \text{Neptunus } (♆), \text{Pluto } (♇)\}$ (5 benda langit).
 
 Terdapat total $\binom{10}{2} = 45$ pasangan interaksi planet. Dari 45 pasangan tersebut:
 - Sebanyak $\binom{5}{2} = 10$ pasangan merupakan interaksi murni antar-planet luar ($\{i, j\} \subset \mathcal{O}$). Ke-10 pasangan inilah yang menyusun komponen jangka panjang **$L(t)$**.
@@ -99,14 +99,14 @@ Sedangkan untuk komponen jangka panjang $L(t)$, karena pergerakan sudut planet l
 $$L(t) = K_L \cdot \sum_{\substack{i < j \\ \{i,j\} \subset \mathcal{O}}} \sum_{\theta_{\text{aspect}} \in \Theta} V_{ij}(\theta_{\text{aspect}}) \cdot 10 \cdot \max\left(0, \; 1 - \frac{|\Delta\theta_{ij}(t) - \theta_{\text{aspect}}|}{15^\circ}\right)$$
 
 ##### C. Formulasi Eksplisit Komponen Deklinasi Venus-Mars $D(t)$
-Selain bujur ekliptika, Bradley menyadari bahwa kemiringan sumbu rotasi Bumi ($\epsilon \approx 23^\circ 26'$) menyebabkan variasi musiman pada sudut datang radiasi dan posisi ekuatorial planet yang diukur melalui **deklinasi ($\delta$)**. Bradley mengisolasi deklinasi geosentris dari dua planet tetangga terdekat Bumi—**Venus ($\delta_{\venus}$)** dan **Mars ($\delta_{\mars}$)**—untuk membentuk suku $D(t)$:
+Selain bujur ekliptika, Bradley menyadari bahwa kemiringan sumbu rotasi Bumi ($\epsilon \approx 23^\circ 26'$) menyebabkan variasi musiman pada sudut datang radiasi dan posisi ekuatorial planet yang diukur melalui **deklinasi ($\delta$)**. Bradley mengisolasi deklinasi geosentris dari dua planet tetangga terdekat Bumi—**Venus ($\delta_{♀}$)** dan **Mars ($\delta_{♂}$)**—untuk membentuk suku $D(t)$:
 
-$$D(t) = \frac{|\delta_{\venus}(t)| \cdot \text{sgn}(\delta_{\venus}) + |\delta_{\mars}(t)| \cdot \text{sgn}(\delta_{\mars})}{C_D} \equiv \frac{\delta_{\venus}(t) + \delta_{\mars}(t)}{2}$$
+$$D(t) = \frac{|\delta_{♀}(t)| \cdot \text{sgn}(\delta_{♀}) + |\delta_{♂}(t)| \cdot \text{sgn}(\delta_{♂})}{C_D} \equiv \frac{\delta_{♀}(t) + \delta_{♂}(t)}{2}$$
 
 Dalam pedoman komputasi praktis Bradley:
 - Deklinasi Utara (*North Declination*, $\delta > 0^\circ$) diberi tanda aljabar **positif ($+$)**.
 - Deklinasi Selatan (*South Declination*, $\delta < 0^\circ$) diberi tanda aljabar **negatif ($-$)**.
-- Nilai derajat deklinasi Venus dan Mars (yang secara astronomis berkisar antara $-28^\circ$ hingga $+28^\circ$) dijumlahkan secara aljabar dan dibagi dengan konstanta skala $C_D = 2$ (atau digunakan langsung nilainya dalam derajat tergantung pada faktor pengali $M$). Ketika Venus dan Mars keduanya berada jauh di deklinasi Utara (misalnya $\delta_{\venus} = +24^\circ\text{ N}$ dan $\delta_{\mars} = +22^\circ\text{ N}$), suku $D(t)$ menyumbangkan dorongan positif yang signifikan terhadap kurva $P(t)$. Sebaliknya, ketika salah satu planet melintasi ekuator langit ($\delta = 0^\circ$, *celestial equator crossover*) atau mencapai titik balik deklinasi maksimum (*out-of-bounds / maximum declination*), kurva $D(t)$ mengalami infleksi halus yang memodulasi gelombang pendek.
+- Nilai derajat deklinasi Venus dan Mars (yang secara astronomis berkisar antara $-28^\circ$ hingga $+28^\circ$) dijumlahkan secara aljabar dan dibagi dengan konstanta skala $C_D = 2$ (atau digunakan langsung nilainya dalam derajat tergantung pada faktor pengali $M$). Ketika Venus dan Mars keduanya berada jauh di deklinasi Utara (misalnya $\delta_{♀} = +24^\circ\text{ N}$ dan $\delta_{♂} = +22^\circ\text{ N}$), suku $D(t)$ menyumbangkan dorongan positif yang signifikan terhadap kurva $P(t)$. Sebaliknya, ketika salah satu planet melintasi ekuator langit ($\delta = 0^\circ$, *celestial equator crossover*) atau mencapai titik balik deklinasi maksimum (*out-of-bounds / maximum declination*), kurva $D(t)$ mengalami infleksi halus yang memodulasi gelombang pendek.
 
 ---
 

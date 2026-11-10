@@ -93,7 +93,7 @@ Berikut adalah kutipan presisi dari **Geocentric Tropical Swiss Ephemeris** untu
 **Tabel 6.1: Kutipan Swiss Ephemeris (Geocentric Tropical, 00:00 UTC) – Maret 2020**
 *(Notasi Tanda: $\♓$ Pisces, $\♈$ Aries, $\♉$ Taurus, $\♊$ Gemini, $\♋$ Cancer, $\♌$ Leo, $\♍$ Virgo, $\♎$ Libra, $\♏$ Scorpio, $\♐$ Sagittarius, $\♑$ Capricorn, $\♒$ Aquarius. Simbol `R` = Retrograde, `D` = Direct/Stationary Direct).*
 
-| Tanggal (2020) | Hari | Sun ($\odot$) | Moon ($\mathbb{C}$) | Moon $\delta$ | Mercury ($\☿$) | Venus ($\♀$) | Mars ($\♂$) | Jupiter ($\♃$) | Saturn ($\♄$) |
+| Tanggal (2020) | Hari | Sun ($\odot$) | Moon ($\mathbb{C}$) | Moon $\delta$ | Mercury ($\☿$) | Venus ($\♀$) | Mars ($♂$) | Jupiter ($\♃$) | Saturn ($\♄$) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Mar 09** | Mon | $18\♓ 56'$ | $09\♍ 41'$ | $+04^\circ 12'$ | $28\♒ 19'\text{ R}$ | $04\♉ 08'$ | $14\♑ 41'$ | $20\♑ 43'$ | $29\♑ 06'$ |
 | **Mar 10** | Tue | $19\♓ 56'$ | $24\♍ 47'$ | $-02^\circ 15'$ | $28\♒ 13'\text{ D}$ | $05\♉ 15'$ | $15\♑ 20'$ | $20\♑ 53'$ | $29\♑ 11'$ |
@@ -114,7 +114,7 @@ Berikut adalah kutipan presisi dari **Geocentric Tropical Swiss Ephemeris** untu
    * *Eksekusi Trading Desk:* Kombinasi *Full Moon* dan *Mercury Station* menandai puncak kepanikan gelombang pertama (*circuit breaker* pertama S&P 500 terjadi pada pagi hari 9 Maret 2020 menyusul perang harga minyak Arab Saudi–Rusia), memicu *short-covering bounce* tajam namun bersifat sementara pada 10 Maret.
 
 2. **Identifikasi Stellium Capricorn, Vernal Equinox & Saturn Ingress (20–22 Maret 2020):**
-   Perhatikan kolom Mars ($\♂$), Jupiter ($\♃$), dan Saturnus ($\♄$) antara tanggal 20 hingga 23 Maret. Pada 20 Maret, Mars ($21\♑ 51'$) bertemu tepat (*conjunction* $0^\circ$) dengan Jupiter ($22\♑ 21'$). Pada hari yang sama, Matahari melintasi titik kritis $00\♈ 00'$ (**Vernal Equinox**). Dua hari kemudian, pada 22 Maret, Saturnus meninggalkan Capricorn dan masuk ke derajat kritis $00\♒ 00'$ (**Saturn Ingress into Aquarius**).
+   Perhatikan kolom Mars ($♂$), Jupiter ($\♃$), dan Saturnus ($\♄$) antara tanggal 20 hingga 23 Maret. Pada 20 Maret, Mars ($21\♑ 51'$) bertemu tepat (*conjunction* $0^\circ$) dengan Jupiter ($22\♑ 21'$). Pada hari yang sama, Matahari melintasi titik kritis $00\♈ 00'$ (**Vernal Equinox**). Dua hari kemudian, pada 22 Maret, Saturnus meninggalkan Capricorn dan masuk ke derajat kritis $00\♒ 00'$ (**Saturn Ingress into Aquarius**).
    * *Eksekusi Trading Desk:* Akumulasi peristiwa kosmik mayor dalam jendela waktu 72 jam ini disebut sebagai **Cosmic Cluster / Time Cluster**. Ini memberikan peringatan kepada meja kuantitatif bahwa tren *bearish* vertikal yang telah berlangsung sejak Februari sedang memasuki fase kapitulasi parabolik akhir.
 
 3. **Eksekusi Titik Balik Utama pada New Moon di Aries (23–24 Maret 2020):**
@@ -292,7 +292,7 @@ Sebuah gerhana hanya dapat terjadi apabila fase **Syzygy** (*New Moon* atau *Ful
 Dalam hukum *Astronacci*, *New Moon* atau *Full Moon* reguler hanya mengatur ayunan harga (*swing*) berdurasi 1 hingga 2 minggu. Namun, ketika sebuah *Syzygy* mengalami penyelarasan vektor tiga dimensi dengan *Lunar Nodes* ($|\lambda_{\text{Syzygy}} - \lambda_{\text{Node}}| < 18^\circ$) sehingga menghasilkan **Gerhana**, terjadi fenomena **Three-Body Gravitational & Electromagnetic Alignment** (Bumi–Bulan–Matahari berada pada satu garis lurus sempurna dalam ruang tiga dimensi).
 
 1. **Efek Akumulasi Energi & *Time Multiplier*:** Gerhana bertindak sebagai pengali waktu (*Time Multiplier*). Jika *New Moon* biasa memiliki pengaruh selama $\approx 14\text{--}29\text{ hari}$, maka sebuah **Solar Eclipse** atau **Lunar Eclipse** mengunci struktur psikologi pasar dan memicu pembalikan tren (*trend reversal*) atau akselerasi struktural yang bertahan selama **3 hingga 6 bulan ke depan** (hingga musim gerhana / *eclipse season* berikutnya yang terjadi setiap $\approx 173.31\text{ hari}$ atau setengah *Eclipse Year* $346.62\text{ hari}$).
-2. **Mekanisme *Degree Activation* (Titik Sensitif Ekliptika):** Derajat bujur ekliptika tepat tempat terjadinya Gerhana (misalnya *Total Solar Eclipse* terjadi pada $19^\circ \text{ Aries } 24'$) akan menjadi "derajat listrik aktif" (* sensitized degree*) di memori pasar. Berbulan-bulan setelah gerhana selesai, ketika planet transit cepat seperti **Mars** ($\♂$) atau **Matahari** ($\odot$) melintasi derajat $19^\circ \text{ Aries}$ tersebut (atau membentuk sudut $90^\circ / 180^\circ$ terhadapnya), pemicu sekunder (*secondary trigger*) akan meledak dan memicu pergerakan harga besar di bursa.
+2. **Mekanisme *Degree Activation* (Titik Sensitif Ekliptika):** Derajat bujur ekliptika tepat tempat terjadinya Gerhana (misalnya *Total Solar Eclipse* terjadi pada $19^\circ \text{ Aries } 24'$) akan menjadi "derajat listrik aktif" (* sensitized degree*) di memori pasar. Berbulan-bulan setelah gerhana selesai, ketika planet transit cepat seperti **Mars** ($♂$) atau **Matahari** ($\odot$) melintasi derajat $19^\circ \text{ Aries}$ tersebut (atau membentuk sudut $90^\circ / 180^\circ$ terhadapnya), pemicu sekunder (*secondary trigger*) akan meledak dan memicu pergerakan harga besar di bursa.
 
 <figure class="editorial-figure archival-plate">
   <div class="figure-badge">OBSERVASI NASA • TOTAL SOLAR ECLIPSE CORONA (PUBLIC DOMAIN)</div>
