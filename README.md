@@ -1,10 +1,10 @@
-# ASTRONACCI: The Quantum Synthesis of Cosmic Time & Fractal Space in Financial Markets
+# ASTROLOGY-FIBONACCI: The Quantum Synthesis of Cosmic Time & Fractal Space in Financial Markets
 *Karya Referensi Institusional & Buku Digital Interaktif Pasar Modal*
 
 **Prinsipal Eksekutif**: Ilham Rizanto  
 **Arsitektur Kognitif**: Gemini 4 Argon  
 **Sistem**: RizaCorp Global Capital Markets & Investment Intelligence (`DIV-FIN`)  
-**Live URL**: [https://ilhamrizanto.github.io/astronacci-handbook/](https://ilhamrizanto.github.io/astronacci-handbook/)
+**Live URL**: [https://ilhamrizanto.github.io/astrology-fibonacci-handbook/](https://ilhamrizanto.github.io/astrology-fibonacci-handbook/)
 
 ---
 

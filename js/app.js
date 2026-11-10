@@ -404,7 +404,7 @@
     buildSectionOutline();
 
     // Update document title for editorial polish
-    document.title = `Bab ${chapterMeta.num}: ${chapterMeta.title} — ASTRONACCI`;
+    document.title = `Bab ${chapterMeta.num}: ${chapterMeta.title} — ASTROLOGY-FIBONACCI`;
 
     // Scroll handling
     if (targetHeadingId) {
